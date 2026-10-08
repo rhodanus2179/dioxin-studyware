@@ -26,10 +26,14 @@ for(const r of audits){
   assert.equal(r.length,7);
   assert.ok(allQuestions.has(r[1]),"Unknown exam question in audit");
   for(const id of r[3].split(";"))assert.ok(sources.has(id),"Unknown source "+id);
-  assert.ok(["primary-law-verified","primary-law-and-agency-verified","secondary-JIS-text-verified","agency-statistic-primary-and-question-text","primary-law-and-secondary-underline-mapping","primary-agency-oxidation-and-secondary-underline-mapping","academic-context-secondary-underline-with-caveat","academic-context-secondary-underline-mapping","professional-manual-reference-diagram-plus-question-secondary","secondary-JIS-and-question-formula-correlated","professional-manual-formula-and-arithmetic-reviewed"].includes(r[4]));
+  assert.ok(["primary-law-verified","primary-law-and-agency-verified","secondary-JIS-text-verified","agency-statistic-primary-and-question-text","primary-law-and-secondary-underline-mapping","primary-agency-oxidation-and-secondary-underline-mapping","academic-context-secondary-underline-with-caveat","academic-context-secondary-underline-mapping","professional-manual-reference-diagram-plus-question-secondary","secondary-JIS-and-question-formula-correlated","professional-manual-formula-and-arithmetic-reviewed","environment-ministry-sampling-procedure-and-secondary-JIS-confirmed","JEMCA-2021-professional-manual-and-secondary-JIS-confirmed","mirrored-exam-page-visually-inspected-with-secondary-JIS-formula"].includes(r[4]));
 }
 assert.equal(audits.filter(r=>r[5]==="original-underline-not-seen").length,1);
-assert.equal(audits.filter(r=>r[4]==="secondary-JIS-text-verified").length,2);
+assert.equal(audits.filter(r=>r[4]==="secondary-JIS-text-verified").length,0);
+assert.equal(allChoices.get("R03-A-Q23-C5")[5],"individual-reason-draft");
+assert.ok(sources.get("EX05")[6].includes("page14-visual-inspected"));
+assert.ok(audits.find(r=>r[0]==="AUD011")[5].includes("not-official-JEMAI"));
+assert.ok(sources.get("P18")[6].includes("primary-agency"));
 assert.equal(allQuestions.get("R03-G-Q02")[4],"1");
 assert.equal(allQuestions.get("R03-G-Q03")[4],"3");
 assert.equal(allQuestions.get("R03-A-Q18")[4],"1");

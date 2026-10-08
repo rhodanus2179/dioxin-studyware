@@ -44,7 +44,7 @@
 "T09","standard-secondary","JIS非公式掲載","JIS K 0311:2020 排ガス中のダイオキシン類の測定方法","https://kikakurui.com/k0/K0311-2020-01.html","2020版／非公式サイト","secondary-text-checked-primary-pending","等速吸引−5～+10%、OCDD/OCDF DL0.5pg、DL-PCB DL0.2pg"
 "EX03","exam-primary","産業環境管理協会","R07ダイオキシン類概論問題PDF","https://www.jemai.or.jp/polconman/examination/dd4ht300000005fn-att/R07_14.pdf","2025年度","PDF-text-checked-image-failed","R07-G-Q14の本文で約15万t確認。下線の画像確認は未完了"
 "EX04","exam-paper-mirror","公害防止管理者試験対策サイトに保存された2021年度試験紙面","R03ダイオキシン類概論（試験紙面PDF複製）","https://pierre-usagi.com/wp-content/uploads/2025/01/R03_14.pdf","試験2021／掲載2025","mirrored-exam-pages-visually-reviewed","PDF表示ページindex2問2下線・index7問12構造式/問13不等号。JEMAI公式配布元のPDFとのファイル同一性は未検証"
-"EX05","exam-mirror","試験対策サイト","R03ダイオキシン類特論（2021年度試験紙面PDF）","https://pierre-usagi.com/wp-content/uploads/2025/01/R03_15.pdf","2021年度試験","mirror-pdf-text-checked-visual-not-checked","特論問3・6・10の文言。下線画像の番号対応は非公式サイトを使用"
+"EX05","exam-mirror","試験対策サイト","R03ダイオキシン類特論（2021年度試験紙面PDF）","https://pierre-usagi.com/wp-content/uploads/2025/01/R03_15.pdf","2021年度試験","mirrored-PDF-text-checked-and-page14-visual-inspected","試験2021年特論問23の数式(a/b)×(c/d)と五択をPDFページindex14で目視。ほかのページの図・下線は今回まだ未確認"
 "S13","exam-secondary","ISEED","R03概論問3の下線番号付き解説","https://iseed.earth/dioxin-overview-r3-3/","2025年公開","secondary-transcription-checked","下線①～⑤を法第28条の対象と対応づける"
 "S14","exam-secondary","公害こむ！","R03特論問6 活性炭の細孔の下線付き解説","https://pierre-usagi.com/kougai-r3-dxn-tokuron-6/","2021年公開","secondary-transcription-checked","下線②マクロ孔。製法依存性は別の技術論文を確認"
 "S15","exam-secondary","公害こむ！","R03特論問10 塩化揮発法の下線付き解説","https://pierre-usagi.com/kougai-r3-dxn-tokuron-10/","2021年公開","secondary-transcription-checked","下線④CaCl2を蒸留炉に入れる記述が誤り"
@@ -55,3 +55,4 @@
 "T12","professional-technical-manual","日本環境測定分析協会（JEMCA）","固定発生源からの排ガス分析マニュアル 2021年版 3.16","https://www.jemca.or.jp/wp-content/uploads/2022/03/030316_kotei_manual-FY2021_DXN_JIS-K0311.pdf","2021版","primary-professional-manual-not-JIS-authentic-text","JISⅠ形図3.16.3-3、ガス量計算3.16.3.6、等速吸引−5～＋10%。JIS正式正本との区別が必要"
 "S17","exam-secondary","公害こむ！","R03ダイオキシン類特論問19の図と選択肢","https://pierre-usagi.com/kougai-r3-dxn-tokuron-19/","2021年","secondary-question-options","出題の選択肢①～⑤とJEMCAの独立した装置図を対照"
 "S18","exam-secondary","公害こむ！","R03ダイオキシン類特論問23 相対感度式の転記","https://pierre-usagi.com/kougai-r3-dxn-tokuron-23/","2021年","secondary-question-formula-text","出題のa/b×c/dと5択。原本PDFの数式画像は未確認"
+"P18","government-technical-reference","環境省","ダイオキシン類環境調査・試料採取法参考資料10","https://www.env.go.jp/council/content/i_06/000169107.pdf","公表版は2020年試験以後／2021年当時への適用に注意","primary-agency-method-verified","排ガス等速吸引の許容相対誤差−5%～＋10%を記載。R03-A-Q18の二次JIS記載との独立照合"

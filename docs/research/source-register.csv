@@ -40,3 +40,4 @@
 "P14","official-whitepaper","環境省","令和3年版環境白書：2019年度ダイオキシン類の個人摂取量","https://www.env.go.jp/policy/hakusyo/r03/html/hj21020501.html","対象2019年度","verified-summary","総摂取0.47pg-TEQ/kg体重/日、食品のみ0.46。R04-G-Q15"
 "T07","peer-reviewed","WHO国際会合研究者グループ","The 2005 WHO reevaluation of TEFs (2006論文)","https://pmc.ncbi.nlm.nih.gov/articles/PMC2290740/","2006公開","verified-values","TEFの代表値。WHO2005会合/2006論文（試験対象版の確認が必要）"
 "T08","peer-reviewed","毒性学研究者グループ","Polybrominated Dioxins etc: Interim TEF Proposal","https://pmc.ncbi.nlm.nih.gov/articles/PMC3663561/","2013公開","verified-research-proposal","臭素系への塩素系相当の暫定TEFを研究論文として提案。法定・WHO公式推奨の確定とは区別"
+"P15","official-inventory","環境省","2018年ダイオキシン類排出インベントリー結果","https://www.env.go.jp/press/107882.html","対象2018年・公表2020-03-27","verified-summary","全国排出117～119g-TEQ/年。R03-G08では発生源別構成は別添原表を要確認。"

@@ -19,3 +19,4 @@ jobs:
       - run: node tests/validate-cross-year.mjs
       - run: node tests/validate-three-years.mjs
       - run: node tests/validate-four-years.mjs
+      - run: node tests/validate-five-years.mjs

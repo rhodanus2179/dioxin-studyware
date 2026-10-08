@@ -20,13 +20,13 @@ for(const y of ["r03","r04","r05","r06","r07"]){
   for(const r of csv(`docs/research/${y}-question-review.csv`).slice(1))allQuestions.set(r[0],r);
   for(const r of csv(`docs/research/${y}-choice-review.csv`).slice(1))allChoices.set(r[0],r);
 }
-assert.equal(audits.length,5);
+assert.equal(audits.length,9);
 assert.equal(new Set(audits.map(r=>r[0])).size,audits.length);
 for(const r of audits){
   assert.equal(r.length,7);
   assert.ok(allQuestions.has(r[1]),"Unknown exam question in audit");
   for(const id of r[3].split(";"))assert.ok(sources.has(id),"Unknown source "+id);
-  assert.ok(["primary-law-verified","primary-law-and-agency-verified","secondary-JIS-text-verified","agency-statistic-primary-and-question-text"].includes(r[4]));
+  assert.ok(["primary-law-verified","primary-law-and-agency-verified","secondary-JIS-text-verified","agency-statistic-primary-and-question-text","primary-law-and-secondary-underline-mapping","primary-agency-oxidation-and-secondary-underline-mapping","academic-context-secondary-underline-with-caveat","academic-context-secondary-underline-mapping"].includes(r[4]));
 }
 assert.equal(audits.filter(r=>r[5]==="original-underline-not-seen").length,1);
 assert.equal(audits.filter(r=>r[4]==="secondary-JIS-text-verified").length,2);
@@ -42,4 +42,4 @@ assert.equal(allChoices.get("R03-G-Q02-C1")[5],"individual-reason-draft");
 assert.equal(allChoices.get("R07-G-Q14-C5")[5],"secondary-underline-rationale-draft");
 assert.ok(sources.get("T09")[6].includes("secondary"),"JIS repost must not be marked primary");
 assert.ok(sources.get("EX03")[6].includes("image-failed"),"Failed visual review must remain pending");
-console.log("PASS: 5 claim-source audits; 2 standard-secondary; R03-G02 visual mapped; R07-G14 still pending");
+console.log("PASS: 9 claim-source audits; 4 secondary-mapped question sets kept visually pending");

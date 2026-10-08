@@ -1,6 +1,6 @@
 import fs from "node:fs";import assert from "node:assert/strict";
 function csv(p){const t=fs.readFileSync(p,"utf8");let out=[],row=[],v="",quote=false;for(let i=0;i<t.length;i++){const c=t[i];if(c==='"'){if(quote&&t[i+1]==='"'){v+='"';i++;}else quote=!quote;}else if(c===','&&!quote){row.push(v);v="";}else if(c==='\n'&&!quote){row.push(v);out.push(row);row=[];v="";}else if(c!=='\r')v+=c;}assert.equal(quote,false);return out.filter(r=>r.length);}
-const years=["r03","r04","r05","r06","r07"],draftExpected=[160,170,150,150,195],heldExpected=[15,30,50,50,0],secondaryExpected=[20,0,0,0,5];
+const years=["r03","r04","r05","r06","r07"],draftExpected=[160,170,150,150,195],heldExpected=[0,30,50,50,0],secondaryExpected=[30,0,0,0,5];
 const answers=csv("docs/research/past-exam-answer-key.csv").slice(1),map=new Map(answers.map(r=>[r[0],Number(r[5])]));assert.equal(map.size,200);
 const knowledge=csv("docs/research/knowledge-map.csv").slice(1),knowledgeIds=new Set(knowledge.map(r=>r[0]));
 let allQ=[],allC=[],draft=0,held=0,secondary=0;const observed=new Map();
@@ -15,7 +15,7 @@ for(let i=0;i<5;i++){
 }
 assert.equal(allQ.length,200);assert.equal(allC.length,1000);
 assert.equal(new Set(allQ.map(q=>q[0])).size,200);assert.equal(new Set(allC.map(c=>c[0])).size,1000);
-assert.equal(draft,825);assert.equal(secondary,25);assert.equal(held,145);
+assert.equal(draft,825);assert.equal(secondary,35);assert.equal(held,130);
 const additionalDrafts=allC.filter(c=>["reference-figure-rationale-draft","secondary-formula-rationale-draft"].includes(c[5])).length;
 assert.equal(additionalDrafts,5);
 assert.equal(observed.size,96);assert.equal(knowledge.length,212);assert.equal(knowledge.length-observed.size,116);
@@ -25,10 +25,11 @@ const recurrence=csv("docs/research/r03-r07-knowledge-recurrence.csv").slice(1);
 const audit=csv("docs/research/knowledge-map-coverage-audit.csv").slice(1);assert.equal(audit.length,212);assert.equal(audit.filter(r=>r[7]==="no-primary-question-link").length,116);
 const queue=csv("docs/research/review-queue.csv").slice(1);
 assert.equal(queue.length,175);assert.equal(new Set(queue.map(r=>r[0])).size,175);
-assert.equal(queue.filter(r=>r[7]==="secondary-underline-rationale-draft").length,25);
+assert.equal(queue.filter(r=>r[7]==="secondary-underline-rationale-draft").length,35);
 assert.equal(queue.filter(r=>r[7]==="reference-figure-rationale-draft").length,5);
+assert.equal(queue.filter(r=>r[7]==="symbol-ambiguous-rationale-draft").length,5);
 assert.equal(queue.filter(r=>r[7]==="secondary-formula-rationale-draft").length,0);
-assert.equal(queue.filter(r=>r[7].startsWith("needs-")).length,145);
+assert.equal(queue.filter(r=>r[7].startsWith("needs-")).length,130);
 for(const r of queue){assert.equal(r.length,13);assert.equal(r[11],"NOT-VALIDATED");assert.ok(allC.some(x=>x[0]===r[0]));}
 for(const id of ["R03-G-Q03","R03-A-Q03","R03-A-Q06","R03-A-Q10"]){
   for(let n=1;n<=5;n++){
@@ -48,6 +49,19 @@ for(const [id,status] of [["R03-A-Q19","reference-figure-rationale-draft"]]){
 const a20=allQ.find(q=>q[0]==="R03-A-Q20");
 assert.ok(a20[5].includes("3.125m³"));
 assert.ok(a20[5].includes("3m³"));
+for(const id of ["R03-A-Q15","R03-A-Q16"]){
+ for(let n=1;n<=5;n++){
+  const ch=allC.find(c=>c[0]===id+"-C"+n);
+  assert.equal(ch[5],"secondary-underline-rationale-draft");
+  assert.ok(queue.some(r=>r[0]===ch[0] && r[12].startsWith("HOLD-")));
+ }
+}
+for(let n=1;n<=5;n++){
+ const ch=allC.find(c=>c[0]==="R03-G-Q15-C"+n);
+ assert.equal(ch[5],"symbol-ambiguous-rationale-draft");
+ assert.ok(queue.some(r=>r[0]===ch[0]));
+}
+assert.ok(allQ.find(q=>q[0]==="R03-G-Q15")[5].includes("比較記号"));
 const visual=csv("docs/research/visual-audit-pass3.csv").slice(1);
 assert.equal(visual.length,4);
 for(const id of ["R03-G-Q02","R03-G-Q12","R03-G-Q13","R03-A-Q23"]){
@@ -60,4 +74,4 @@ const a=allQ.find(q=>q[0]==="R03-A-Q20");assert.equal(Number(a[4]),2);
 function eq(x,y,tol=1e-9){assert.ok(Math.abs(x-y)<tol,`${x} != ${y}`);}
 eq((4-0.2)/4*100,95);eq(1500*2,3000);eq(0.05*(50/2)*(100/50)/(0.0008*1000),3.125);
 eq((2/6)*(21-12)/(21-20),3);
-console.log("PASS: 200 questions, 1000 choices, 825 normal + 25 underline + 5 reference-figure drafts, 145 undrafted, 175 visual queue");
+console.log("PASS: 200 questions, 1000 choices, 825 normal + 35 underline + 5 reference-figure + 5 symbol-ambiguous, 130 undrafted, 175 visual queue");

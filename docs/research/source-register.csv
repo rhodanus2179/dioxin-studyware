@@ -34,3 +34,5 @@
 "T05","standards-secondary","JIS K0312：非公式規格本文転載サイト","JIS K 0312:2020 工場排水測定方法","https://kikakurui.com/k0/K0312-2020-01.html","2020","secondary-technical-check","非公式掲載本文。同定に関するピーク面積比・塩素同位体・15/25%を照合。正式JIS要確認"
 "P09","official-primary","環境省","PCB問題について：生産・使用数量","https://www.env.go.jp/recycle/poly/pcb-pamf/p3.pdf","historical official brochure","verified-content","国内製造58,787t、国内使用54,001t。R07-G14の数値誤りを裏付ける。"
 "P10","technical-primary","環境省","PRTR届出排出量算出資料（ダイオキシン類の酸素濃度換算）","https://www.env.go.jp/chemi/prtr/notification/sansyutsu/2_tougou_all.pdf","2024参考資料","verified-excerpt","排ガスの酸素濃度20%超は20%で補正。R06-A23の計算根拠"
+"P11","official-inventory","環境省","2020年ダイオキシン類排出インベントリーの公表","https://www.env.go.jp/press/110777.html","対象2020／公表2022-03-25","verified-content","全排出98～100g-TEQ/年、削減目標対象96g-TEQ/年。R05-G-Q15など"
+"P12","official-inventory","環境省","2021年ダイオキシン類排出インベントリー（2023-03公表）","https://www.env.go.jp/content/000123883.pdf","対象2021／公表2023-03-31","verified-content-and-table-visual","大気：電炉23.8、アルミ二次6.55、焼結4.9。水：VCM0.40、産廃焼却0.35。R06-G-Q07/Q08"

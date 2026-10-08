@@ -5,8 +5,8 @@ const answer=new Map(rows("docs/research/past-exam-answer-key.csv").slice(1).map
 assert.equal(g06.length,40);assert.equal(g07.length,40);assert.equal(c06.length,200);assert.equal(c07.length,200);
 for(const r of [...g06,...g07]){assert.equal(r.length,8);assert.equal(+r[4],answer.get(r[0]));for(const k of r[2].split(" "))assert.ok(kids.has(k));}
 for(const r of [...c06,...c07]){assert.equal(r.length,8);assert.equal(r[3],(+r[2]===answer.get(r[1])?"yes":"no"));for(const k of r[6].split(" "))assert.ok(kids.has(k));}
-assert.equal(c06.filter(r=>r[5]==="individual-reason-draft").length,145);
-assert.equal(c06.filter(r=>r[5]==="needs-source-or-image-check").length,55);
+assert.equal(c06.filter(r=>r[5]==="individual-reason-draft").length,150);
+assert.equal(c06.filter(r=>r[5]==="needs-source-or-image-check").length,50);
 assert.equal(c07.filter(r=>r[5]==="individual-reason-draft").length,195);
 assert.equal(c07.filter(r=>r[5]==="secondary-underline-rationale-draft").length,5);
 assert.ok(g06.find(r=>r[0]==="R06-A-Q23")[5].includes("20.5%"));assert.equal(answer.get("R06-A-Q23"),4);

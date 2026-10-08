@@ -17,3 +17,4 @@ jobs:
       - run: node tests/validate-past-exams.mjs
       - run: node tests/validate-answer-keys.mjs
       - run: node tests/validate-cross-year.mjs
+      - run: node tests/validate-three-years.mjs

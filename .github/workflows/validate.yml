@@ -12,3 +12,4 @@ jobs:
           node-version: '22'
       - run: node --check js/app.js && node --check js/storage.js
       - run: node tests/validate.mjs
+      - run: node tests/validate-research.mjs

@@ -1,0 +1,85 @@
+[
+  {
+    "id": "intro",
+    "subject": "intro",
+    "title": "序章　ダイオキシン類を学ぶ前に",
+    "description": "物質・社会問題・規制の全体像",
+    "path": "content/00-introduction.md",
+    "status": "draft"
+  },
+  {
+    "id": "g01",
+    "subject": "general",
+    "title": "第1章　法規制",
+    "description": "TDI・環境基準・排出基準の関係",
+    "path": "content/general/01-law.md",
+    "status": "draft"
+  },
+  {
+    "id": "g02",
+    "subject": "general",
+    "title": "第2章　ダイオキシン類問題の背景",
+    "status": "planned"
+  },
+  {
+    "id": "g03",
+    "subject": "general",
+    "title": "第3章　排出の現状",
+    "status": "planned"
+  },
+  {
+    "id": "g04",
+    "subject": "general",
+    "title": "第4章　性質",
+    "status": "planned"
+  },
+  {
+    "id": "g05",
+    "subject": "general",
+    "title": "第5章　汚染の発生機構",
+    "path": "content/general/05-formation.md",
+    "status": "draft"
+  },
+  {
+    "id": "g06",
+    "subject": "general",
+    "title": "第6章　汚染による影響",
+    "status": "planned"
+  },
+  {
+    "id": "g07",
+    "subject": "general",
+    "title": "第7章　国・地方公共団体の対策",
+    "status": "planned"
+  },
+  {
+    "id": "a01",
+    "subject": "advanced",
+    "title": "第8章　大気関係対策",
+    "status": "planned"
+  },
+  {
+    "id": "a02",
+    "subject": "advanced",
+    "title": "第9章　大気関係対象施設",
+    "status": "planned"
+  },
+  {
+    "id": "a03",
+    "subject": "advanced",
+    "title": "第10章　水質関係対策",
+    "status": "planned"
+  },
+  {
+    "id": "a04",
+    "subject": "advanced",
+    "title": "第11章　水質関係対象施設",
+    "status": "planned"
+  },
+  {
+    "id": "a05",
+    "subject": "advanced",
+    "title": "第12章　測定",
+    "status": "planned"
+  }
+]

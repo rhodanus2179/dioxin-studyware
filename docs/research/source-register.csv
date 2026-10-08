@@ -52,3 +52,6 @@
 "P17","agency","環境省","ごみ処理に係るダイオキシン類発生防止等ガイドライン","https://www.env.go.jp/recycle/kosei_press/h970123a/h970123a-1.html","1997年","primary-agency-guideline","酸化触媒での分解除去に言及"
 "T10","paper","Wan Daud and Wan Ali","Comparison on pore development of activated carbon produced from palm shell and coconut shell","https://www.sciencedirect.com/science/article/pii/S0960852403002955","2004年","peer-reviewed-abstract","細孔分布は原料と賦活条件で変わる。特定の細孔径が存在しないという一般化を避ける"
 "T11","paper","日本鉄鋼協会","電気炉ダストと塩化カルシウムの反応による亜鉛の回収","https://www.jstage.jst.go.jp/article/tetsutohagane/106/11/106_TETSU-2020-032/_html/-char/ja","2020年","peer-reviewed-study","CaCl2の塩化揮発での使用を確認。問題に記載された全工程と同じとは限らない"
+"T12","professional-technical-manual","日本環境測定分析協会（JEMCA）","固定発生源からの排ガス分析マニュアル 2021年版 3.16","https://www.jemca.or.jp/wp-content/uploads/2022/03/030316_kotei_manual-FY2021_DXN_JIS-K0311.pdf","2021版","primary-professional-manual-not-JIS-authentic-text","JISⅠ形図3.16.3-3、ガス量計算3.16.3.6、等速吸引−5～＋10%。JIS正式正本との区別が必要"
+"S17","exam-secondary","公害こむ！","R03ダイオキシン類特論問19の図と選択肢","https://pierre-usagi.com/kougai-r3-dxn-tokuron-19/","2021年","secondary-question-options","出題の選択肢①～⑤とJEMCAの独立した装置図を対照"
+"S18","exam-secondary","公害こむ！","R03ダイオキシン類特論問23 相対感度式の転記","https://pierre-usagi.com/kougai-r3-dxn-tokuron-23/","2021年","secondary-question-formula-text","出題のa/b×c/dと5択。原本PDFの数式画像は未確認"

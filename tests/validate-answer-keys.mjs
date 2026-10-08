@@ -47,10 +47,10 @@ for(const c of choices){
  assert.equal(c[3],+c[2]===answerMap.get(c[1])?"yes":"no");
  if(c[3]==="yes")selected++;
  if(c[5]==="individual-reason-draft")detailed++;
- if(c[5]==="unreviewed")pending++;
+ if(c[5]==="needs-image-check")pending++;
 }
 assert.equal(selected,40);assert.equal(detailed,195);assert.equal(pending,5);
-for(const c of choices.filter(c=>c[5]==="unreviewed"))assert.ok(c[0].startsWith("R07-G-Q14-"),"Only underlined G14 should remain visually unverified");
+for(const c of choices.filter(c=>c[5]==="needs-image-check"))assert.ok(c[0].startsWith("R07-G-Q14-"),"Only underlined G14 should remain visually unverified");
 for(const c of choices.filter(c=>c[5]==="individual-reason-draft"))assert.ok(c[4].length>=12);
 assert.equal(reviews.find(r=>r[0]==="R07-G-Q15")[4],"5");
 console.log("PASS: 200 official answer positions; 40 R07 topics; 195 individual rationale drafts; 5 image checks outstanding");

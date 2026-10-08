@@ -1,0 +1,20 @@
+[
+  {
+    "id": "jemai-scope",
+    "title": "産業環境管理協会：国家試験の試験科目・範囲",
+    "url": "https://www.jemai.or.jp/polconman/examination/dd4ht300000005eq-att/pol_subjects1.pdf",
+    "kind": "exam"
+  },
+  {
+    "id": "jemai-past",
+    "title": "産業環境管理協会：国家試験の問題と正解",
+    "url": "https://www.jemai.or.jp/polconman/examination/past.html",
+    "kind": "exam"
+  },
+  {
+    "id": "env-dioxin",
+    "title": "環境省：ダイオキシン類対策",
+    "url": "https://www.env.go.jp/air/dioxin/dioxin.html",
+    "kind": "primary"
+  }
+]

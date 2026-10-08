@@ -22,10 +22,18 @@ const chapters=csv("docs/research/r03-r07-chapter-counts.csv").slice(1);assert.e
 const recurrence=csv("docs/research/r03-r07-knowledge-recurrence.csv").slice(1);assert.equal(recurrence.length,96);for(const r of recurrence)assert.ok(knowledgeIds.has(r[0]));
 const audit=csv("docs/research/knowledge-map-coverage-audit.csv").slice(1);assert.equal(audit.length,212);assert.equal(audit.filter(r=>r[7]==="no-primary-question-link").length,116);
 const queue=csv("docs/research/review-queue.csv").slice(1);
-assert.equal(queue.length,195);assert.equal(new Set(queue.map(r=>r[0])).size,195);
+assert.equal(queue.length,180);assert.equal(new Set(queue.map(r=>r[0])).size,180);
 assert.equal(queue.filter(r=>r[7]==="secondary-underline-rationale-draft").length,5);
-assert.equal(queue.filter(r=>r[7].startsWith("needs-")).length,190);
+assert.equal(queue.filter(r=>r[7].startsWith("needs-")).length,175);
 for(const r of queue){assert.equal(r.length,13);assert.equal(r[11],"NOT-VALIDATED");assert.ok(allC.some(x=>x[0]===r[0]));}
+const visual=csv("docs/research/visual-audit-pass3.csv").slice(1);
+assert.equal(visual.length,3);
+for(const id of ["R03-G-Q02","R03-G-Q12","R03-G-Q13"]){
+  assert.ok(visual.some(v=>v[0]===id));
+  for(let n=1;n<=5;n++)assert.equal(allC.find(c=>c[0]===id+"-C"+n)[5],"individual-reason-draft");
+  assert.ok(queue.every(r=>r[1]!==id));
+}
+assert.equal(visual.find(v=>v[0]==="R03-G-Q13")[8].includes("編集注"),true);
 const a=allQ.find(q=>q[0]==="R03-A-Q20");assert.equal(Number(a[4]),2);
 function eq(x,y,tol=1e-9){assert.ok(Math.abs(x-y)<tol,`${x} != ${y}`);}
 eq((4-0.2)/4*100,95);eq(1500*2,3000);eq(0.05*(50/2)*(100/50)/(0.0008*1000),3.125);

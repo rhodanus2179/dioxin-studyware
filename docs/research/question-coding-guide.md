@@ -32,3 +32,7 @@
 ## 重要度の付与
 
 現段階では `unrated` とし、過去問コーディング後に頻度・広がり・誤答率・制度的重要度の4軸で決める。直近5年の観察は**将来の出題を保証しない**。
+
+## 第1パス実施後（2026-10-09）
+
+`past-exam-question-index.csv` および `past-exam-choice-index.csv` を作成。**全問の主題仮分類**のみ完了し、選択肢の正誤・個別知識の対応は依然として `unverified`。詳細は `past-exam-analysis-status.md`。

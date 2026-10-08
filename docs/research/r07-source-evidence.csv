@@ -1,0 +1,7 @@
+"question_id","knowledge_claim","source_id","verification_level","verification_detail"
+"R07-G-Q15","2022年度の媒体別環境基準超過地点","P07","primary-agency-verified","大気0、水質28、底質3、地下水0、土壌0"
+"R07-G-Q07","2022年の全排出量","P08","primary-agency-verified-partial","総量105～107g-TEQ/年。水排出量・部門別内訳は未突合"
+"R07-A-Q16","排ガス採取用フィルタの上限温度","T04","secondary-JIS-text-checked","JIS K0311:2020は120℃。規格正本は別途確認"
+"R07-A-Q22","GC-MSにおける塩素同位体・同定許容幅","T05","secondary-JIS-text-checked","面積比、塩素同位体比、±15%、検出下限の3倍以下は±25%"
+"R07-A-Q19","分取液と注入量から装置検出下限を計算","EX02","calculation-checked","0.08×25×40/100×1/20＝0.04pg"
+"R07-A-Q23","排ガスの酸素濃度12%換算","EX02","calculation-checked","10/4×(21-12)/(21-14)≈3.21ng/m3"

@@ -13,7 +13,7 @@
 "R07-G-Q12","G05","DX-G05-008 DX-G05-009","燃焼時の塩素源","3","NaClの塩素のほうがCuCl由来の塩素より離脱しやすいという記述が誤り。","needs-chemistry-source","verification-needed"
 "R07-G-Q13","G05","DX-G05-002 DX-G05-005","非燃焼系の生成","1","鉄鉱石焼結や製鋼工程もde novo反応による生成を一律に排除できない。","draft","draft-no-independent-fact-audit"
 "R07-G-Q14","G04","DX-G04-003 DX-G02-001","PCBの用途と生産量","5","公式正答は下線⑤。国内累積生産量の数値は統計原典と下線位置を改めて照合する。","needs-image-and-history","verification-needed"
-"R07-G-Q15","G03","DX-G03-009 DX-G03-010","2022年度環境調査","4","地下水質の環境基準達成状況に関する選択肢④が公式正答。2022年度の原表で確認する。","needs-2022-statistics","verification-needed"
+"R07-G-Q15","G03","DX-G03-009 DX-G03-010","2022年度環境調査","5","土壌の環境基準超過地点があったとする選択肢⑤が公式正答。2022年度の原表で確認する。","needs-2022-statistics","verification-needed"
 "R07-A-Q01","A01","DX-A01-001","固体燃料の燃焼","2","固体燃料の熱分解燃焼と残渣の表面燃焼を区別し、一般廃棄物の揮発分が多い点を理解する。","draft","draft-no-independent-fact-audit"
 "R07-A-Q02","A01","DX-A01-001 DX-A01-002","ストーカ・流動床・微粉燃焼","1","火格子移動はストーカ、砂層を使うのは流動床、粒子を吹き込むのは噴霧燃焼。","draft","draft-no-independent-fact-audit"
 "R07-A-Q03","A01","DX-A01-006 DX-A01-014","バグフィルター安全対策","2","酸露点以下で運転すると腐食・障害が起きやすいため、酸露点以下での維持が不適切。","draft","draft-no-independent-fact-audit"

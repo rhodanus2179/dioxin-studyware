@@ -21,6 +21,11 @@ assert.equal([...observed.values()].filter(v=>v.size===5).length,21);
 const chapters=csv("docs/research/r03-r07-chapter-counts.csv").slice(1);assert.equal(chapters.reduce((t,r)=>t+Number(r[7]),0),200);
 const recurrence=csv("docs/research/r03-r07-knowledge-recurrence.csv").slice(1);assert.equal(recurrence.length,96);for(const r of recurrence)assert.ok(knowledgeIds.has(r[0]));
 const audit=csv("docs/research/knowledge-map-coverage-audit.csv").slice(1);assert.equal(audit.length,212);assert.equal(audit.filter(r=>r[7]==="no-primary-question-link").length,116);
+const queue=csv("docs/research/review-queue.csv").slice(1);
+assert.equal(queue.length,195);assert.equal(new Set(queue.map(r=>r[0])).size,195);
+assert.equal(queue.filter(r=>r[7]==="secondary-underline-rationale-draft").length,5);
+assert.equal(queue.filter(r=>r[7].startsWith("needs-")).length,190);
+for(const r of queue){assert.equal(r.length,13);assert.equal(r[11],"NOT-VALIDATED");assert.ok(allC.some(x=>x[0]===r[0]));}
 const a=allQ.find(q=>q[0]==="R03-A-Q20");assert.equal(Number(a[4]),2);
 function eq(x,y,tol=1e-9){assert.ok(Math.abs(x-y)<tol,`${x} != ${y}`);}
 eq((4-0.2)/4*100,95);eq(1500*2,3000);eq(0.05*(50/2)*(100/50)/(0.0008*1000),3.125);

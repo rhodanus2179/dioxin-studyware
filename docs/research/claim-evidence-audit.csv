@@ -1,0 +1,6 @@
+"audit_id","question_id","fact_claim","reference_ids","fact_support","question_visual_status","remaining_work"
+"AUD001","R03-G-Q02","届出からの実施制限原則60日","L07","primary-law-verified","original-underline-not-seen","下線①の番号と誤数値の原本画像対応を確認する"
+"AUD002","R03-G-Q03","事業者の排出ガス・排出水測定年1回以上","L07;L08","primary-law-and-agency-verified","original-underline-not-seen","下線③の番号を原本画像で確認する"
+"AUD003","R03-A-Q18","等速吸引許容誤差−5～+10%","T09","secondary-JIS-text-verified","ordinary-choice","公式JISの正本で該当条項・例外を検証する"
+"AUD004","R03-A-Q25","装置DL OCDD/OCDF0.5pg、DL-PCB0.2pg","T09","secondary-JIS-text-verified","ordinary-choice","正式JIS原文と適用条件を検証する"
+"AUD005","R07-G-Q14","日本のPCB国内生産58787t・原題約15万t","P09;EX03","agency-statistic-primary-and-question-text","underline-mapping-secondary-not-image","公式PDF画像による下線番号の視認が未了"

@@ -12,7 +12,7 @@
 "R07-G-Q11","G05","DX-G05-004","クロロフェノール縮合反応","1","図示された2,4,5-トリクロロフェノールの縮合生成物として2,3,7,8-TeCDDを選ぶ。図は公式PDFで確認した。","figure-checked","verification-needed"
 "R07-G-Q12","G05","DX-G05-008 DX-G05-009","燃焼時の塩素源","3","NaClの塩素のほうがCuCl由来の塩素より離脱しやすいという記述が誤り。","needs-chemistry-source","verification-needed"
 "R07-G-Q13","G05","DX-G05-002 DX-G05-005","非燃焼系の生成","1","鉄鉱石焼結や製鋼工程もde novo反応による生成を一律に排除できない。","draft","draft-no-independent-fact-audit"
-"R07-G-Q14","G04","DX-G04-003 DX-G02-001","PCBの用途と生産量","5","環境省資料ではPCBの国内生産は58,787トン、国内使用約54,001トン。設問の国内累積生産量約15万トンとの記述が不適切。下線位置は二次資料照合であり公式画像確認は保留。","needs-official-underline-image","environment-agency-statistic-verified;underline-secondary-only"
+"R07-G-Q14","G04","DX-G04-003 DX-G02-001","PCBの用途と生産量","5","環境省資料ではPCBの国内生産は58,787トン、国内使用約54,001トン。設問の国内累積生産量約15万トンとの記述が不適切。下線位置は二次資料照合であり公式画像確認は保留。","needs-official-underline-image","agency-production-total-verified;official-question-text-seen;underline-mapping-secondary-only;visual-pending"
 "R07-G-Q15","G03","DX-G03-009 DX-G03-010","2022年度環境調査","5","土壌の環境基準超過地点があったとする選択肢⑤が公式正答。2022年度の原表で確認する。","needs-2022-statistics","verification-needed"
 "R07-A-Q01","A01","DX-A01-001","固体燃料の燃焼","2","固体燃料の熱分解燃焼と残渣の表面燃焼を区別し、一般廃棄物の揮発分が多い点を理解する。","draft","draft-no-independent-fact-audit"
 "R07-A-Q02","A01","DX-A01-001 DX-A01-002","ストーカ・流動床・微粉燃焼","1","火格子移動はストーカ、砂層を使うのは流動床、粒子を吹き込むのは噴霧燃焼。","draft","draft-no-independent-fact-audit"

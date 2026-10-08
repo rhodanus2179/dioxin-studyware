@@ -56,3 +56,6 @@
 "S17","exam-secondary","公害こむ！","R03ダイオキシン類特論問19の図と選択肢","https://pierre-usagi.com/kougai-r3-dxn-tokuron-19/","2021年","secondary-question-options","出題の選択肢①～⑤とJEMCAの独立した装置図を対照"
 "S18","exam-secondary","公害こむ！","R03ダイオキシン類特論問23 相対感度式の転記","https://pierre-usagi.com/kougai-r3-dxn-tokuron-23/","2021年","secondary-question-formula-text","出題のa/b×c/dと5択。原本PDFの数式画像は未確認"
 "P18","government-technical-reference","環境省","ダイオキシン類環境調査・試料採取法参考資料10","https://www.env.go.jp/council/content/i_06/000169107.pdf","公表版は2020年試験以後／2021年当時への適用に注意","primary-agency-method-verified","排ガス等速吸引の許容相対誤差−5%～＋10%を記載。R03-A-Q18の二次JIS記載との独立照合"
+"EX06","official-exam","産業環境管理協会","令和6年度ダイオキシン類特論 問16：クロロベンゼン製造の触媒","https://www.jemai.or.jp/polconman/examination/dd4ht300000005fn-att/R06_15.pdf","2024年度試験","official-text-checked","鉄触媒を用いるクロロベンゼン製造について出題。R03原題の下線位置を証明するものではない"
+"S19","exam-secondary","過去問解説（note）","令和3年度特論問15/16解説","https://note.com/_ina_/n/nd3a88a6f5fe7","2023年頃","secondary-exam-key-rationale","問15：白金→鉄、問16：シリコン→カルシウム。原題の下線位置は未視認"
+"P19","agency-mechanism-guidance","環境省","ごみ処理に係るダイオキシン類発生防止等ガイドライン","https://www.env.go.jp/recycle/kosei_press/h970123a/h970123a-1.html","1997年","primary-general-mechanism-only","燃焼・温度・排ガスの基本的な生成抑制要素。CuCl2/PbCl2/FeCl2序列の実験的裏付けには使えない"

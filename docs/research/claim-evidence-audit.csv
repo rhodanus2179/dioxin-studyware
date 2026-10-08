@@ -11,3 +11,6 @@
 "AUD010","R03-A-Q19","JISⅠ形装置の捕集部の4箇所の正しい配置","T12;S17;T09","professional-manual-reference-diagram-plus-question-secondary","JEMAI-original-figure-image-pending","JEMAI公式問題の矢印位置を画像確認する"
 "AUD011","R03-A-Q23","RR_RS=(A_CS/A_RS)×(Q_RS/Q_CS)","EX05;T09;S18","mirrored-exam-page-visually-inspected-with-secondary-JIS-formula","reproduced-exam-PDF-image-checked-not-official-JEMAI","正式JIS K0311:2020の規格正本とJEMAI配布ファイルの同一性を確認する"
 "AUD012","R03-A-Q20","必要採取量3.125m³と試験の近似3m³の相違","T12","professional-manual-formula-and-arithmetic-reviewed","ordinary-question-no-image","3m³は五択正答だが設計の下限には満たないと明記"
+"AUD013","R03-A-Q15","ベンゼンの塩素化では鉄系触媒、白金触媒は本題の誤り","EX05;EX06;S19","later-official-exam-and-secondary-review-consistent","2021-original-underline-unseen","2021年度公式試験紙面の下線①～⑤を目視照合する"
+"AUD014","R03-A-Q16","CaC₂+2H₂O→C₂H₂+Ca(OH)₂。原題SiCは誤り","EX05;S19;L09","exam-text-secondary-review-and-reaction-stoichiometry","2021-original-underline-unseen","2021年度の公式紙面で下線②の位置を確認する"
+"AUD015","R03-G-Q15","金属塩化物の触媒能序列の比較記号がテキスト抽出で欠落","EX04;P19","official-answer-but-inequality-glyph-not-visually-reviewed","inequality-direction-unverified","公式PDFの大小記号を画像確認し、条件付き一次実験文献と照合"

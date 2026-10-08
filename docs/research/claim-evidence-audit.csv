@@ -4,3 +4,7 @@
 "AUD003","R03-A-Q18","等速吸引許容誤差−5～+10%","T09","secondary-JIS-text-verified","ordinary-choice","公式JISの正本で該当条項・例外を検証する"
 "AUD004","R03-A-Q25","装置DL OCDD/OCDF0.5pg、DL-PCB0.2pg","T09","secondary-JIS-text-verified","ordinary-choice","正式JIS原文と適用条件を検証する"
 "AUD005","R07-G-Q14","日本のPCB国内生産58787t・原題約15万t","P09;EX03","agency-statistic-primary-and-question-text","underline-mapping-secondary-not-image","公式PDF画像による下線番号の視認が未了"
+"AUD006","R03-G-Q03","法第28条の年1回以上と下線番号①～⑤","L07;L08;S13","primary-law-and-secondary-underline-mapping","secondary-underline-awaits-original-image","公式PDF画像の下線番号を照合"
+"AUD007","R03-A-Q03","触媒表面の酸化分解と誤った還元分解","EX05;S16;P17","primary-agency-oxidation-and-secondary-underline-mapping","secondary-underline-awaits-original-image","公式PDF画像と出題の下線位置を照合"
+"AUD008","R03-A-Q06","活性炭のマクロ孔・メソ孔と賦活条件","S14;T10","academic-context-secondary-underline-with-caveat","secondary-underline-awaits-original-image","細孔分布を原料だけで一般化せず、原本下線番号を確認"
+"AUD009","R03-A-Q10","塩化揮発のCaCl2とコークス使用段階","S15;T11","academic-context-secondary-underline-mapping","secondary-underline-awaits-original-image","正式工程資料で炉ごとの添加位置を確認"

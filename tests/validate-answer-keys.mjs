@@ -49,7 +49,8 @@ for(const c of choices){
  if(c[5]==="individual-reason-draft")detailed++;
  if(c[5]==="needs-image-check")pending++;
 }
-assert.equal(selected,40);assert.equal(detailed,195);assert.equal(pending,0);\nassert.equal(choices.filter(c=>c[5]==='secondary-underline-rationale-draft').length,5);
+assert.equal(selected,40);assert.equal(detailed,195);assert.equal(pending,0);
+assert.equal(choices.filter(c=>c[5]==='secondary-underline-rationale-draft').length,5);
 for(const c of choices.filter(c=>c[5]==='secondary-underline-rationale-draft'))assert.ok(c[0].startsWith('R07-G-Q14-'),'G14 underlines remain primary-unverified');
 for(const c of choices.filter(c=>c[5]==="individual-reason-draft"))assert.ok(c[4].length>=12);
 assert.equal(reviews.find(r=>r[0]==="R07-G-Q15")[4],"5");

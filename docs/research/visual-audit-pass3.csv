@@ -1,0 +1,4 @@
+"question_id","mirror_source_id","zero_based_page","print_page","visual_element","choice_mapping_state","fact_source","content_status","remaining_issue"
+"R03-G-Q02","EX04","2","4","五つの下線：30日、使用の、方法、発生ガス、汚水","five-alternatives-inspected","L07","individual-rationale-draft","公的配布PDFとの同一性確認"
+"R03-G-Q12","EX04","7","9","五つのPCDD/PCDFの分子構造式","five-alternatives-inspected","T07","individual-rationale-draft","塩素置換位置の厳密な構造式ラベルを別原図と照合"
+"R03-G-Q13","EX04","7","9","五つの異性体群の不等式と『多い順』の文言","five-alternatives-inspected","T07","individual-rationale-draft-with-wording-issue","『多い順』と1<3<4<5の語義関係は要編集注"

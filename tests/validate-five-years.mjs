@@ -1,6 +1,6 @@
 import fs from "node:fs";import assert from "node:assert/strict";
 function csv(p){const t=fs.readFileSync(p,"utf8");let out=[],row=[],v="",quote=false;for(let i=0;i<t.length;i++){const c=t[i];if(c==='"'){if(quote&&t[i+1]==='"'){v+='"';i++;}else quote=!quote;}else if(c===','&&!quote){row.push(v);v="";}else if(c==='\n'&&!quote){row.push(v);out.push(row);row=[];v="";}else if(c!=='\r')v+=c;}assert.equal(quote,false);return out.filter(r=>r.length);}
-const years=["r03","r04","r05","r06","r07"],draftExpected=[140,170,150,150,195],heldExpected=[60,30,50,50,0],secondaryExpected=[0,0,0,0,5];
+const years=["r03","r04","r05","r06","r07"],draftExpected=[155,170,150,150,195],heldExpected=[45,30,50,50,0],secondaryExpected=[0,0,0,0,5];
 const answers=csv("docs/research/past-exam-answer-key.csv").slice(1),map=new Map(answers.map(r=>[r[0],Number(r[5])]));assert.equal(map.size,200);
 const knowledge=csv("docs/research/knowledge-map.csv").slice(1),knowledgeIds=new Set(knowledge.map(r=>r[0]));
 let allQ=[],allC=[],draft=0,held=0,secondary=0;const observed=new Map();
@@ -15,7 +15,7 @@ for(let i=0;i<5;i++){
 }
 assert.equal(allQ.length,200);assert.equal(allC.length,1000);
 assert.equal(new Set(allQ.map(q=>q[0])).size,200);assert.equal(new Set(allC.map(c=>c[0])).size,1000);
-assert.equal(draft,805);assert.equal(secondary,5);assert.equal(held,190);
+assert.equal(draft,820);assert.equal(secondary,5);assert.equal(held,175);
 assert.equal(observed.size,96);assert.equal(knowledge.length,212);assert.equal(knowledge.length-observed.size,116);
 assert.equal([...observed.values()].filter(v=>v.size===5).length,21);
 const chapters=csv("docs/research/r03-r07-chapter-counts.csv").slice(1);assert.equal(chapters.reduce((t,r)=>t+Number(r[7]),0),200);
@@ -30,4 +30,4 @@ const a=allQ.find(q=>q[0]==="R03-A-Q20");assert.equal(Number(a[4]),2);
 function eq(x,y,tol=1e-9){assert.ok(Math.abs(x-y)<tol,`${x} != ${y}`);}
 eq((4-0.2)/4*100,95);eq(1500*2,3000);eq(0.05*(50/2)*(100/50)/(0.0008*1000),3.125);
 eq((2/6)*(21-12)/(21-20),3);
-console.log("PASS: 200 questions, 1000 choice IDs, 805 normal + 5 secondary rationale drafts, 190 pending, 212 knowledge IDs/116 without primary-question tags");
+console.log("PASS: 200 questions, 1000 choice IDs, 820 normal + 5 secondary rationale drafts, 175 pending, 212 knowledge IDs/116 without primary-question tags");

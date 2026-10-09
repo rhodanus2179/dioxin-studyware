@@ -1,7 +1,7 @@
 import {readProgress,saveAnswer,summary} from "./storage.js";
 const root=document.getElementById("app");
 const nav=document.getElementById("navigation");
-const catalog={chapters:[],questions:[],references:[]};
+const catalog={chapters:[],questions:[],references:[],sections:[]};
 let quizState=null;
 function escapeHtml(v){return String(v).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
 function inline(v){return escapeHtml(v).replace(/\*\*(.+?)\*\*/g,"<strong>$1</strong>").replace(/`(.+?)`/g,"<code>$1</code>");}
@@ -20,6 +20,7 @@ function mdRender(md){
 }
 function el(tag,attrs={},txt){const e=document.createElement(tag);for(const [k,v] of Object.entries(attrs)){if(k==="className")e.className=v;else e.setAttribute(k,v);}if(txt!==undefined)e.textContent=txt;return e;}
 function chapter(id){return catalog.chapters.find(c=>c.id===id);}
+function outlineHtml(id){const items=catalog.sections.filter(s=>s.chapter_id===id);return '<section class="panel"><h2>採択済み目次v3</h2><p class="muted">正式な節構成です。すべての節の本文が執筆済みという意味ではありません。</p><ul>'+items.map(s=>'<li>'+escapeHtml(s.id+' '+s.title)+'</li>').join('')+'</ul></section>';}
 function hpath(){return decodeURIComponent(location.hash.slice(1)||"/");}
 function renderNav(){
   nav.replaceChildren();
@@ -55,13 +56,13 @@ function renderHome(){
 }
 async function renderLesson(id){
   const c=chapter(id);if(!c){renderNotFound();return;}
-  if(c.status==="planned"){root.innerHTML='<section class="panel"><span class="eyebrow">制作予定</span><h1>'+escapeHtml(c.title)+'</h1><p>この章は執筆準備中です。公式出題範囲には含まれていますが、まだ本文や演習問題を公開していません。</p><a href="#/" class="btn secondary">章一覧へ</a></section>';return;}
+  if(c.status==="planned"){root.innerHTML='<section class="panel"><span class="eyebrow">制作予定</span><h1>'+escapeHtml(c.title)+'</h1><p>この章は執筆準備中です。公式出題範囲には含まれていますが、まだ本文や演習問題を公開していません。</p><a href="#/" class="btn secondary">章一覧へ</a></section>'+outlineHtml(id);return;}
   root.innerHTML='<section class="panel"><p class="muted">本文を読み込んでいます……</p></section>';
   try{
     const r=await fetch(c.path);if(!r.ok)throw Error("HTTP "+r.status);
     const text=await r.text();if(!location.hash.endsWith("/"+id))return;
     const n=catalog.questions.filter(q=>q.chapter===id).length;
-    root.innerHTML='<article class="panel"><span class="eyebrow">解説テキスト・初稿</span><div class="article">'+mdRender(text)+'</div><hr class="rule"><p class="meta">この章は編集途中の原稿です。試験の最新の法令・数値は一次資料でも確認してください。</p><div class="actions"><a href="#/quiz?chapter='+encodeURIComponent(id)+'" class="btn">この章の確認問題 ('+n+'問)</a><a href="#/" class="btn secondary">章一覧へ</a></div></article>';
+    root.innerHTML=outlineHtml(id)+'<article class="panel"><span class="eyebrow">解説テキスト・初稿</span><div class="article">'+mdRender(text)+'</div><hr class="rule"><p class="meta">この章は編集途中の原稿です。試験の最新の法令・数値は一次資料でも確認してください。</p><div class="actions"><a href="#/quiz?chapter='+encodeURIComponent(id)+'" class="btn">この章の確認問題 ('+n+'問)</a><a href="#/" class="btn secondary">章一覧へ</a></div></article>';
   }catch(e){root.innerHTML='<section class="panel"><h1>読み込みエラー</h1><p>教材を取得できませんでした。GitHub PagesなどHTTPサーバーで開いてください。</p><p class="meta">'+escapeHtml(e.message)+'</p></section>';}
 }
 function quizPool(path){
@@ -135,9 +136,9 @@ function renderReferences(){
 function renderNotFound(){root.innerHTML='<section class="panel"><h1>ページが見つかりません</h1><a href="#/" class="btn secondary">トップに戻る</a></section>';}
 async function load(){
   try{
-    const files=["./data/chapters.json","./data/questions.json","./data/references.json"];
+    const files=["./data/chapters.json","./data/questions.json","./data/references.json","./data/sections.json"];
     const results=await Promise.all(files.map(async url=>{const r=await fetch(url);if(!r.ok)throw Error(url+" "+r.status);return r.json();}));
-    [catalog.chapters,catalog.questions,catalog.references]=results;
+    [catalog.chapters,catalog.questions,catalog.references,catalog.sections]=results;
     window.addEventListener("hashchange",route);
     route();
   }catch(e){root.innerHTML='<section class="panel"><h1>データの読み込みに失敗しました</h1><p>GitHub PagesまたはローカルHTTPサーバーで開いてください。</p><pre>'+escapeHtml(e.message)+'</pre></section>';}

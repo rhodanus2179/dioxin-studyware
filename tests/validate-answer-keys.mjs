@@ -50,8 +50,9 @@ for(const c of choices){
  if(c[5]==="needs-image-check")pending++;
 }
 assert.equal(selected,40);assert.equal(detailed,195);assert.equal(pending,0);
-assert.equal(choices.filter(c=>c[5]==='secondary-underline-rationale-draft').length,5);
-for(const c of choices.filter(c=>c[5]==='secondary-underline-rationale-draft'))assert.ok(c[0].startsWith('R07-G-Q14-'),'G14 underlines remain primary-unverified');
+assert.equal(choices.filter(c=>c[5]==='secondary-underline-rationale-draft').length,0);
+assert.equal(choices.filter(c=>c[5]==='drive-exam-page-visual-rationale-draft').length,5);
+for(const c of choices.filter(c=>c[5]==='drive-exam-page-visual-rationale-draft'))assert.ok(c[0].startsWith('R07-G-Q14-'),'G14 five underlines were visually checked; publication audit still pending');
 for(const c of choices.filter(c=>c[5]==="individual-reason-draft"))assert.ok(c[4].length>=12);
 assert.equal(reviews.find(r=>r[0]==="R07-G-Q15")[4],"5");
-console.log("PASS: 200 official answer positions; 40 R07 topics; 195 primary-text draft rationales plus 5 secondary-underline drafts; 5 official-image checks");
+console.log("PASS: 200 official answer positions; 40 R07 topics; 195 primary-text draft rationales plus 5 Drive-PDF visually inspected drafts; 0 underline image pending");

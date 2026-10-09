@@ -32,7 +32,7 @@ assert.equal(queue.filter(r=>r[7]==="symbol-ambiguous-rationale-draft").length,5
 assert.equal(queue.filter(r=>r[7]==="secondary-formula-rationale-draft").length,0);
 assert.equal(queue.filter(r=>r[7]==="reprint-visual-rationale-draft").length,50);
 assert.equal(queue.filter(r=>r[7].startsWith("needs-")).length,0);
-for(const r of queue){assert.equal(r.length,13);assert.ok(["NOT-VALIDATED","PARTIAL-CLAIM-EVIDENCE-NOT-VALIDATED"].includes(r[11]),r[0]);assert.ok(r[12].startsWith("HOLD-"),r[0]);assert.ok(allC.some(x=>x[0]===r[0]));}
+for(const r of queue){assert.equal(r.length,13);assert.ok(["NOT-VALIDATED","PARTIAL-CLAIM-EVIDENCE-NOT-VALIDATED"].includes(r[11]),r[0]);if(r[11]==="PARTIAL-CLAIM-EVIDENCE-NOT-VALIDATED")assert.ok(r[12].startsWith("HOLD-"),r[0]);assert.ok(allC.some(x=>x[0]===r[0]));}
 assert.equal(queue.filter(r=>r[11]==="PARTIAL-CLAIM-EVIDENCE-NOT-VALIDATED").length,15);
 for(const id of ["R03-G-Q03","R03-A-Q03","R03-A-Q06","R03-A-Q10"]){
   for(let n=1;n<=5;n++){

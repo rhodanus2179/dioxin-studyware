@@ -58,4 +58,7 @@ assert.equal(allChoices.size,1000);
 const reviewQueue=csv("docs/research/review-queue.csv").slice(1);
 assert.equal(reviewQueue.length,175);
 assert.equal(reviewQueue.filter(r=>r[2]==="R06").length,50);
-console.log("PASS: 41 claim-source audits; 10 R06 screenshot checks, 2 primary-law checks; 175 holds remain");
+assert.ok(sources.has("JEMAI-ERRATA-2025-DXN"));
+assert.ok(audits.find(r=>r[1]==="R05-G-Q12")[3].includes("JEMAI-ERRATA-2025-DXN"));
+assert.equal(reviewQueue.filter(r=>r[1]==="R05-G-Q12"&&r[9].startsWith("P0-official-publisher")).length,5);
+console.log("PASS: 41 claim-source audits; 10 R06 screenshot checks, 2 primary-law checks; JEMAI R05 structure erratum flagged; 175 holds remain");

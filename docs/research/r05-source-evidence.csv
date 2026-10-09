@@ -4,7 +4,7 @@
 "R05-G-Q07","R05-PG;R05-SG07;P23","2020-government-inventory-total-verified-source-rank-needs-annex-review","official-or-reproduced-exam-PDF-text-read-image-not-verified","図・下線位置、2020インベントリー原表、2018ECF比率などの一次照合"
 "R05-G-Q09","R05-PG;R05-SG09;T07","secondary-underlines-physicochemical-principle-supported","official-or-reproduced-exam-PDF-text-read-image-not-verified","図・下線位置、2020インベントリー原表、2018ECF比率などの一次照合"
 "R05-G-Q10","R05-PG;R05-SG10;T16","secondary-underlines-vapor-pressure-values-need-authoritative-table","official-or-reproduced-exam-PDF-text-read-image-not-verified","図・下線位置、2020インベントリー原表、2018ECF比率などの一次照合"
-"R05-G-Q12","R05-PG;R05-SG12;T07","secondary-structure-transcription-not-visually-verified","official-or-reproduced-exam-PDF-text-read-image-not-verified","図・下線位置、2020インベントリー原表、2018ECF比率などの一次照合"
+"R05-G-Q12","R05-PG;R05-SG12;T07;JEMAI-ERRATA-2025-DXN","secondary-structure-transcription-not-visually-verified","official-or-reproduced-exam-PDF-text-read-image-not-verified","JEMAI公式の『正解とヒント2020～2024』正誤表（2025-09-10）にR05-69・問12の図の訂正あり。訂正前後の画像内容は未確認。国家試験問題そのものの訂正とは混同せず、原題構造図・公式解説書正誤図・TEF表の三点を照合する。"
 "R05-A-Q06","R05-PA;R05-SA06","PDF-text-underlines-order-inferred-no-official-visual","official-or-reproduced-exam-PDF-text-read-image-not-verified","図・下線位置、2020インベントリー原表、2018ECF比率などの一次照合"
 "R05-A-Q15","R05-PA;R05-SA15","secondary-underlines-historical-ECF-percentage-primary-stats-pending","official-or-reproduced-exam-PDF-text-read-image-not-verified","図・下線位置、2020インベントリー原表、2018ECF比率などの一次照合"
 "R05-A-Q16","R05-PA;R05-SA16;T17","secondary-underlines-chlorination-versus-oxidation-process-caveat","official-or-reproduced-exam-PDF-text-read-image-not-verified","図・下線位置、2020インベントリー原表、2018ECF比率などの一次照合"

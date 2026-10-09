@@ -88,3 +88,5 @@
 "T16","secondary-physicochemical-summary","公害こむ！","ダイオキシン類の物理的性質：蒸気圧","https://pierre-usagi.com/kougai-dxn-matome1-8/","2024-03","secondary-vapor-pressure-orders","OCDDと低塩素化物のオーダー差。数値の出典は一次物性データで別照合"
 "T17","secondary-process-explanation","公害こむ！","カーバイド法アセチレン製造工程","https://pierre-usagi.com/kougai-dxn-matome2-16/","2024-03","secondary-process-chemistry","次亜塩素酸塩と前駆体の塩素化過程を説明"
 "P24","official-agency-manual-QA","環境省","ダイオキシン類測定マニュアルに関するQ&A集","https://www.env.go.jp/content/000037131.pdf","2008マニュアル版のQA","agency-QA-derivative-verified","二重測定の定量下限と30%判定。JIS2020への直接一次条文とは区別"
+"R06-PG","exam-paper-reprint","公害こむ！","令和6年度・ダイオキシン類概論 試験紙面（転載）","https://pierre-usagi.com/wp-content/uploads/2025/01/R06_14.pdf","2024年試験","reprint-PDF-page-image-reviewed-not-identical-to-official-confirmed","概論問1・2はPDF index2、問11はindex6の下線・構造図を確認。JEMAI配布PDFとバイト同一かは未確認。"
+"R06-PA","exam-paper-reprint","公害こむ！","令和6年度・ダイオキシン類特論 試験紙面（転載）","https://pierre-usagi.com/wp-content/uploads/2025/01/R06_15.pdf","2024年試験","reprint-PDF-page-image-reviewed-not-identical-to-official-confirmed","特論問4 index4、問6 index5、問7 index6、問12 index8、問14 index10、問19 index13、問21 index14を画像確認。正式JIS検証とは別。"

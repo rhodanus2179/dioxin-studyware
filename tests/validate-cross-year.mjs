@@ -6,10 +6,10 @@ assert.equal(g06.length,40);assert.equal(g07.length,40);assert.equal(c06.length,
 for(const r of [...g06,...g07]){assert.equal(r.length,8);assert.equal(+r[4],answer.get(r[0]));for(const k of r[2].split(" "))assert.ok(kids.has(k));}
 for(const r of [...c06,...c07]){assert.equal(r.length,8);assert.equal(r[3],(+r[2]===answer.get(r[1])?"yes":"no"));for(const k of r[6].split(" "))assert.ok(kids.has(k));}
 assert.equal(c06.filter(r=>r[5]==="individual-reason-draft").length,150);
-assert.equal(c06.filter(r=>r[5]==="needs-source-or-image-check").length,50);
+assert.equal(c06.filter(r=>r[5]==="reprint-visual-rationale-draft").length,50);
 assert.equal(c07.filter(r=>r[5]==="individual-reason-draft").length,195);
 assert.equal(c07.filter(r=>r[5]==="secondary-underline-rationale-draft").length,5);
 assert.ok(g06.find(r=>r[0]==="R06-A-Q23")[5].includes("20.5%"));assert.equal(answer.get("R06-A-Q23"),4);
 const allCh=rows("docs/research/r06-r07-chapter-counts.csv").slice(1);assert.equal(allCh.reduce((sum,r)=>sum+(+r[4]),0),80);
 const allK=rows("docs/research/r06-r07-knowledge-recurrence.csv").slice(1);assert.equal(allK.filter(r=>r[4]==="both-years").length,32);for(const r of allK)assert.ok(kids.has(r[0]));
-console.log("PASS: R06/R07 80 questions, 400 option records, 345 explanation drafts (55 pending), 32 recurring candidate IDs");
+console.log("PASS: R06/R07 80 questions, 400 option records, 400 explanation drafts (55 provisional), 32 recurring candidate IDs");

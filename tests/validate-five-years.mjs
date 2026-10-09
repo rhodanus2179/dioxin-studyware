@@ -16,7 +16,7 @@ for(let i=0;i<5;i++){
 assert.equal(allQ.length,200);assert.equal(allC.length,1000);
 assert.equal(new Set(allQ.map(q=>q[0])).size,200);assert.equal(new Set(allC.map(c=>c[0])).size,1000);
 assert.equal(draft,825);assert.equal(secondary,110);assert.equal(held,0);
-const additionalDrafts=allC.filter(c=>["reference-figure-rationale-draft","secondary-formula-rationale-draft","secondary-structure-rationale-draft"].includes(c[5])).length;
+const additionalDrafts=allC.filter(c=>["reference-figure-rationale-draft","secondary-formula-rationale-draft","secondary-structure-rationale-draft","user-supplied-figure-visual-rationale-draft"].includes(c[5])).length;
 assert.equal(additionalDrafts,10);
 assert.equal(observed.size,96);assert.equal(knowledge.length,212);assert.equal(knowledge.length-observed.size,116);
 assert.equal([...observed.values()].filter(v=>v.size===5).length,21);
@@ -27,7 +27,8 @@ const queue=csv("docs/research/review-queue.csv").slice(1);
 assert.equal(queue.length,175);assert.equal(new Set(queue.map(r=>r[0])).size,175);
 assert.equal(queue.filter(r=>r[7]==="secondary-underline-rationale-draft").length,110);
 assert.equal(queue.filter(r=>r[7]==="reference-figure-rationale-draft").length,5);
-assert.equal(queue.filter(r=>r[7]==="secondary-structure-rationale-draft").length,5);
+assert.equal(queue.filter(r=>r[7]==="secondary-structure-rationale-draft").length,0);
+assert.equal(queue.filter(r=>r[7]==="user-supplied-figure-visual-rationale-draft").length,5);
 assert.equal(queue.filter(r=>r[7]==="symbol-ambiguous-rationale-draft").length,5);
 assert.equal(queue.filter(r=>r[7]==="secondary-formula-rationale-draft").length,0);
 assert.equal(queue.filter(r=>r[7]==="reprint-visual-rationale-draft").length,50);
@@ -82,7 +83,7 @@ const r05Provisional=["R05-G-Q02","R05-G-Q04","R05-G-Q07","R05-G-Q09","R05-G-Q10
 for(const id of r05Provisional){
  for(let n=1;n<=5;n++){
   const option=allC.find(x=>x[0]===id+"-C"+n);
-  assert.equal(option[5],id==="R05-G-Q12"?"secondary-structure-rationale-draft":"secondary-underline-rationale-draft");
+  assert.equal(option[5],id==="R05-G-Q12"?"user-supplied-figure-visual-rationale-draft":"secondary-underline-rationale-draft");
   assert.ok(option[4].length>20,option[0]);
   const held=queue.find(r=>r[0]===option[0]);
   assert.ok(held && held[12].startsWith("HOLD-"),option[0]);

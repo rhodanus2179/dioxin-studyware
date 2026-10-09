@@ -13,7 +13,7 @@ for(const [idx,year] of years.entries()){
  assert.equal(draft,[150,150,195][idx],year+" draft");
  assert.equal(unreviewed,[0,0,0][idx],year+" pending");
  individual+=draft;pending+=unreviewed;
- extra+=cs.filter(c=>["secondary-underline-rationale-draft","secondary-structure-rationale-draft"].includes(c[5])).length;
+ extra+=cs.filter(c=>["secondary-underline-rationale-draft","secondary-structure-rationale-draft","user-supplied-figure-visual-rationale-draft"].includes(c[5])).length;
 }
 assert.equal(total,600);assert.equal(individual,495);assert.equal(extra,55);assert.equal(pending,0);
 const chapters=rows("docs/research/r05-r07-chapter-counts.csv").slice(1);

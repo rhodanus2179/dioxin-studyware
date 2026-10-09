@@ -13,11 +13,11 @@ for(let i=0;i<years.length;i++){
  assert.equal(n,expectedIndividual[i]);assert.equal(p,expectedPending[i]);assert.equal(s,expectedSecondary[i]);individual+=n;pending+=p;secondary+=s;
 }
 assert.equal(allQ,160);assert.equal(allChoices,800);assert.equal(individual,665);
-const structureR05=rows("docs/research/r05-choice-review.csv").slice(1).filter(r=>r[5]==="secondary-structure-rationale-draft");
+const structureR05=rows("docs/research/r05-choice-review.csv").slice(1).filter(r=>r[5]==="user-supplied-figure-visual-rationale-draft");
 assert.equal(structureR05.length,5);
 assert.equal(structureR05.every(r=>r[1]==="R05-G-Q12"),true);assert.equal(secondary,80);assert.equal(pending,0);
 const byChapter=rows("docs/research/r04-r07-chapter-counts.csv").slice(1);assert.equal(byChapter.reduce((t,r)=>t+Number(r[6]),0),160);
 const byKnowledge=rows("docs/research/r04-r07-knowledge-recurrence.csv").slice(1);for(const r of byKnowledge)assert.ok(nodes.has(r[0]));assert.equal(byKnowledge.reduce((t,r)=>t+Number(r[6]),0)>0,true);
 const eq=(a,b)=>assert.ok(Math.abs(a-b)<1e-9,`${a} != ${b}`);
 eq(10/4*(21-12)/(21-14),45/14);eq(0.04*(50/2)*(200/50)/8/1000,0.0005);eq((100000/150000)*(600/1.04)/500*100,76.92307692307692);
-console.log("PASS R04–R07: 160 questions, 800 choices; 665 normal + 80 underline + 5 structural + 50 reprint-visual provisional");
+console.log("PASS R04–R07: 160 questions, 800 choices; 665 normal + 80 underline + 5 visually inspected structural + 50 reprint-visual provisional");

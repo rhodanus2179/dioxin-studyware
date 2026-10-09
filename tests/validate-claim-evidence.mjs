@@ -90,6 +90,9 @@ for(const id of ["DRV-R04-G-2022","DRV-R04-A-2022","R04-EPA-ECF"])assert.ok(sour
 const va=csv("docs/research/r04-visual-review.csv").slice(1);assert.equal(va.length,6);
 for(const id of ["R04-G-Q02","R04-G-Q08","R04-A-Q07","R04-A-Q15","R04-A-Q16","R04-A-Q20"]){assert.equal(reviewQueue.filter(r=>r[1]===id&&r[7]==="drive-exam-page-visual-rationale-draft").length,5);assert.ok(audits.some(r=>r[1]===id&&r[5].includes("2022-exam-PDF")));}
 for(const id of ["DRV-R05-A-2023","R05-LAW-2023","R05-IARC-VAPOR-1997","R05-EPA-WET-SCRUBBER","R05-CARBIDE-PATENT"])assert.ok(sources.has(id),id);
+for(const id of ["R05-ECF-JPPA-2013-PROJECTION","R05-ECF-METI-2007-MANUAL","R05-ECF-PAPER-2007-PRODUCTION","R04-CARBON-R06-OFFICIAL-REPEAT","R04-CARBON-IGNITION-RESEARCH-2023","R05-CARBIDE-UNEP-2013-TOOLKIT","R05-CARBIDE-ENV-2002-SURVEY"])assert.ok(sources.has(id),id);
+for(const id of ["R05-G-Q12","R04-A-Q07","R05-A-Q15","R05-A-Q16"]){const hold=reviewQueue.filter(r=>r[1]===id);assert.equal(hold.length,5);assert.ok(hold.every(r=>r[12].startsWith("HOLD-")));}
+assert.ok(reviewQueue.filter(r=>r[1]==="R05-G-Q12").every(r=>r[9].startsWith("P0-")));
 const vR05=csv("docs/research/r05-visual-review.csv").slice(1);assert.equal(vR05.length,8);
 for(const id of ["R05-G-Q02","R05-G-Q04","R05-G-Q09","R05-G-Q10","R05-A-Q06","R05-A-Q15","R05-A-Q16","R05-A-Q25"]){assert.equal(reviewQueue.filter(r=>r[1]===id&&r[7]==="drive-exam-page-visual-rationale-draft").length,5);assert.ok(audits.some(r=>r[1]===id&&r[5].includes("R05-2023-exam")));}
 assert.equal(reviewQueue.filter(r=>r[1]==="R07-G-Q14"&&r[12].startsWith("HOLD-")).length,5);

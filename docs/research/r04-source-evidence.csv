@@ -9,7 +9,7 @@
 "R04-A-Q24","内標準回収率","EX02","arithmetic-checked","(100000/150000)*(600/1.04)/500*100=76.923%"
 "R04-G-Q02","法目的","L07;R04P-G;R04S-G2","official-law-verified-original-image-pending","法第1条汚染土壌に係る措置"
 "R04-G-Q08","カネミ油症の原因物質","P20;T14;R04P-G","MHLW-and-research-verified-visual-pending","PCB/PCDF複合。PCDDsとPCDFsのみではない"
-"R04-A-Q07","活性炭の発火温度","R04S-A7;R04-CARBON-R06-OFFICIAL-REPEAT;R04-CARBON-IGNITION-RESEARCH-2023","official-later-exam-consistency-plus-peer-reviewed-adsorption-risk-not-100C-empirical","令和6年度ダイオキシン類特論問9で、使用後活性炭は新炭より約100℃発火点が低下するという試験記述が再出題。2023年独立論文は吸着有機溶剤による燃焼促進を示すが、排ガス吸着済み炭の同一試料で約100℃低下を計測した実験結果ではない。したがって量的な一次監査未了を維持。"
+"R04-A-Q07","活性炭の発火温度","R04S-A7;R04-CARBON-R06-OFFICIAL-REPEAT;R04-CARBON-IGNITION-RESEARCH-2023;R04-OGC-DXN-CARBON-IGNITION-SPECS;R04-CARBON-FLYASH-PATENT-JP3073196","official-later-exam-consistency-plus-peer-reviewed-adsorption-risk-not-100C-empirical","令和6年度ダイオキシン類特論問9で、使用後活性炭は新炭より約100℃発火点が低下するという試験記述が再出題。2023年独立論文は吸着有機溶剤による燃焼促進を示すが、排ガス吸着済み炭の同一試料で約100℃低下を計測した実験結果ではない。したがって量的な一次監査未了を維持。 第15パス：大阪ガスケミカルのダイオキシン除去用活性炭3銘柄の発火点測定例は463・582・438℃（社内法）で、製品によって大きく異なる。JP3073196B1は高純度炭約550℃、アルカリ不純物を多く含む炭約300℃と説明し、飛灰混入による低温発火・蓄熱危険に触れる。ただし前者は別銘柄間、後者は特許明細書の条件比較であり、R04原題の『排ガス吸着運転前後で発火点が約100℃低下』を同一炭で検証した結果ではない。"
 "R04-A-Q15","ClO2酸化漂白","P21;R04S-A15","EPA-and-exam-secondary-checked","還元反応ではない"
 "R04-A-Q16","EDC酸化塩素化温度と触媒","T15;R04S-A16","EU-JRC-industrial-verified","反応方式依存の温度幅"
 "R04-A-Q20","HRGC/HRMS SIM","P22;T09;R04S-A20","Ministry-and-standards-secondary","全イオンではなくSIM"

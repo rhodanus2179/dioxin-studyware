@@ -60,3 +60,6 @@
 
 ## 第10パス（2026-10-09）：令和4年度の6問30選択肢をDrive原題画像で確認
 [個別監査報告](quality-audit-pass10-r04-underlines.md)／[下線位置台帳](r04-visual-review.csv)。概論問2・8／特論問7・15・16・20のPDFページ画像を表示して①～⑤の全位置を直接確認し、30選択肢を`drive-exam-page-visual-rationale-draft`へ変更（累計75件）。特論問7の活性炭着火温度550～600℃と使用後変化100℃は独立実験根拠が未確認のため当該5件は`VISUAL-VERIFIED-TECHNICAL-QA-PENDING`、他25件も出版前の全主張監査は未完了。175件は引き続きHOLD。非公開Drive IDやPDF紙面画像は公開GitHubに保存しない。JEMAI公式ファイルとのバイト一致、正式JIS正本の逐条監査も別ゲート。
+
+## 第11パス（2026-10-09）：R05残8問40選択肢のDrive原題画像目視
+[第11パス報告](quality-audit-pass11-r05-underlines.md)と[画像確認台帳](r05-visual-review.csv)を参照。R05概論問2・4・9・10、特論問6・15・16・25のPDF画像で下線①～⑤を直接照合。8問40件を`drive-exam-page-visual-rationale-draft`に移行し、Drive紙面目視は累計115件、別途R05概論問12のユーザー提供図5件。うちECF転換率（特論15）・アセチレン洗浄反応機構（特論16）の10件は`VISUAL-VERIFIED-TECHNICAL-QA-PENDING`、その他30件も出版前の全主張・原本同一性確認は未了。**保留175件を継続**し、正式JIS正本未閲覧、IARC蒸気圧の代表条件・出版社正誤図の未確認を明記する。PDF紙面・非公開Drive IDは公開GitHubに転載しない。

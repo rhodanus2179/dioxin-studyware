@@ -11,11 +11,11 @@ for(const [idx,year] of years.entries()){
  const draft=cs.filter(c=>c[5]==="individual-reason-draft").length;
  const unreviewed=cs.filter(c=>c[5]==="needs-original-image-or-primary-source"||c[5]==="needs-source-or-image-check").length;
  assert.equal(draft,[150,150,195][idx],year+" draft");
- assert.equal(unreviewed,[50,50,0][idx],year+" pending");
+ assert.equal(unreviewed,[0,50,0][idx],year+" pending");
  individual+=draft;pending+=unreviewed;
- extra+=cs.filter(c=>c[5]==="secondary-underline-rationale-draft").length;
+ extra+=cs.filter(c=>["secondary-underline-rationale-draft","secondary-structure-rationale-draft"].includes(c[5])).length;
 }
-assert.equal(total,600);assert.equal(individual,495);assert.equal(extra,5);assert.equal(pending,100);
+assert.equal(total,600);assert.equal(individual,495);assert.equal(extra,55);assert.equal(pending,50);
 const chapters=rows("docs/research/r05-r07-chapter-counts.csv").slice(1);
 assert.equal(chapters.reduce((n,r)=>n+Number(r[5]),0),120);
 const knowledge=rows("docs/research/r05-r07-knowledge-recurrence.csv").slice(1);
@@ -29,4 +29,4 @@ approx((500000/100000)*500/1.040/3000*100,80.128205128); // R05 A21 %
 const r06=rows("docs/research/r06-question-review.csv").slice(1);
 assert.ok(r06.find(r=>r[0]==="R06-G-Q07")[5].includes("23.8"));
 assert.equal(r06.find(r=>r[0]==="R06-G-Q07")[4],"5");
-console.log("PASS: 120 questions / 600 choices / 500 draft rationales incl 5 secondary, 100 unreviewed; 48 recurring nodes, 24 in all years");
+console.log("PASS: 120 questions / 600 choices / 550 draft rationales incl 55 provisional, 50 undrafted; 48 recurring nodes, 24 in all years");

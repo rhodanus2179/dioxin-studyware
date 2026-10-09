@@ -66,7 +66,7 @@ assert.equal(pcb.filter(r=>r[4]==="WHO2006-TEF-assigned").length,4);
 assert.equal(pcb.filter(r=>r[4]==="not-in-12-WHO-DL-PCBs").length,1);
 assert.ok(pcb.every(r=>r[6].includes("original-exam-image-and-errata-figures-unseen")));
 assert.ok(audits.find(r=>r[1]==="R05-G-Q12")[3].includes("JEMAI-ERRATA-2025-DXN"));
-assert.equal(reviewQueue.filter(r=>r[1]==="R05-G-Q12"&&r[9].startsWith("P0-official-publisher")).length,5);
+assert.equal(reviewQueue.filter(r=>r[1]==="R05-G-Q12"&&r[9]==="P0-figure-erratum-three-image-compare-required").length,5);
 for(const id of ["R06-ZN-JST01","R06-ZN-OPERATOR01","R06-ZN-PAPER01","R06-MEM-EPA01","R06-MEM-EPA02","R06-JIS-K0311-SECONDARY"])assert.ok(sources.has(id),id);
 for(const id of ["R06-A-Q12","R06-A-Q14","R06-A-Q19"])assert.ok(audits.some(r=>r[1]===id&&r[3].includes("R06-")),id);
 assert.equal(reviewQueue.filter(r=>["R06-A-Q12","R06-A-Q14","R06-A-Q19"].includes(r[1])&&r[11]==="PARTIAL-CLAIM-EVIDENCE-NOT-VALIDATED").length,15);

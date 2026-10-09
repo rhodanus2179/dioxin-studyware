@@ -8,7 +8,8 @@ for(const r of [...c06,...c07]){assert.equal(r.length,8);assert.equal(r[3],(+r[2
 assert.equal(c06.filter(r=>r[5]==="individual-reason-draft").length,150);
 assert.equal(c06.filter(r=>r[5]==="reprint-visual-rationale-draft").length,50);
 assert.equal(c07.filter(r=>r[5]==="individual-reason-draft").length,195);
-assert.equal(c07.filter(r=>r[5]==="secondary-underline-rationale-draft").length,5);
+assert.equal(c07.filter(r=>r[5]==="secondary-underline-rationale-draft").length,0);
+assert.equal(c07.filter(r=>r[5]==="drive-exam-page-visual-rationale-draft").length,5);
 assert.ok(g06.find(r=>r[0]==="R06-A-Q23")[5].includes("20.5%"));assert.equal(answer.get("R06-A-Q23"),4);
 const allCh=rows("docs/research/r06-r07-chapter-counts.csv").slice(1);assert.equal(allCh.reduce((sum,r)=>sum+(+r[4]),0),80);
 const allK=rows("docs/research/r06-r07-knowledge-recurrence.csv").slice(1);assert.equal(allK.filter(r=>r[4]==="both-years").length,32);for(const r of allK)assert.ok(kids.has(r[0]));

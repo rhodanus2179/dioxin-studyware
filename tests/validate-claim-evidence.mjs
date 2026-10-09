@@ -67,7 +67,7 @@ const pcb=csv("docs/research/r05-q12-congener-crosscheck.csv").slice(1);
 assert.equal(pcb.length,5);
 assert.equal(pcb.filter(r=>r[4]==="WHO2006-TEF-assigned").length,4);
 assert.equal(pcb.filter(r=>r[4]==="not-in-12-WHO-DL-PCBs").length,1);
-assert.ok(pcb.every(r=>r[6].includes("user-supplied-question-figure-structure-directly-inspected")&&r[6].includes("erratum-images-pending")));
+assert.ok(pcb.every(r=>r[6].includes("exam-page-compared-publisher-book-erratum-visual-confirmed")&&r[6].includes("publisher-old-reprint-Cl-missing")));
 assert.ok(pcb.every(r=>r[5].includes("R05-USER-FIGURE-20261009")));
 assert.ok(sources.has("R05-USER-FIGURE-20261009"));
 for(const id of ["DRV-R03-G-2021","DRV-R03-A-2021","DRV-R05-G-2023","SCI-FUJIMORI2009","ENV-R02-INVENTORY2022"])assert.ok(sources.has(id),id);

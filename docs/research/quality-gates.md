@@ -57,3 +57,6 @@
 
 ## 第9パス（2026-10-09）：R03の6問30選択肢を元紙面の画像から確認
 [監査報告](quality-audit-pass9-r03-underlines.md)。ユーザー保管DriveのR03概論・特論PDFで、下線①～⑤の位置を6問とも直接目視。`drive-exam-page-visual-rationale-draft`は累計45件。R03問6は石炭系メソ孔とマクロ孔の『典型傾向』の差、問10はCaCl₂の投入工程の一次資料不足を明記し、10選択肢を`VISUAL-VERIFIED-TECHNICAL-QA-PENDING`として保留。その他20選択肢も最終公開品質審査は未了。総保留175件を維持。PDF本文・図・非公開Drive IDはGitHubに転載しない。
+
+## 第10パス（2026-10-09）：令和4年度の6問30選択肢をDrive原題画像で確認
+[個別監査報告](quality-audit-pass10-r04-underlines.md)／[下線位置台帳](r04-visual-review.csv)。概論問2・8／特論問7・15・16・20のPDFページ画像を表示して①～⑤の全位置を直接確認し、30選択肢を`drive-exam-page-visual-rationale-draft`へ変更（累計75件）。特論問7の活性炭着火温度550～600℃と使用後変化100℃は独立実験根拠が未確認のため当該5件は`VISUAL-VERIFIED-TECHNICAL-QA-PENDING`、他25件も出版前の全主張監査は未完了。175件は引き続きHOLD。非公開Drive IDやPDF紙面画像は公開GitHubに保存しない。JEMAI公式ファイルとのバイト一致、正式JIS正本の逐条監査も別ゲート。

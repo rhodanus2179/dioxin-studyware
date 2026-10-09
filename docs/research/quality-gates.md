@@ -54,3 +54,6 @@
 
 ## 第8パス：ユーザー所有Drive内PDFの3問を直接目視（2026-10-09）
 [R03概論問15、R03特論問19、R05概論問7の原題PDF画像の実査報告](quality-audit-pass8-drive-original-three.md)を追加。`drive-exam-page-visual-rationale-draft`の15選択肢はユーザー収蔵の試験PDFから図・比較記号・下線を直接視認し、主要主張の独立根拠を確認した。**JEMAIの公式配布ファイルと同一であること・JIS正本・全選択肢の最終編集査読は別ゲート**。これら15件は `VISUAL-AND-CLAIM-SUPPORTED-FINAL-QA-PENDING` として保留175件に含めたまま。試験問題の図や私有Drive IDは公開リポジトリに持ち込まない。
+
+## 第9パス（2026-10-09）：R03の6問30選択肢を元紙面の画像から確認
+[監査報告](quality-audit-pass9-r03-underlines.md)。ユーザー保管DriveのR03概論・特論PDFで、下線①～⑤の位置を6問とも直接目視。`drive-exam-page-visual-rationale-draft`は累計45件。R03問6は石炭系メソ孔とマクロ孔の『典型傾向』の差、問10はCaCl₂の投入工程の一次資料不足を明記し、10選択肢を`VISUAL-VERIFIED-TECHNICAL-QA-PENDING`として保留。その他20選択肢も最終公開品質審査は未了。総保留175件を維持。PDF本文・図・非公開Drive IDはGitHubに転載しない。

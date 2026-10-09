@@ -51,3 +51,6 @@
 
 ## 第7パス（2026-10-09）：ユーザー提供の試験問題図の目視
 [R05概論問12の構造式5種の直接目視記録](r05-q12-user-figure-visual-review.md)を保存。状態`user-supplied-figure-visual-rationale-draft`は、チャット添付の問題図を視覚的に確認して各Cl置換位置からPCB異性体を同定したことを意味する。**JEMAI公式PDF原本の同一性も、出版社『正解とヒント』の訂正前後の図も確認済みではない。** 画像は公開リポジトリに置かず、文字だけの独立した解説と監査結果を保存する。5件は引き続き掲載保留、175件も据え置き。
+
+## 第8パス：ユーザー所有Drive内PDFの3問を直接目視（2026-10-09）
+[R03概論問15、R03特論問19、R05概論問7の原題PDF画像の実査報告](quality-audit-pass8-drive-original-three.md)を追加。`drive-exam-page-visual-rationale-draft`の15選択肢はユーザー収蔵の試験PDFから図・比較記号・下線を直接視認し、主要主張の独立根拠を確認した。**JEMAIの公式配布ファイルと同一であること・JIS正本・全選択肢の最終編集査読は別ゲート**。これら15件は `VISUAL-AND-CLAIM-SUPPORTED-FINAL-QA-PENDING` として保留175件に含めたまま。試験問題の図や私有Drive IDは公開リポジトリに持ち込まない。

@@ -5,3 +5,5 @@
 "R03-A-Q05","触媒分解率95%と流量3000m3N/h","EX02","arithmetic-checked","SV=1500/h、触媒量2m3"
 "R03-A-Q20","方法DLから必要試料量約3.125m3","EX02","arithmetic-checked-with-choice-rounding-caveat","正答選択肢3m3は計算上の必要量より小さい"
 "R03-A-Q24","20.5%酸素を20%に補正し3ng/m3","T04","secondary-standard-text-and-arithmetic-checked","試験年度2021の版とJIS正本の逐条監査は未完了"
+"R03-G-Q15","CuCl₂・PbCl₂・FeCl₂触媒能序列、比較記号","DRV-R03-G-2021;SCI-FUJIMORI2009","Drive-exam-screenshot-and-peer-reviewed-conditional-order-corroborated","印刷10頁を視認。試験記載 CuCl₂>PbCl₂>FeCl₂ とモデル飛灰実験のCuCl₂>FeCl₂>PbCl₂（試薬は水和塩）を比較。水和物・条件の差を残し、普遍的順位と断定しない。"
+"R03-A-Q19","JIS I形装置のア～エの配置","DRV-R03-A-2021;T09;S17","Drive-exam-screenshot-plus-secondary-JIS-and-professional-manual","印刷13頁の装置図を直接視認。円筒ろ紙／ヘキサン洗浄水／吸着剤カラム／ジエチレングリコールで選択肢①。JIS正式規格正本は未監査。"

@@ -31,7 +31,7 @@ for(const r of audits){
 assert.equal(audits.filter(r=>r[5]==="original-underline-not-seen").length,0);
 assert.equal(audits.filter(r=>r[1].startsWith("R04-")).length,6);
 assert.equal(audits.filter(r=>r[1].startsWith("R05-")).length,10);
-for(const r of audits.filter(r=>r[1].startsWith("R05-")))if(r[1]==="R05-G-Q12")assert.ok(r[5].includes("user-provided-question-image-five-structures-visually-verified"));else if(r[1]==="R05-G-Q07")assert.ok(r[5].includes("user-Drive-exam-PDF-question-page-image-visually-verified"));else assert.ok(r[5].includes("user-Drive-R05-2023-exam-question-page-underlines1-5-visually-verified"),r[1]);
+for(const r of audits.filter(r=>r[1].startsWith("R05-")))if(r[1]==="R05-G-Q12")assert.ok(r[5].includes("user-provided-2023-exam-sheet-page10-and-2025-publisher-corrected-figure-visually-compared"));else if(r[1]==="R05-G-Q07")assert.ok(r[5].includes("user-Drive-exam-PDF-question-page-image-visually-verified"));else assert.ok(r[5].includes("user-Drive-R05-2023-exam-question-page-underlines1-5-visually-verified"),r[1]);
 for(const audit of audits.filter(r=>r[1].startsWith("R04-")))assert.ok(audit[5].includes("visually-checked-official-identity-pending"));
 assert.equal(audits.filter(r=>r[4]==="secondary-JIS-text-verified").length,0);
 assert.equal(allChoices.get("R03-A-Q23-C5")[5],"individual-reason-draft");
@@ -73,13 +73,16 @@ assert.ok(sources.has("R05-USER-FIGURE-20261009"));
 for(const id of ["DRV-R03-G-2021","DRV-R03-A-2021","DRV-R05-G-2023","SCI-FUJIMORI2009","ENV-R02-INVENTORY2022"])assert.ok(sources.has(id),id);
 for(const id of ["R03-G-Q15","R03-A-Q19","R05-G-Q07"]){assert.ok(allQuestions.get(id)[6].includes("drive-archived-exam-PDF-page-visually-reviewed"),id);for(let n=1;n<=5;n++)assert.equal(allChoices.get(id+"-C"+n)[5],"drive-exam-page-visual-rationale-draft");}
 assert.equal(allChoices.get("R05-G-Q12-C4")[5],"user-supplied-figure-visual-rationale-draft");
-assert.ok(allQuestions.get("R05-G-Q12")[6].includes("user-provided-question-image-visually-reviewed"));
+assert.ok(allQuestions.get("R05-G-Q12")[6].includes("exam-paper-image-and-publisher-reprint-erratum-both-visually-compared"));
 assert.ok(audits.find(r=>r[1]==="R05-G-Q12")[3].includes("JEMAI-ERRATA-2025-DXN"));
-assert.equal(reviewQueue.filter(r=>r[1]==="R05-G-Q12"&&r[9]==="P0-publisher-erratum-diagrams-and-official-identity").length,5);
+assert.equal(reviewQueue.filter(r=>r[1]==="R05-G-Q12"&&r[9]==="P1-final-publication-QA-and-official-PDF-byte-identity").length,5);
+assert.equal(reviewQueue.filter(r=>r[9].startsWith("P0-")).length,0);
+assert.ok(sources.get("JEMAI-ERRATA-2025-DXN")[6].includes("old-new-book-figure-image-inspected"));
+assert.ok(sources.has("R05-EXAM-PAPER-2023-USER-PAGE10-VISUAL"));
 for(const id of ["R06-ZN-JST01","R06-ZN-OPERATOR01","R06-ZN-PAPER01","R06-MEM-EPA01","R06-MEM-EPA02","R06-JIS-K0311-SECONDARY"])assert.ok(sources.has(id),id);
 for(const id of ["R06-A-Q12","R06-A-Q14","R06-A-Q19"])assert.ok(audits.some(r=>r[1]===id&&r[3].includes("R06-")),id);
 assert.equal(reviewQueue.filter(r=>["R06-A-Q12","R06-A-Q14","R06-A-Q19"].includes(r[1])&&r[11]==="PARTIAL-CLAIM-EVIDENCE-NOT-VALIDATED").length,15);
-assert.equal(reviewQueue.filter(r=>r[11]==="VISUAL-AND-CLAIM-SUPPORTED-FINAL-QA-PENDING").length,95);
+assert.equal(reviewQueue.filter(r=>r[11]==="VISUAL-AND-CLAIM-SUPPORTED-FINAL-QA-PENDING").length,100);
 assert.equal(reviewQueue.filter(r=>r[11]==="VISUAL-VERIFIED-TECHNICAL-QA-PENDING").length,25);
 for(const id of ["R03-LAW28-2021","R03-OXIDATIVE-CATALYST","R03-PORE-INDUSTRY","R03-ENV-CHLOROBENZENE","R03-ENV-CALCIUM-CARBIDE"])assert.ok(sources.has(id));
 for(const id of ["R03-G-Q03","R03-A-Q03","R03-A-Q06","R03-A-Q10","R03-A-Q15","R03-A-Q16"]){
@@ -92,7 +95,7 @@ for(const id of ["R04-G-Q02","R04-G-Q08","R04-A-Q07","R04-A-Q15","R04-A-Q16","R0
 for(const id of ["DRV-R05-A-2023","R05-LAW-2023","R05-IARC-VAPOR-1997","R05-EPA-WET-SCRUBBER","R05-CARBIDE-PATENT"])assert.ok(sources.has(id),id);
 for(const id of ["R05-ECF-JPPA-2013-PROJECTION","R05-ECF-METI-2007-MANUAL","R05-ECF-PAPER-2007-PRODUCTION","R04-CARBON-R06-OFFICIAL-REPEAT","R04-CARBON-IGNITION-RESEARCH-2023","R05-CARBIDE-UNEP-2013-TOOLKIT","R05-CARBIDE-ENV-2002-SURVEY"])assert.ok(sources.has(id),id);
 for(const id of ["R05-G-Q12","R04-A-Q07","R05-A-Q15","R05-A-Q16"]){const hold=reviewQueue.filter(r=>r[1]===id);assert.equal(hold.length,5);assert.ok(hold.every(r=>r[12].startsWith("HOLD-")));}
-assert.ok(reviewQueue.filter(r=>r[1]==="R05-G-Q12").every(r=>r[9].startsWith("P0-")));
+assert.ok(reviewQueue.filter(r=>r[1]==="R05-G-Q12").every(r=>r[9].startsWith("P1-")));
 const vR05=csv("docs/research/r05-visual-review.csv").slice(1);assert.equal(vR05.length,8);
 for(const id of ["R05-G-Q02","R05-G-Q04","R05-G-Q09","R05-G-Q10","R05-A-Q06","R05-A-Q15","R05-A-Q16","R05-A-Q25"]){assert.equal(reviewQueue.filter(r=>r[1]===id&&r[7]==="drive-exam-page-visual-rationale-draft").length,5);assert.ok(audits.some(r=>r[1]===id&&r[5].includes("R05-2023-exam")));}
 assert.equal(reviewQueue.filter(r=>r[1]==="R07-G-Q14"&&r[12].startsWith("HOLD-")).length,5);

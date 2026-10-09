@@ -36,7 +36,7 @@ assert.equal(queue.filter(r=>r[7]==="drive-exam-page-visual-rationale-draft").le
 assert.equal(queue.filter(r=>r[7].startsWith("needs-")).length,0);
 for(const r of queue){assert.equal(r.length,13);assert.ok(["NOT-VALIDATED","PARTIAL-CLAIM-EVIDENCE-NOT-VALIDATED","VISUAL-AND-CLAIM-SUPPORTED-FINAL-QA-PENDING","VISUAL-VERIFIED-TECHNICAL-QA-PENDING"].includes(r[11]),r[0]);if(r[11]==="PARTIAL-CLAIM-EVIDENCE-NOT-VALIDATED")assert.ok(r[12].startsWith("HOLD-"),r[0]);assert.ok(allC.some(x=>x[0]===r[0]));}
 assert.equal(queue.filter(r=>r[11]==="PARTIAL-CLAIM-EVIDENCE-NOT-VALIDATED").length,15);
-assert.equal(queue.filter(r=>r[11]==="VISUAL-AND-CLAIM-SUPPORTED-FINAL-QA-PENDING").length,95);
+assert.equal(queue.filter(r=>r[11]==="VISUAL-AND-CLAIM-SUPPORTED-FINAL-QA-PENDING").length,100);
 assert.equal(queue.filter(r=>r[11]==="VISUAL-VERIFIED-TECHNICAL-QA-PENDING").length,25);
 for(const id of ["R03-G-Q03","R03-A-Q03","R03-A-Q06","R03-A-Q10"]){
   for(let n=1;n<=5;n++){

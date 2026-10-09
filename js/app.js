@@ -111,6 +111,11 @@ function renderQuestion(){
     feedback.hidden=false;feedback.className="feedback"+(correct?"":" incorrect");
     feedback.replaceChildren(el("strong",{},correct?"正解です。":"不正解です。正答："+(q.answer+1)+"番"));
     feedback.append(el("p",{},q.explanation));
+    if(Array.isArray(q.choice_explanations)&&q.choice_explanations.length===5){
+      const details=el("ol",{className:"choice-rationales"});
+      for(const reason of q.choice_explanations)details.append(el("li",{},reason));
+      feedback.append(details);
+    }
     btn.hidden=true;next.hidden=false;
   });
   next.addEventListener("click",()=>{s.index++;renderQuestion();});

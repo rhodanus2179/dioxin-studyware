@@ -1,0 +1,116 @@
+[
+  {
+    "knowledge": "DX-G05-004",
+    "section": "5.2",
+    "auto_score": "0.68",
+    "assigned_item": "5.2.1"
+  },
+  {
+    "knowledge": "DX-A01-009",
+    "section": "8.3",
+    "auto_score": "0.36",
+    "assigned_item": "8.3.2"
+  },
+  {
+    "knowledge": "DX-A02-003",
+    "section": "9.1",
+    "auto_score": "0.38",
+    "assigned_item": "9.1.1"
+  },
+  {
+    "knowledge": "DX-A02-014",
+    "section": "9.2",
+    "auto_score": "0.66",
+    "assigned_item": "9.2.2"
+  },
+  {
+    "knowledge": "DX-A02-010",
+    "section": "9.4",
+    "auto_score": "0.62",
+    "assigned_item": "9.4.2"
+  },
+  {
+    "knowledge": "DX-A02-011",
+    "section": "9.4",
+    "auto_score": "0.33",
+    "assigned_item": "9.4.3"
+  },
+  {
+    "knowledge": "DX-A02-012",
+    "section": "9.4",
+    "auto_score": "0.62",
+    "assigned_item": "9.4.3"
+  },
+  {
+    "knowledge": "DX-A02-013",
+    "section": "9.4",
+    "auto_score": "0.27",
+    "assigned_item": "9.4.3"
+  },
+  {
+    "knowledge": "DX-A04-015",
+    "section": "11.2",
+    "auto_score": "0.23",
+    "assigned_item": "11.2.2"
+  },
+  {
+    "knowledge": "DX-A04-016",
+    "section": "11.2",
+    "auto_score": "0.20",
+    "assigned_item": "11.2.2"
+  },
+  {
+    "knowledge": "DX-A04-018",
+    "section": "11.2",
+    "auto_score": "0.21",
+    "assigned_item": "11.2.3"
+  },
+  {
+    "knowledge": "DX-A04-020",
+    "section": "11.2",
+    "auto_score": "0.65",
+    "assigned_item": "11.2.4"
+  },
+  {
+    "knowledge": "DX-A04-021",
+    "section": "11.2",
+    "auto_score": "0.43",
+    "assigned_item": "11.2.4"
+  },
+  {
+    "knowledge": "DX-A04-022",
+    "section": "11.2",
+    "auto_score": "0.22",
+    "assigned_item": "11.2.4"
+  },
+  {
+    "knowledge": "DX-A04-003",
+    "section": "11.3",
+    "auto_score": "0.65",
+    "assigned_item": "11.3.1"
+  },
+  {
+    "knowledge": "DX-A04-024",
+    "section": "11.3",
+    "auto_score": "0.43",
+    "assigned_item": "11.3.2"
+  },
+  {
+    "knowledge": "DX-A04-027",
+    "section": "11.3",
+    "auto_score": "0.78",
+    "assigned_item": "11.3.3"
+  },
+  {
+    "knowledge": "DX-A04-010",
+    "section": "11.5",
+    "auto_score": "0.29",
+    "assigned_item": "11.5.1"
+  },
+  {
+    "knowledge": "DX-A04-011",
+    "section": "11.5",
+    "auto_score": "0.71",
+    "assigned_item": "11.5.2"
+  }
+]

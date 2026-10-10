@@ -1,0 +1,544 @@
+[
+  {
+    "id": "DX-FIG-0001",
+    "item_id": "1.2.3",
+    "chapter_id": "g01",
+    "title": "TDI・環境基準・排出基準の制度上の関係",
+    "kind": "flow",
+    "method": "Mermaid",
+    "priority": "P1",
+    "status": "planned",
+    "purpose": "毒性等価の概念と規制値の関係",
+    "drawing_spec": "摂取指標・環境中の行政目標・規制対象からの排出許容限度を並列配置。数字を直接換算する矢印は描かない。",
+    "required_labels": [
+      "TDI",
+      "環境基準",
+      "大気排出基準",
+      "水質排出基準"
+    ],
+    "qa_checks": "環境基本法16条とダイ特法7条を混同しない。政策目標は行政解釈と明記。",
+    "source_ids": [
+      "L01",
+      "L03",
+      "L04",
+      "L06",
+      "L10",
+      "L11"
+    ],
+    "alt_text": "TDI・環境基準・排出基準の制度上の関係。毒性等価の概念と規制値の関係。",
+    "asset_path": null,
+    "source_file": null,
+    "review_status": "specification-only"
+  },
+  {
+    "id": "DX-FIG-0002",
+    "item_id": "3.3.1",
+    "chapter_id": "g03",
+    "title": "全国のダイオキシン類排出量の長期推移",
+    "kind": "chart",
+    "method": "Python+CSV",
+    "priority": "P2",
+    "status": "planned",
+    "purpose": "規制前後の比較と定義",
+    "drawing_spec": "環境省排出インベントリーの対象年ごとにg-TEQ/年を時系列表示。合計と発生源別は必要に応じ別図。値の原表を確定するまで曲線を描かない。",
+    "required_labels": [
+      "対象年",
+      "排出量g-TEQ/年",
+      "発生源",
+      "資料公表年"
+    ],
+    "qa_checks": "排出総量と濃度を混同しない。TEF換算版・遡及修正を確認。",
+    "source_ids": [
+      "P03",
+      "P04"
+    ],
+    "alt_text": "全国のダイオキシン類排出量の長期推移。規制前後の比較と定義。",
+    "asset_path": null,
+    "source_file": null,
+    "review_status": "specification-only"
+  },
+  {
+    "id": "DX-FIG-0003",
+    "item_id": "4.1.1",
+    "chapter_id": "g04",
+    "title": "PCDD・PCDF・DL-PCBの基本骨格",
+    "kind": "chemical",
+    "method": "RDKit+SVG",
+    "priority": "P1",
+    "status": "planned",
+    "purpose": "骨格と塩素置換部位",
+    "drawing_spec": "3種の代表骨格を横並び。同じ縮尺でPCDD酸素架橋2個、PCDF1個、PCBビフェニルを示す。対象異性体は例示と明示。",
+    "required_labels": [
+      "PCDD",
+      "PCDF",
+      "DL-PCB",
+      "O",
+      "Cl"
+    ],
+    "qa_checks": "化合物同一性、結合位置、オルト置換の区別。SMILES入力を人が原典照合。",
+    "source_ids": [
+      "S01",
+      "C01"
+    ],
+    "alt_text": "PCDD・PCDF・DL-PCBの基本骨格。骨格と塩素置換部位。",
+    "asset_path": null,
+    "source_file": null,
+    "review_status": "specification-only"
+  },
+  {
+    "id": "DX-FIG-0004",
+    "item_id": "4.2.2",
+    "chapter_id": "g04",
+    "title": "2,3,7,8-TCDDの塩素置換位置",
+    "kind": "chemical",
+    "method": "RDKit+SVG",
+    "priority": "P1",
+    "status": "planned",
+    "purpose": "位置の重要性",
+    "drawing_spec": "PCDD骨格に2,3,7,8位を表示し4位置に塩素を結合した分子図。位置番号の表示は描画ツールの内部原子番号ではなく化学命名上の番号。",
+    "required_labels": [
+      "2",
+      "3",
+      "7",
+      "8",
+      "Cl",
+      "TCDD"
+    ],
+    "qa_checks": "PubChem CID15625の構造式と置換番号を確認。別異性体と誤記しない。",
+    "source_ids": [
+      "C01",
+      "S01"
+    ],
+    "alt_text": "2,3,7,8-TCDDの塩素置換位置。位置の重要性。",
+    "asset_path": null,
+    "source_file": null,
+    "review_status": "specification-only"
+  },
+  {
+    "id": "DX-FIG-0005",
+    "item_id": "4.3.2",
+    "chapter_id": "g04",
+    "title": "TEQ計算の重み付けと合計",
+    "kind": "math",
+    "method": "LaTeX+SVG",
+    "priority": "P1",
+    "status": "planned",
+    "purpose": "濃度に係数を乗じて合算",
+    "drawing_spec": "濃度・TEF・濃度×TEF・総和を横並びにする。数値例は必ず架空と書く。WHO最新版と日本での適用版を同一視しない。",
+    "required_labels": [
+      "濃度C_i",
+      "TEF_i",
+      "TEQ",
+      "単位"
+    ],
+    "qa_checks": "係数適用版、単位と未検出値の扱いを別途確認。",
+    "source_ids": [
+      "S01",
+      "T07",
+      "L03"
+    ],
+    "alt_text": "TEQ計算の重み付けと合計。濃度に係数を乗じて合算。",
+    "asset_path": null,
+    "source_file": null,
+    "review_status": "specification-only"
+  },
+  {
+    "id": "DX-FIG-0006",
+    "item_id": "5.2.3",
+    "chapter_id": "g05",
+    "title": "前駆体経路とde novo合成の併存",
+    "kind": "flow",
+    "method": "Mermaid+SVG",
+    "priority": "P1",
+    "status": "planned",
+    "purpose": "複数反応の併存と異性体組成",
+    "drawing_spec": "左右に前駆体経路と飛灰表面のde novo経路。上段に温度・塩素・触媒・滞留時間の共通影響因子を配置。反応式を確定的に描かない。",
+    "required_labels": [
+      "前駆体",
+      "de novo",
+      "飛灰",
+      "塩素",
+      "触媒"
+    ],
+    "qa_checks": "複数経路の併存を示し、必ず同程度に寄与するとは書かない。",
+    "source_ids": [
+      "S01",
+      "S03",
+      "L09"
+    ],
+    "alt_text": "前駆体経路とde novo合成の併存。複数反応の併存と異性体組成。",
+    "asset_path": null,
+    "source_file": null,
+    "review_status": "specification-only"
+  },
+  {
+    "id": "DX-FIG-0007",
+    "item_id": "5.3.1",
+    "chapter_id": "g05",
+    "title": "燃焼後の排ガス冷却と再生成の可能性",
+    "kind": "schematic-graph",
+    "method": "SVG",
+    "priority": "P1",
+    "status": "planned",
+    "purpose": "冷却域と滞留条件",
+    "drawing_spec": "経過時間と温度を軸に急冷・緩冷却の概念曲線。実測データではないと明示し、反応が起こり得る温度帯は出典確認後にだけ数値を付す。",
+    "required_labels": [
+      "経過時間",
+      "温度",
+      "急冷",
+      "緩冷却"
+    ],
+    "qa_checks": "温度一つで生成量を一義的に決める図にしない。",
+    "source_ids": [
+      "L09",
+      "T01"
+    ],
+    "alt_text": "燃焼後の排ガス冷却と再生成の可能性。冷却域と滞留条件。",
+    "asset_path": null,
+    "source_file": null,
+    "review_status": "specification-only"
+  },
+  {
+    "id": "DX-FIG-0008",
+    "item_id": "6.3.1",
+    "chapter_id": "g06",
+    "title": "食品を経由する曝露の流れ",
+    "kind": "flow",
+    "method": "Mermaid",
+    "priority": "P2",
+    "status": "planned",
+    "purpose": "食事からの摂取の位置付け",
+    "drawing_spec": "発生源→大気/水/土壌→生物・食物連鎖→食品→人の経路を分岐表示。環境への拡散と生体蓄積の矢印を分ける。",
+    "required_labels": [
+      "発生源",
+      "環境媒体",
+      "食物連鎖",
+      "食品",
+      "人"
+    ],
+    "qa_checks": "特定経路の定量比率を根拠なく図示しない。",
+    "source_ids": [
+      "S01",
+      "S02"
+    ],
+    "alt_text": "食品を経由する曝露の流れ。食事からの摂取の位置付け。",
+    "asset_path": null,
+    "source_file": null,
+    "review_status": "specification-only"
+  },
+  {
+    "id": "DX-FIG-0009",
+    "item_id": "8.3.1",
+    "chapter_id": "a01",
+    "title": "バグフィルター・湿式集じんの断面比較",
+    "kind": "apparatus",
+    "method": "draw.io+SVG",
+    "priority": "P1",
+    "status": "planned",
+    "purpose": "ろ布・ダスト層・払落し",
+    "drawing_spec": "ろ布・ダスト層・払落しと、スクラバーのガス液接触・ミスト除去・排水の二つの模式図。流体矢印を区別する。",
+    "required_labels": [
+      "含じんガス",
+      "ろ布",
+      "ダスト層",
+      "洗浄水",
+      "排水"
+    ],
+    "qa_checks": "特定メーカーの構造を一般の標準として断定しない。",
+    "source_ids": [
+      "L09",
+      "T01"
+    ],
+    "alt_text": "バグフィルター・湿式集じんの断面比較。ろ布・ダスト層・払落し。",
+    "asset_path": null,
+    "source_file": null,
+    "review_status": "specification-only"
+  },
+  {
+    "id": "DX-FIG-0010",
+    "item_id": "8.3.2",
+    "chapter_id": "a01",
+    "title": "電気集じんと逆電離・比抵抗",
+    "kind": "apparatus",
+    "method": "draw.io+SVG",
+    "priority": "P1",
+    "status": "planned",
+    "purpose": "放電・集じん・逆電離",
+    "drawing_spec": "放電極→粒子帯電→集じん極・ダスト層の原理と、比抵抗が高い場合の逆電離を左右に比較。電界方向と極性を整合させる。",
+    "required_labels": [
+      "放電極",
+      "集じん極",
+      "帯電粒子",
+      "比抵抗",
+      "逆電離"
+    ],
+    "qa_checks": "逆電離があらゆる運転で生じると描かない。",
+    "source_ids": [
+      "T01",
+      "L09"
+    ],
+    "alt_text": "電気集じんと逆電離・比抵抗。放電・集じん・逆電離。",
+    "asset_path": null,
+    "source_file": null,
+    "review_status": "specification-only"
+  },
+  {
+    "id": "DX-FIG-0011",
+    "item_id": "8.4.1",
+    "chapter_id": "a01",
+    "title": "活性炭吸着と触媒分解の違い",
+    "kind": "schematic",
+    "method": "draw.io+SVG",
+    "priority": "P1",
+    "status": "planned",
+    "purpose": "細孔・等温式・発熱と安全",
+    "drawing_spec": "吸着剤細孔内への保持と、触媒表面での分解を別の装置として図示。吸着後の吸着剤管理を省略しない。",
+    "required_labels": [
+      "活性炭",
+      "細孔",
+      "吸着",
+      "触媒",
+      "分解"
+    ],
+    "qa_checks": "吸着＝分解・無害化という誤解を防ぐ。",
+    "source_ids": [
+      "L09",
+      "T01"
+    ],
+    "alt_text": "活性炭吸着と触媒分解の違い。細孔・等温式・発熱と安全。",
+    "asset_path": null,
+    "source_file": null,
+    "review_status": "specification-only"
+  },
+  {
+    "id": "DX-FIG-0012",
+    "item_id": "9.2.1",
+    "chapter_id": "a02",
+    "title": "焼結・電炉・亜鉛回収の工程の違い",
+    "kind": "industrial-flow",
+    "method": "draw.io+SVG",
+    "priority": "P2",
+    "status": "planned",
+    "purpose": "焼結層・排ガス条件・抑制",
+    "drawing_spec": "焼結鉱製造、鉄スクラップ等からの製鋼用電気炉、電炉集じんダストの亜鉛回収を別工程として表示。排出ガス・ダスト出口を表す。",
+    "required_labels": [
+      "焼結炉",
+      "電気炉",
+      "電炉ダスト",
+      "亜鉛回収"
+    ],
+    "qa_checks": "全電炉に亜鉛回収設備が接続されると描かない。",
+    "source_ids": [
+      "L02",
+      "L03",
+      "Y01"
+    ],
+    "alt_text": "焼結・電炉・亜鉛回収の工程の違い。焼結層・排ガス条件・抑制。",
+    "asset_path": null,
+    "source_file": null,
+    "review_status": "specification-only"
+  },
+  {
+    "id": "DX-FIG-0013",
+    "item_id": "10.2.1",
+    "chapter_id": "a03",
+    "title": "水処理の凝集沈殿・ろ過・吸着",
+    "kind": "flow",
+    "method": "Mermaid",
+    "priority": "P1",
+    "status": "planned",
+    "purpose": "SSに吸着した汚染物の除去",
+    "drawing_spec": "原水→凝集・固液分離→ろ過→必要時吸着→処理水。各操作から汚泥・吸着剤への分岐。選択する処理方式は排水性状に依存する旨を明示。",
+    "required_labels": [
+      "原水",
+      "SS",
+      "凝集",
+      "ろ過",
+      "吸着",
+      "汚泥"
+    ],
+    "qa_checks": "唯一の標準フロー、全量除去と誤解させない。",
+    "source_ids": [
+      "T01",
+      "L03"
+    ],
+    "alt_text": "水処理の凝集沈殿・ろ過・吸着。SSに吸着した汚染物の除去。",
+    "asset_path": null,
+    "source_file": null,
+    "review_status": "specification-only"
+  },
+  {
+    "id": "DX-FIG-0014",
+    "item_id": "11.1.1",
+    "chapter_id": "a04",
+    "title": "水質特定施設19号の用途別分類",
+    "kind": "legal-structure",
+    "method": "Mermaid+SVG",
+    "priority": "P1",
+    "status": "planned",
+    "purpose": "別表第二の用途・工程",
+    "drawing_spec": "施行令別表第二第1〜19号を製造・金属・廃棄物処理・二次施設に整理。全号を漏れなく表示し、18/19号の条件付き性質を注記。",
+    "required_labels": [
+      "第1～19号",
+      "化学製造",
+      "金属",
+      "焼却",
+      "下水道"
+    ],
+    "qa_checks": "施行令の最新別表を照合。分類名だけでは指定条件を満たさないと明記。",
+    "source_ids": [
+      "L02",
+      "L03",
+      "Y01"
+    ],
+    "alt_text": "水質特定施設19号の用途別分類。別表第二の用途・工程。",
+    "asset_path": null,
+    "source_file": null,
+    "review_status": "specification-only"
+  },
+  {
+    "id": "DX-FIG-0015",
+    "item_id": "11.5.3",
+    "chapter_id": "a04",
+    "title": "水質適用事業場と規制対象の判定",
+    "kind": "legal-decision",
+    "method": "draw.io+SVG",
+    "priority": "P1",
+    "status": "planned",
+    "purpose": "一律10と条件付きの区別",
+    "drawing_spec": "政令別表指定施設の該当性→第18/19号の由来・除外→事業場→排出先と排出水→届出/測定/基準判定。分岐にAND/ORを明示。",
+    "required_labels": [
+      "特定施設",
+      "適用事業場",
+      "排出水",
+      "除外条件"
+    ],
+    "qa_checks": "施行日・施設由来・事業場単位を区別し、一律義務と断定しない。",
+    "source_ids": [
+      "L01",
+      "L02",
+      "L03",
+      "L06"
+    ],
+    "alt_text": "水質適用事業場と規制対象の判定。一律10と条件付きの区別。",
+    "asset_path": null,
+    "source_file": null,
+    "review_status": "specification-only"
+  },
+  {
+    "id": "DX-FIG-0016",
+    "item_id": "12.2.1",
+    "chapter_id": "a05",
+    "title": "排ガスの等速吸引・捕集装置",
+    "kind": "apparatus",
+    "method": "draw.io+SVG",
+    "priority": "P1",
+    "status": "planned",
+    "purpose": "等速吸引と代表性",
+    "drawing_spec": "煙道→採取ノズル→粒子捕集→ガス相捕集→流量計。等速吸引方向と捕集の流れを示す。規格の図をそのまま写さない。",
+    "required_labels": [
+      "煙道",
+      "ノズル",
+      "粒子捕集",
+      "ガス相捕集",
+      "流量計"
+    ],
+    "qa_checks": "採取方式・温度・捕集の順序はJIS正本と照合後に確定。",
+    "source_ids": [
+      "T01",
+      "T04",
+      "L03"
+    ],
+    "alt_text": "排ガスの等速吸引・捕集装置。等速吸引と代表性。",
+    "asset_path": null,
+    "source_file": null,
+    "review_status": "specification-only"
+  },
+  {
+    "id": "DX-FIG-0017",
+    "item_id": "12.3.2",
+    "chapter_id": "a05",
+    "title": "抽出・クリーンアップ・濃縮の流れ",
+    "kind": "flow",
+    "method": "Mermaid",
+    "priority": "P1",
+    "status": "planned",
+    "purpose": "シリカ・アルミナ・活性炭等",
+    "drawing_spec": "排ガス・排水・固体からの抽出→クリーンアップ→濃縮→測定液。内標準添加段階を別ラベル。媒体によって詳細は異なる。",
+    "required_labels": [
+      "抽出",
+      "精製",
+      "濃縮",
+      "内標準",
+      "測定液"
+    ],
+    "qa_checks": "全媒体が同一試薬・同一順序とは断定しない。",
+    "source_ids": [
+      "T01",
+      "T04",
+      "T05"
+    ],
+    "alt_text": "抽出・クリーンアップ・濃縮の流れ。シリカ・アルミナ・活性炭等。",
+    "asset_path": null,
+    "source_file": null,
+    "review_status": "specification-only"
+  },
+  {
+    "id": "DX-FIG-0018",
+    "item_id": "12.4.2",
+    "chapter_id": "a05",
+    "title": "HRGC/HRMSでの分離・同定・定量",
+    "kind": "apparatus",
+    "method": "draw.io+SVG",
+    "priority": "P1",
+    "status": "planned",
+    "purpose": "HRMS・同位体比・ロックマス",
+    "drawing_spec": "注入→GCカラム→MSのイオン化/分離→検出/同定→定量。保持時間、m/z、同位体比、ロックマスの役割を分ける。",
+    "required_labels": [
+      "GC",
+      "保持時間",
+      "MS",
+      "m/z",
+      "同位体比"
+    ],
+    "qa_checks": "実在装置の確定構成・性能値を規格照合前に描かない。",
+    "source_ids": [
+      "T01",
+      "T04",
+      "T05"
+    ],
+    "alt_text": "HRGC/HRMSでの分離・同定・定量。HRMS・同位体比・ロックマス。",
+    "asset_path": null,
+    "source_file": null,
+    "review_status": "specification-only"
+  },
+  {
+    "id": "DX-FIG-0019",
+    "item_id": "12.5.1",
+    "chapter_id": "a05",
+    "title": "排ガス濃度・酸素補正・TEQ換算",
+    "kind": "calculation",
+    "method": "LaTeX+SVG",
+    "priority": "P1",
+    "status": "planned",
+    "purpose": "採取量・濃度の数値処理",
+    "drawing_spec": "採取質量/標準体積→濃度→該当場合の酸素補正→TEQ集計。各変数の単位と適用条件を示す。",
+    "required_labels": [
+      "採取量",
+      "体積",
+      "標準状態",
+      "酸素補正",
+      "TEQ"
+    ],
+    "qa_checks": "排水へ酸素補正を適用しない。例外・補正上限を原典確認。",
+    "source_ids": [
+      "L03",
+      "P10",
+      "T04"
+    ],
+    "alt_text": "排ガス濃度・酸素補正・TEQ換算。採取量・濃度の数値処理。",
+    "asset_path": null,
+    "source_file": null,
+    "review_status": "specification-only"
+  }
+]

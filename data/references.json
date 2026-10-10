@@ -16,5 +16,23 @@
     "title": "環境省：ダイオキシン類対策",
     "url": "https://www.env.go.jp/air/dioxin/dioxin.html",
     "kind": "primary"
+  },
+  {
+    "id": "egov-dioxin-law",
+    "title": "e-Gov法令検索：ダイオキシン類対策特別措置法（2026-09-16施行版）",
+    "url": "https://laws.e-gov.go.jp/law/411AC0100000105/20260916_508AC0000000043",
+    "kind": "primary"
+  },
+  {
+    "id": "env-dioxin-standard",
+    "title": "環境省：ダイオキシン類の環境基準（平成11年環境庁告示第68号）",
+    "url": "https://www.env.go.jp/kijun/dioxin.html",
+    "kind": "primary"
+  },
+  {
+    "id": "env-dioxin-tdi",
+    "title": "環境省：ダイオキシン類対策特別措置法の施行に伴う留意事項（TDI等）",
+    "url": "https://www.env.go.jp/hourei/11/000275.html",
+    "kind": "primary"
   }
 ]

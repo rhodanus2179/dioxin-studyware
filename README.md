@@ -4,7 +4,7 @@
 
 公害防止管理者等国家試験の「ダイオキシン類概論」「ダイオキシン類特論」を対象に、意味・因果関係・論点間のつながりを語りかけるように解説する、非公式のオープンStudywareです。
 
-> **開発初期段階**：序章・法規制・発生機構の解説は下書きです。現状の問題はオリジナル6問のみで、全出題範囲をカバーしていません。
+> **開発初期段階**：序章・法規制・発生機構の解説は下書きです。現状の問題はオリジナル9問のみで、全出題範囲をカバーしていません。
 
 ## 学習サイト
 
@@ -17,10 +17,14 @@ Pages設定を有効にするまでは公開ページが表示されません。
 ## 特徴
 
 - **理解重視のテキスト**：定義や数字を羅列せず、なぜ必要な知識なのかを説明。
-- **概論7分野＋特論5分野**：公式の試験科目の範囲に対応する章立て。
+- **概論7分野＋特論5分野**：公式の試験科目の範囲に対応する章立て。正式目次v3は**13章・65節**。
 - **序章**：「ダイオキシン類とは何か」「問題・規制の経緯」から導入。
 - **確認問題**：選択式・解説付きのオリジナル問題。
 - **弱点復習**：直近の誤答を端末内に記録（localStorage）。
+
+## 正式目次v3
+
+[正式目次v3（13章65節）](docs/outline/outline-v3.md)を採択済み。学習サイトの章ページに正式な節構成を表示します。[185項の詳細目次](docs/outline/outline-v4-item-detail.md)・**知識218 ID（追加6件）**・[知識ID統合台帳](docs/research/knowledge-normalization.csv)・[過去問1,000選択肢との暫定対応表](docs/research/choice-knowledge-map-v1.csv)を整備済みです。候補リンク205件は対応関係の個別確認待ちであり、公式試験の科学・法令監査の完了とは別です。旧[63節の目次](docs/outline/outline-v2.md)は履歴資料として保存し、旧形式で書いた本文草稿は次の執筆工程で整合させます。共通科目「公害総論」は本Studywareの対象外です。
 
 ## ローカルでの起動
 
@@ -41,6 +45,8 @@ js/app.js              画面・演習ロジック
 js/storage.js          ブラウザ内の学習履歴
 content/               Markdown形式の解説原稿
 data/chapters.json     公式出題範囲と章の対応
+data/sections.json     正式目次v3（65節）
+data/outline-items.json  185項の編集用詳細目次
 data/questions.json    自作の確認問題と解説
 data/references.json   参照元
 docs/editorial-policy.md  執筆方針
@@ -49,6 +55,14 @@ docs/editorial-policy.md  執筆方針
 ## 公開方法
 
 Repository Settings → Pages → Build and deployment → **Deploy from a branch** → Branch **main** → Folder **/(root)** を選び、Saveしてください。初期Pull Requestがマージされるまではコンテンツがありません。
+
+## 執筆・図版の制作基準
+
+- [法令・公式文書の用語・表現基準](docs/editorial/legal-and-official-source-writing-policy.md)
+- [図版の種類別の制作基準](docs/editorial/figure-production-policy.md)
+- [詳細な図版プレースホルダ19件](docs/editorial/figure-backlog-v1.md)（[機械可読の図版台帳](data/figures.json)）
+
+未制作の図を本文に取り込むための`[[figure:DX-FIG-0001]]`というID参照方式を設計していますが、**現在の表示エンジンは未対応**です。本文に挿入する前に改修・検証します。法令の定義は参照条文と制度上の役割を先に記し、理解用の言い換えはその後に置きます。
 
 ## 注意事項・権利
 

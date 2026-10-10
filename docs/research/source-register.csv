@@ -1,4 +1,4 @@
-"source_id","type","publisher","title","url","edition_or_target_date","review_status","notes"
+source_id,type,publisher,title,url,edition_or_target_date,review_status,notes
 "EX01","exam","産業環境管理協会","試験科目の範囲","https://www.jemai.or.jp/polconman/examination/dd4ht300000005eq-att/pol_subjects1.pdf","current","verified-index","概論7分野・特論5分野の起点。科目名・範囲をそのまま保持。"
 "EX02","exam","産業環境管理協会","国家試験の問題と正解","https://www.jemai.or.jp/polconman/examination/past.html","2021-2025","verified-index","5年度の問題と正解。後工程で選択肢単位コーディング。"
 "L01","law","e-Gov","ダイオキシン類対策特別措置法（法律105号）","https://laws.e-gov.go.jp/law/411AC0100000105","2026-10-09","verified-index","2026年施行分と未施行改正の表示あり。改正後全文・適用時点を章ごとに再確認。"
@@ -173,3 +173,4 @@
 "V29-08","official-manual","環境省","ダイオキシン類に係る大気環境調査マニュアル","https://www.env.go.jp/air/osen/manual/manual.pdf","2008-03, environmental ambient air","pdf-text-section-verified-not-jis","トラベルブランク3.5にリスクがある時は必須・毎回不要の条件、3試料以上。排出ガスJIS K0311の正本ではない"
 "V29-09","official-standards-access","日本産業標準調査会","JISの入手閲覧方法（JISC公式案内）","https://www.jisc.go.jp/jis-act/reading.html","2026-10-10 checked","official-access-route-verified","JIS検索で規格PDFを閲覧可。今回JIS K0311:2020の正式規格PDF本文は閲覧できていない"
 "V29-10","exam-reprint","公害こむ・公表複製PDF","令和4年度ダイオキシン類概論問11 公開複製","https://pierre-usagi.com/wp-content/uploads/2025/01/R04_14.pdf","R04/2022; printed page 9","web-index-text-only-image-unavailable","③四/五塩素化物10^-2～10^-3Pa、七塩素化物10^-4～10^-5Paという設問表記。実画像直接確認未了"
+"ORG02","related-law-ordinance","e-Gov","特定工場における公害防止組織の整備に関する法律施行規則 第6条第7項","https://laws.e-gov.go.jp/law/346M50010D40003/20190401_431M60001F40001","2019-04-01 dated statutory reference; examination applies 2025-04-01","statutory-list-checked-via-official-historical-version-2025-consolidation-to-verify","燃料原材料検査、発生施設の点検、処理施設の操作・点検・補修、排出ガス・排出水の量の測定記録、測定機器点検・補修等。2019適用版の条文は確認。2025-04-01適用版との字句一致は別ゲートとする。"

@@ -56,6 +56,14 @@ docs/editorial-policy.md  執筆方針
 
 Repository Settings → Pages → Build and deployment → **Deploy from a branch** → Branch **main** → Folder **/(root)** を選び、Saveしてください。初期Pull Requestがマージされるまではコンテンツがありません。
 
+## 執筆・図版の制作基準
+
+- [法令・公式文書の用語・表現基準](docs/editorial/legal-and-official-source-writing-policy.md)
+- [図版の種類別の制作基準](docs/editorial/figure-production-policy.md)
+- [詳細な図版プレースホルダ19件](docs/editorial/figure-backlog-v1.md)（[機械可読の図版台帳](data/figures.json)）
+
+未制作の図を本文に取り込むための`[[figure:DX-FIG-0001]]`というID参照方式を設計していますが、**現在の表示エンジンは未対応**です。本文に挿入する前に改修・検証します。法令の定義は参照条文と制度上の役割を先に記し、理解用の言い換えはその後に置きます。
+
 ## 注意事項・権利
 
 本サイトは国家試験実施機関・行政機関と無関係の非公式教材です。公表資料・最新法令と照合して学習してください。学習履歴は端末ごとに保存され、端末間同期はされません。

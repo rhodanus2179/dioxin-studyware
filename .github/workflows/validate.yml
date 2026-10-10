@@ -16,6 +16,7 @@ jobs:
       - run: node tests/validate-knowledge-linkage.mjs
       - run: node tests/validate-semantic-adjudication.mjs
       - run: node tests/validate-precision-source-audit.mjs
+      - run: node tests/validate-quality-pass30.mjs
       - run: node tests/validate-figure-policy.mjs
       - run: node tests/validate-research.mjs
       - run: node tests/validate-facilities.mjs

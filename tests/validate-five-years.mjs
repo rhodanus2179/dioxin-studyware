@@ -18,11 +18,11 @@ assert.equal(new Set(allQ.map(q=>q[0])).size,200);assert.equal(new Set(allC.map(
 assert.equal(draft,825);assert.equal(secondary,0);assert.equal(held,0);
 const additionalDrafts=allC.filter(c=>["reference-figure-rationale-draft","secondary-formula-rationale-draft","secondary-structure-rationale-draft","user-supplied-figure-visual-rationale-draft","drive-exam-page-visual-rationale-draft"].includes(c[5])).length;
 assert.equal(additionalDrafts,125);
-assert.equal(observed.size,96);assert.equal(knowledge.length,226);assert.equal(knowledge.length-observed.size,130);
+assert.equal(observed.size,96);assert.equal(knowledge.length,227);assert.equal(knowledge.length-observed.size,131);
 assert.equal([...observed.values()].filter(v=>v.size===5).length,21);
 const chapters=csv("docs/research/r03-r07-chapter-counts.csv").slice(1);assert.equal(chapters.reduce((t,r)=>t+Number(r[7]),0),200);
 const recurrence=csv("docs/research/r03-r07-knowledge-recurrence.csv").slice(1);assert.equal(recurrence.length,96);for(const r of recurrence)assert.ok(knowledgeIds.has(r[0]));
-const audit=csv("docs/research/knowledge-map-coverage-audit.csv").slice(1);assert.equal(audit.length,226);assert.equal(audit.filter(r=>r[7]==="no-primary-question-link").length,130);
+const audit=csv("docs/research/knowledge-map-coverage-audit.csv").slice(1);assert.equal(audit.length,227);assert.equal(audit.filter(r=>r[7]==="no-primary-question-link").length,131);
 const queue=csv("docs/research/review-queue.csv").slice(1);
 assert.equal(queue.length,175);assert.equal(new Set(queue.map(r=>r[0])).size,175);
 assert.equal(queue.filter(r=>r[7]==="secondary-underline-rationale-draft").length,0);

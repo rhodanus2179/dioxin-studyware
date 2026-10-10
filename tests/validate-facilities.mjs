@@ -25,7 +25,7 @@ assert.equal(facilities.length,24,"5 air + 19 water facilities");
 assert.equal(facilityIds.size,24,"unique facility IDs");
 assert.equal(stds.length,8,"7 air standards + 1 water standard");
 assert.equal(stdIds.size,8,"unique standard IDs");
-assert.equal(knowledge.length,226,"181 initial + 31 facility-stage + 6 outline-stage + 7 precision-stage + 1 manager-duty addition");
+assert.equal(knowledge.length,227,"181 initial + 31 facility-stage + 6 outline-stage + 7 precision-stage + 1 manager-duty addition");
 for(const medium of ["air","water"]){
  const subset=facilities.filter(x=>x[1]===medium);
  const max=medium==="air"?5:19;
@@ -49,4 +49,4 @@ const ids=new Set(knowledge.map(x=>x[0]));
 assert.equal(ids.size,knowledge.length,"unique knowledge IDs");
 const linked=knowledge.filter(x=>x[12]==="checked-facility-inventory");
 assert.equal(linked.length,31,"31 new candidate nodes");
-console.log("PASS: 5 air legal categories + 19 water legal categories; 8 emission standard rows; 226 knowledge nodes");
+console.log("PASS: 5 air legal categories + 19 water legal categories; 8 emission standard rows; 227 knowledge nodes");

@@ -1,4 +1,4 @@
-"choice_id","question_id","choice_number","selected_in_official_key","original_explanation_draft","review_state","candidate_knowledge_ids","verification_flag"
+choice_id,question_id,choice_number,selected_in_official_key,original_explanation_draft,review_state,candidate_knowledge_ids,verification_flag
 "R03-G-Q01-C1","R03-G-Q01","1","no","大気の環境基準は0.6 pg-TEQ/m³。","individual-reason-draft","DX-G01-007 DX-G01-008 DX-G01-009 DX-G01-010","environment-standards-basic"
 "R03-G-Q01-C2","R03-G-Q01","2","no","公共用水域水質の環境基準は1 pg-TEQ/L。","individual-reason-draft","DX-G01-007 DX-G01-008 DX-G01-009 DX-G01-010","environment-standards-basic"
 "R03-G-Q01-C3","R03-G-Q01","3","no","底質の環境基準は150 pg-TEQ/g。","individual-reason-draft","DX-G01-007 DX-G01-008 DX-G01-009 DX-G01-010","environment-standards-basic"
@@ -35,7 +35,7 @@
 "R03-G-Q07-C4","R03-G-Q07","4","no","水質関係での洗浄・湿式集じんと灰貯留設備の件数順位を問う。","individual-reason-draft","DX-G03-011 DX-G03-009 DX-G01-011","needs-historical-facility-data"
 "R03-G-Q07-C5","R03-G-Q07","5","no","水質上位2設備で70%以上という比率の原表を確認する。","individual-reason-draft","DX-G03-011 DX-G03-009 DX-G01-011","needs-historical-facility-data"
 "R03-G-Q08-C1","R03-G-Q08","1","no","焼却施設からの排出合計約56gという個別値は2018年の原表と追加照合。","individual-reason-draft","DX-G03-002 DX-G03-004 DX-G03-005 DX-G03-011","inventory-total-primary-verified-details-pending"
-"R03-G-Q08-C2","R03-G-Q08","2","no","産業系の大気排出寄与約48%も原表確認。","individual-reason-draft","DX-G03-002 DX-G03-004 DX-G03-005 DX-G03-011","inventory-total-primary-verified-details-pending"
+"R03-G-Q08-C2","R03-G-Q08","2","no","2018年の産業系寄与率『約48%』は独立監査未解決。環境省2020年3月公表の原表では産業分野約59 g-TEQ/年、総排出量117～119 g-TEQ/年なので総量比約49.6～50.4%（大気排出のみの分母では約50～51%）。定義・分母や集計差を確認する必要があり、現段階で数値を『検証済み』と断定しない。公式解答④は変更しない。","individual-reason-draft","DX-G03-002 DX-G03-004 DX-G03-005 DX-G03-011","QA35-inventory-numerical-denominator-discrepancy-investigation-open"
 "R03-G-Q08-C3","R03-G-Q08","3","no","産業系最大が製鋼用電気炉との寄与順位を原表確認。","individual-reason-draft","DX-G03-002 DX-G03-004 DX-G03-005 DX-G03-011","inventory-total-primary-verified-details-pending"
 "R03-G-Q08-C4","R03-G-Q08","4","yes","一般廃棄物焼却と電炉の大小が逆のため誤りとされる。","individual-reason-draft","DX-G03-002 DX-G03-004 DX-G03-005 DX-G03-011","inventory-total-primary-verified-details-pending"
 "R03-G-Q08-C5","R03-G-Q08","5","no","2018年の総排出量117～119 g-TEQ/年は環境省公表値。","individual-reason-draft","DX-G03-002 DX-G03-004 DX-G03-005 DX-G03-011","inventory-total-primary-verified-details-pending"

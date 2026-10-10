@@ -25,7 +25,7 @@ knowledge_id,canonical_id,knowledge_title,section_id,mapped_choices,mapped_examp
 "DX-G01-012","DX-G01-012","水質基準対象施設","1.4","0","","no-choice-draft-link-not-irrelevant"
 "DX-G01-013","DX-G01-013","大気排出基準","1.4","5","R03-G-Q04-C1 R03-G-Q04-C2 R03-G-Q04-C3 R03-G-Q04-C4 R03-G-Q04-C5","option-draft-linked"
 "DX-G01-014","DX-G01-014","水質排出基準","1.4","0","","no-choice-draft-link-not-irrelevant"
-"DX-G01-015","DX-G01-015","設置・変更等の届出","1.5","16","R03-G-Q02-C1 R03-G-Q02-C2 R03-G-Q02-C3 R03-G-Q02-C4 R03-G-Q02-C5 R04-G-Q02-C4","option-draft-linked"
+"DX-G01-015","DX-G01-015","設置・変更等の届出","1.5","11","R03-G-Q02-C1 R03-G-Q02-C2 R03-G-Q02-C3 R03-G-Q02-C4 R03-G-Q02-C5 R04-G-Q02-C4 R04-G-Q04-C1 R04-G-Q04-C2","option-draft-linked"
 "DX-G01-016","DX-G01-016","計画変更命令等","1.5","2","R04-G-Q03-C2 R06-G-Q02-C4","option-draft-linked"
 "DX-G01-017","DX-G01-017","事業者測定・報告公表","1.5","18","R03-G-Q03-C1 R03-G-Q03-C2 R03-G-Q03-C3 R03-G-Q03-C4 R03-G-Q03-C5 R04-G-Q03-C1","option-draft-linked"
 "DX-G01-018","DX-G01-018","行政の報告徴収と立入検査","1.5","4","R06-G-Q02-C1 R06-G-Q02-C2 R06-G-Q02-C3 R06-G-Q02-C5","option-draft-linked"
@@ -224,3 +224,4 @@ knowledge_id,canonical_id,knowledge_title,section_id,mapped_choices,mapped_examp
 "DX-G04-017","DX-G04-017","PCBの塩素数別融点・蒸気圧の物性表","4.4","2","R04-G-Q11-C2 R04-G-Q11-C3","option-draft-linked"
 "DX-G04-018","DX-G04-018","臭素系ダイオキシン類の暫定TEF援用と正式係数","4.3","3","R04-A-Q13-C1 R04-A-Q13-C2 R04-A-Q13-C3","option-draft-linked"
 "DX-A01-016","DX-A01-016","触媒分解率・SV・処理流量の算定","8.4","5","R03-A-Q05-C1 R03-A-Q05-C2 R03-A-Q05-C3 R03-A-Q05-C4 R03-A-Q05-C5","option-draft-linked"
+"DX-G01-024","DX-G01-024","公害防止管理者の管理する技術的事項（発生施設の点検と処理施設の補修）","1.5","5","R07-G-Q05-C1 R07-G-Q05-C2 R07-G-Q05-C3 R07-G-Q05-C4 R07-G-Q05-C5","option-draft-linked"

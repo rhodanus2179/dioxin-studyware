@@ -1,4 +1,4 @@
-"knowledge_id","subject","chapter_id","section_id","section_title","knowledge_item","teaching_angle","source_ids","related_chapters","status","past_exam_count","priority","verification"
+knowledge_id,subject,chapter_id,section_id,section_title,knowledge_item,teaching_angle,source_ids,related_chapters,status,past_exam_count,priority,verification
 "DX-I-001","intro","I","0.1","ダイオキシン類という物質群","物質群と単一物質","ダイオキシンと呼ばれる物質群・法的定義・PCDDとPCDFとDL-PCB","S01 S02 P01 L01 S03","G04 G06 G01","candidate","","unrated","to-verify"
 "DX-I-002","intro","I","0.1","ダイオキシン類という物質群","PCDDとPCDFの構造差","ダイオキシンと呼ばれる物質群・法的定義・PCDDとPCDFとDL-PCB","S01 S02 P01 L01 S03","G04 G06 G01","candidate","","unrated","to-verify"
 "DX-I-003","intro","I","0.1","ダイオキシン類という物質群","ダイオキシン様PCB","ダイオキシンと呼ばれる物質群・法的定義・PCDDとPCDFとDL-PCB","S01 S02 P01 L01 S03","G04 G06 G01","candidate","","unrated","to-verify"
@@ -224,3 +224,4 @@
 "DX-G04-017","general","G04","4.4","物理化学的性質","PCBの塩素数別融点・蒸気圧の物性表","IARCの四塩素化PCB融点47～180℃/蒸気圧0.012Pa、五塩素化PCB76.5～124℃/0.0026Pa（蒸気圧25℃）。","V28-07","G02 G06","candidate","","unrated","to-verify"
 "DX-G04-018","general","G04","4.3","TEF・TEQと適用版","臭素系ダイオキシン類の暫定TEF援用と正式係数","WHO・UNEP専門家報告2013年の暫定援用勧告と正式塩素系WHO-TEF・国内法適用版を分ける。","V28-09 V28-10","G01 G02","candidate","","unrated","to-verify"
 "DX-A01-016","advanced","A01","8.4","吸着・触媒による除去・分解","触媒分解率・SV・処理流量の算定","分解率=(Cin-Cout)/Cin。SV=Q/V。4→0.2なら95%、SV1500h-1・触媒2m3で流量3000m3/h。","V28-06 V28-13","A05","candidate","","unrated","to-verify"
+"DX-G01-024","general","G01","1.5","届出・測定義務・行政措置","公害防止管理者の管理する技術的事項（発生施設の点検と処理施設の補修）","組織整備法4条1項7号・同法施行規則6条7項における管理業務と、ダイ特法の施設届出・事業者測定義務を区別。発生施設は点検、処理施設と測定機器は補修が列挙される。発生施設の補修は禁止という意味ではない。","ORG01 ORG02 EX03","G01 A02 A04 A05","candidate","","unrated","to-verify"

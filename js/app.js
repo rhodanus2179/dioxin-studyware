@@ -1,7 +1,7 @@
 import {readProgress,saveAnswer,summary} from "./storage.js";
 const root=document.getElementById("app");
 const nav=document.getElementById("navigation");
-const catalog={chapters:[],questions:[],references:[],sections:[]};
+const catalog={chapters:[],questions:[],references:[],sections:[],outlineItems:[]};
 let quizState=null;
 function escapeHtml(v){return String(v).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
 function inline(v){return escapeHtml(v).replace(/\*\*(.+?)\*\*/g,"<strong>$1</strong>").replace(/`(.+?)`/g,"<code>$1</code>");}
@@ -20,7 +20,15 @@ function mdRender(md){
 }
 function el(tag,attrs={},txt){const e=document.createElement(tag);for(const [k,v] of Object.entries(attrs)){if(k==="className")e.className=v;else e.setAttribute(k,v);}if(txt!==undefined)e.textContent=txt;return e;}
 function chapter(id){return catalog.chapters.find(c=>c.id===id);}
-function outlineHtml(id){const items=catalog.sections.filter(s=>s.chapter_id===id);return '<section class="panel"><h2>採択済み目次v3</h2><p class="muted">正式な節構成です。すべての節の本文が執筆済みという意味ではありません。</p><ul>'+items.map(s=>'<li>'+escapeHtml(s.id+' '+s.title)+'</li>').join('')+'</ul></section>';}
+function outlineHtml(id){
+ const body=catalog.sections.filter(s=>s.chapter_id===id).map(s=>{
+  const entries=catalog.outlineItems.filter(x=>x.section_id===s.id);
+  return '<li><details><summary>'+escapeHtml(s.id+' '+s.title)+'</summary><ul>'+
+    entries.map(x=>'<li><strong>'+escapeHtml(x.id+' '+x.title)+'</strong> — '+escapeHtml(x.learning_focus)+'</li>').join('')+
+    '</ul></details></li>';
+ }).join('');
+ return '<section class="panel"><h2>正式65節と項レベルの編集案</h2><p class="muted">節構成は採択済み、項構成は執筆用の編集案です。各項の本文・根拠監査はまだ完成していません。</p><ul>'+body+'</ul></section>';
+}
 function hpath(){return decodeURIComponent(location.hash.slice(1)||"/");}
 function renderNav(){
   nav.replaceChildren();
@@ -136,9 +144,9 @@ function renderReferences(){
 function renderNotFound(){root.innerHTML='<section class="panel"><h1>ページが見つかりません</h1><a href="#/" class="btn secondary">トップに戻る</a></section>';}
 async function load(){
   try{
-    const files=["./data/chapters.json","./data/questions.json","./data/references.json","./data/sections.json"];
+    const files=["./data/chapters.json","./data/questions.json","./data/references.json","./data/sections.json","./data/outline-items.json"];
     const results=await Promise.all(files.map(async url=>{const r=await fetch(url);if(!r.ok)throw Error(url+" "+r.status);return r.json();}));
-    [catalog.chapters,catalog.questions,catalog.references,catalog.sections]=results;
+    [catalog.chapters,catalog.questions,catalog.references,catalog.sections,catalog.outlineItems]=results;
     window.addEventListener("hashchange",route);
     route();
   }catch(e){root.innerHTML='<section class="panel"><h1>データの読み込みに失敗しました</h1><p>GitHub PagesまたはローカルHTTPサーバーで開いてください。</p><pre>'+escapeHtml(e.message)+'</pre></section>';}

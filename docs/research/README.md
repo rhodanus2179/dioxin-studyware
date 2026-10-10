@@ -59,3 +59,10 @@ R04の200件全てに個別の理由草稿があり、うち30件は原題下線
 ## 最新進捗（2026-10-09）：R05の50件起草
 
 全5年度で950草稿、未起草50件（R06）。画像・主張の確認待ちは175件のまま。集計の正本は[r03-r07-review-status.md](r03-r07-review-status.md)。
+
+## 65節・185項と選択肢との対応（第20～24パス）
+
+- [項レベルの詳細目次](../outline/outline-v4-item-detail.md)・[項データ](../../data/outline-items.json)
+- [既存212知識IDの代表・別名統合](knowledge-normalization.csv)（代表204件）・[意味的な役割が異なる20組](knowledge-crossrefs.csv)
+- [過去問1,000選択肢の候補リンク](choice-knowledge-map-v1.csv)・[205件の要確認候補](choice-knowledge-review-queue.csv)・[知識別候補件数](knowledge-choice-coverage.csv)
+- 選択肢単位の紐付けは個別解説草稿に基づく**暫定的な編集用リンク**。未確認の科学・法令根拠・公式原本照合や掲載前HOLD175件を解除するものではない。

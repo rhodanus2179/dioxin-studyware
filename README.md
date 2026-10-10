@@ -24,7 +24,7 @@ Pages設定を有効にするまでは公開ページが表示されません。
 
 ## 正式目次v3
 
-[正式目次v3（13章65節）](docs/outline/outline-v3.md)を採択済み。学習サイトの章ページに正式な節構成を表示します。旧[63節の目次](docs/outline/outline-v2.md)は履歴資料として保存し、旧形式で書いた本文草稿は次の執筆工程で整合させます。共通科目「公害総論」は本Studywareの対象外です。
+[正式目次v3（13章65節）](docs/outline/outline-v3.md)を採択済み。学習サイトの章ページに正式な節構成を表示します。[185項の詳細目次](docs/outline/outline-v4-item-detail.md)・[知識ID統合台帳](docs/research/knowledge-normalization.csv)・[過去問1,000選択肢との暫定対応表](docs/research/choice-knowledge-map-v1.csv)を整備済みです。候補リンク205件は対応関係の個別確認待ちであり、公式試験の科学・法令監査の完了とは別です。旧[63節の目次](docs/outline/outline-v2.md)は履歴資料として保存し、旧形式で書いた本文草稿は次の執筆工程で整合させます。共通科目「公害総論」は本Studywareの対象外です。
 
 ## ローカルでの起動
 
@@ -46,6 +46,7 @@ js/storage.js          ブラウザ内の学習履歴
 content/               Markdown形式の解説原稿
 data/chapters.json     公式出題範囲と章の対応
 data/sections.json     正式目次v3（65節）
+data/outline-items.json  185項の編集用詳細目次
 data/questions.json    自作の確認問題と解説
 data/references.json   参照元
 docs/editorial-policy.md  執筆方針

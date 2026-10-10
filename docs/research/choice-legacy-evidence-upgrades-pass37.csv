@@ -1,0 +1,3 @@
+"choice_id","old_scope","new_scope","verified_fact","source_ids","remaining"
+"R03-G-Q07-C4","historical-water-facility-group-supported-detailed-order-pending","primary-2001-water-facility-ranking-directly-verified","2001年度末：廃ガス洗浄・湿式集じん2,730施設（64.2%） > 灰貯留905施設（21.3%）。順序も人数も環境省の4ページ公表原文で確認。","QA37-H13-FAC-SUM QA35-FAC-WP QA34-R03-REPRINT","2001年度水質施設値は独立原報告で照合完了。JEMAI公式配布の2021年原題PDFとの同一性・出版編集の最終確認のみ残る。"
+"R03-G-Q07-C5","historical-2001-water-top-groups-85.5pct-supported","primary-2001-water-facility-85pct-directly-verified","2001年度末：上位2類型合計(2,730+905)=3,635施設、4,253施設に対し85.47%で70%を上回る。","QA37-H13-FAC-SUM QA35-FAC-WP QA34-R03-REPRINT","2001年度水質施設値は独立原報告で照合完了。JEMAI公式配布の2021年原題PDFとの同一性・出版編集の最終確認のみ残る。"

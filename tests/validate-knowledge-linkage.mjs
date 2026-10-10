@@ -15,7 +15,7 @@ assert.equal(sections.length,65);assert.equal(items.length,185);
 const secMap=new Map(sections.map(s=>[s.id,s]));
 assert.equal(secMap.size,65);
 const km=csv("docs/research/knowledge-map.csv").slice(1), kmById=new Map(km.map(r=>[r[0],r]));
-assert.equal(kmById.size,218);
+assert.equal(kmById.size,227);
 const itemByK=new Map(),itemIDs=new Set(),secItemCount=new Map();
 for(const item of items){
  assert.ok(secMap.has(item.section_id),item.id);
@@ -33,13 +33,13 @@ for(const item of items){
 }
 assert.equal(secItemCount.size,65);
 for(const n of secItemCount.values())assert.ok(n>=2&&n<=4);
-assert.equal(itemByK.size,218);
+assert.equal(itemByK.size,227);
 assert.equal(items.filter(i=>i.knowledge_ids.length===0).length,0);
 const norm=csv("docs/research/knowledge-normalization.csv").slice(1),
  related=csv("docs/research/knowledge-crossrefs.csv").slice(1);
-assert.equal(norm.length,218);assert.equal(related.length,26);
+assert.equal(norm.length,227);assert.equal(related.length,33);
 const canonical=new Map(norm.map(r=>[r[0],r[1]]));
-assert.equal(canonical.size,218);
+assert.equal(canonical.size,227);
 assert.equal(norm.filter(r=>r[0]!==r[1]).length,8);
 for(const [id,to] of canonical){assert.ok(kmById.has(to),id);assert.equal(canonical.get(to),to);}
 for(const r of related)assert.ok(kmById.has(r[0])&&kmById.has(r[1]));
@@ -67,18 +67,18 @@ for(const r of links){
 assert.equal(holdNum,175);
 const review=csv("docs/research/choice-knowledge-review-queue.csv").slice(1),
  coverage=csv("docs/research/knowledge-choice-coverage.csv").slice(1);
-assert.equal(reviewNum,23);assert.equal(review.length,23);
-assert.equal(new Set(review.map(r=>r[0])).size,23);
+assert.equal(reviewNum,0);assert.equal(review.length,0);
+assert.equal(new Set(review.map(r=>r[0])).size,0);
 for(const r of review)assert.ok(linkMap.get(r[0])[8].includes("review-required"));
-assert.equal(coverage.length,218);
+assert.equal(coverage.length,227);
 for(const r of coverage)assert.equal(r[4],String(countByCanon.get(r[1])||0),r[0]);
-assert.equal(links.length-reviewNum,977);
-assert.equal(links.filter(r=>r[8]==="semantic-reviewed-provisional").length,182);
-assert.equal(links.filter(r=>r[8]==="precision-gap-review-required").length,23);
+assert.equal(links.length-reviewNum,1000);
+assert.equal(links.filter(r=>r[8]==="semantic-reviewed-provisional").length,207);
+assert.equal(links.filter(r=>r[8]==="precision-gap-review-required").length,0);
 for(const id of ["DX-G05-015","DX-A01-015","DX-A02-022","DX-A04-035","DX-A04-036","DX-A04-037"]){
  const k=kmById.get(id);assert.ok(k&&k[9]==="candidate"&&k[12]==="to-verify",id);
  assert.ok(itemByK.has(id),id);
  assert.ok(coverage.some(x=>x[0]===id&&x[4]===String(countByCanon.get(id)||0)),id);
 }
 
-console.log("PASS: 65 sections, 185 items, 218 knowledge IDs, 210 canonical concepts, 1000 draft-option links, 23 precision-gap QA, 175 original HOLD");
+console.log("PASS: 65 sections, 185 items, 227 knowledge IDs, 219 canonical concepts, 1000 draft-option links, 207 provisionally semantic-reviewed links, 0 outstanding semantic-precision QA, 175 original HOLD");

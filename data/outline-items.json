@@ -1308,11 +1308,12 @@
     "id": "8.3.3",
     "section_id": "8.3",
     "chapter_id": "a01",
-    "title": "湿式スクラバーと捕集機構",
-    "learning_focus": "慣性・拡散等の作用",
+    "title": "集じん方式の部分捕集効率と湿式スクラバー",
+    "learning_focus": "バグフィルター・電気・サイクロン・慣性・重力・湿式の粒径依存性を比較する",
     "status": "editorial-outline",
     "knowledge_ids": [
-      "DX-A01-009"
+      "DX-A01-009",
+      "DX-A01-017"
     ]
   },
   {

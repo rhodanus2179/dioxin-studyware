@@ -1,4 +1,4 @@
-knowledge_id,canonical_id,knowledge_title,section_id,mapped_choices,mapped_example_choice_ids,coverage_class
+"knowledge_id","canonical_id","knowledge_title","section_id","mapped_choices","mapped_example_choice_ids","coverage_class"
 "DX-I-001","DX-I-001","物質群と単一物質","0.1","0","","no-choice-draft-link-not-irrelevant"
 "DX-I-002","DX-I-002","PCDDとPCDFの構造差","0.1","0","","no-choice-draft-link-not-irrelevant"
 "DX-I-003","DX-I-003","ダイオキシン様PCB","0.1","0","","no-choice-draft-link-not-irrelevant"
@@ -114,7 +114,7 @@ knowledge_id,canonical_id,knowledge_title,section_id,mapped_choices,mapped_examp
 "DX-A01-003","DX-A01-003","COと燃焼管理の関係","8.1","0","","no-choice-draft-link-not-irrelevant"
 "DX-A01-004","DX-A01-004","排ガス急冷","8.2","1","R06-A-Q03-C3","option-draft-linked"
 "DX-A01-005","DX-A01-005","集じん温度とde novo反応","8.2","4","R04-A-Q12-C3 R05-A-Q01-C4 R05-A-Q01-C5 R07-A-Q04-C1","option-draft-linked"
-"DX-A01-006","DX-A01-006","バグフィルターと粒子除去","8.3","63","R03-A-Q01-C1 R03-A-Q01-C2 R03-A-Q01-C3 R03-A-Q01-C4 R03-A-Q01-C5 R03-A-Q02-C1 R03-A-Q02-C2 R03-A-Q02-C3","option-draft-linked"
+"DX-A01-006","DX-A01-006","バグフィルターと粒子除去","8.3","58","R03-A-Q01-C1 R03-A-Q01-C2 R03-A-Q01-C3 R03-A-Q01-C4 R03-A-Q01-C5 R03-A-Q02-C1 R03-A-Q02-C2 R03-A-Q02-C3","option-draft-linked"
 "DX-A01-007","DX-A01-007","活性炭吸着","8.4","39","R03-A-Q06-C1 R03-A-Q06-C2 R03-A-Q06-C3 R03-A-Q06-C4 R03-A-Q06-C5 R03-A-Q07-C1","option-draft-linked"
 "DX-A01-008","DX-A01-008","触媒分解","8.4","23","R03-A-Q03-C1 R03-A-Q03-C2 R03-A-Q03-C3 R03-A-Q03-C4 R03-A-Q03-C5 R04-A-Q05-C1","option-draft-linked"
 "DX-A01-009","DX-A01-009","湿式洗浄の特性","8.3","10","R05-A-Q06-C1 R05-A-Q06-C2 R05-A-Q06-C3 R05-A-Q06-C4 R05-A-Q06-C5 R06-A-Q07-C1","option-draft-linked"
@@ -225,3 +225,4 @@ knowledge_id,canonical_id,knowledge_title,section_id,mapped_choices,mapped_examp
 "DX-G04-018","DX-G04-018","臭素系ダイオキシン類の暫定TEF援用と正式係数","4.3","3","R04-A-Q13-C1 R04-A-Q13-C2 R04-A-Q13-C3","option-draft-linked"
 "DX-A01-016","DX-A01-016","触媒分解率・SV・処理流量の算定","8.4","5","R03-A-Q05-C1 R03-A-Q05-C2 R03-A-Q05-C3 R03-A-Q05-C4 R03-A-Q05-C5","option-draft-linked"
 "DX-G01-024","DX-G01-024","公害防止管理者の管理する技術的事項（発生施設の点検と処理施設の補修）","1.5","5","R07-G-Q05-C1 R07-G-Q05-C2 R07-G-Q05-C3 R07-G-Q05-C4 R07-G-Q05-C5","option-draft-linked"
+"DX-A01-017","DX-A01-017","集じん方式別の部分捕集効率曲線（電気・遠心・慣性・重力・ろ過）","8.3","5","R06-A-Q04-C1 R06-A-Q04-C2 R06-A-Q04-C3 R06-A-Q04-C4 R06-A-Q04-C5","option-draft-linked"

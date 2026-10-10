@@ -1,4 +1,4 @@
-knowledge_id,chapter,section,knowledge_title,candidate_mentions_in_5_years,years_with_candidate,example_question_ids,editorial_status,warning
+"knowledge_id","chapter","section","knowledge_title","candidate_mentions_in_5_years","years_with_candidate","example_question_ids","editorial_status","warning"
 "DX-I-001","I","0.1","物質群と単一物質","0","0","","no-primary-question-link","Not a verified choice-level coverage measurement; zero is not proof of irrelevance"
 "DX-I-002","I","0.1","PCDDとPCDFの構造差","0","0","","no-primary-question-link","Not a verified choice-level coverage measurement; zero is not proof of irrelevance"
 "DX-I-003","I","0.1","ダイオキシン様PCB","0","0","","no-primary-question-link","Not a verified choice-level coverage measurement; zero is not proof of irrelevance"
@@ -225,3 +225,4 @@ knowledge_id,chapter,section,knowledge_title,candidate_mentions_in_5_years,years
 "DX-G04-018","G04","4.3","臭素系ダイオキシン類の暫定TEF援用と正式係数","0","0","","no-primary-question-link","new pass28 item; question-level aggregation not recoded"
 "DX-A01-016","A01","8.4","触媒分解率・SV・処理流量の算定","0","0","","no-primary-question-link","new pass28 item; question-level aggregation not recoded"
 "DX-G01-024","G01","1.5","公害防止管理者の管理する技術的事項（発生施設の点検と処理施設の補修）","0","0","","no-primary-question-link","Pass32 newly introduced knowledge: question-level legacy index not recoded. Choice-level mapping has 5 links; do not confuse with question-level count."
+"DX-A01-017","A01","8.3","集じん方式別の部分捕集効率曲線（電気・遠心・慣性・重力・ろ過）","0","0","","no-primary-question-link","New choice-level knowledge link 5 options in R06-A-Q04; legacy question-level aggregation not recoded"

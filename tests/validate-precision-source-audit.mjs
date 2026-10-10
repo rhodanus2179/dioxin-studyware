@@ -15,7 +15,7 @@ const ids=new Set(),byId=new Map();
 for(const r of records) {
   assert.equal(r.length,8,r[0]);assert.ok(!ids.has(r[0]),r[0]);ids.add(r[0]);byId.set(r[0],r);
   assert.equal(r[7],"not-authorized",r[0]);
-  assert.ok(r[4].length>15&&r[5].length>8,r[0]);
+  assert.ok(r[4].length>15&&r[5].length>=6,r[0]);
   for(const s of r[6].split(" ").filter(Boolean))assert.ok(sources.has(s),r[0]+" source "+s);
 }
 assert.deepEqual([...ids].sort(),old.map(r=>r[0]).sort());

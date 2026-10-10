@@ -49,7 +49,7 @@ const qa=csv("docs/research/review-queue.csv").slice(1);
 const hold=new Set(qa.map(r=>r[0]));assert.equal(hold.size,175);
 const links=csv("docs/research/choice-knowledge-map-v1.csv").slice(1);
 const linkMap=new Map(links.map(r=>[r[0],r]));assert.equal(links.length,1000);assert.equal(linkMap.size,1000);
-const statuses=new Set(["rationale-based-provisional","topic-link-provisional","single-source-tag-provisional","cross-topic-secondary-review-required","ambiguous-topic-review-required","cross-chapter-review-required"]);
+const statuses=new Set(["rationale-based-provisional","topic-link-provisional","single-source-tag-provisional","semantic-reviewed-provisional","precision-gap-review-required"]);
 let reviewNum=0,holdNum=0;const countByCanon=new Map();
 for(const r of links){
  assert.equal(r.length,14,r[0]);
@@ -67,16 +67,18 @@ for(const r of links){
 assert.equal(holdNum,175);
 const review=csv("docs/research/choice-knowledge-review-queue.csv").slice(1),
  coverage=csv("docs/research/knowledge-choice-coverage.csv").slice(1);
-assert.equal(reviewNum,205);assert.equal(review.length,205);
+assert.equal(reviewNum,23);assert.equal(review.length,23);
 assert.equal(new Set(review.map(r=>r[0])).size,205);
 for(const r of review)assert.ok(linkMap.get(r[0])[8].includes("review-required"));
 assert.equal(coverage.length,218);
 for(const r of coverage)assert.equal(r[4],String(countByCanon.get(r[1])||0),r[0]);
-assert.equal(links.length-reviewNum,795);
+assert.equal(links.length-reviewNum,977);
+assert.equal(links.filter(r=>r[8]==="semantic-reviewed-provisional").length,182);
+assert.equal(links.filter(r=>r[8]==="precision-gap-review-required").length,23);
 for(const id of ["DX-G05-015","DX-A01-015","DX-A02-022","DX-A04-035","DX-A04-036","DX-A04-037"]){
  const k=kmById.get(id);assert.ok(k&&k[9]==="candidate"&&k[12]==="to-verify",id);
  assert.ok(itemByK.has(id),id);
  assert.ok(coverage.some(x=>x[0]===id&&x[4]==="0"),id);
 }
 
-console.log("PASS: 65 sections, 185 items, 218 knowledge IDs, 210 canonical concepts, 1000 draft-option links, 205 semantic QA, 175 original HOLD");
+console.log("PASS: 65 sections, 185 items, 218 knowledge IDs, 210 canonical concepts, 1000 draft-option links, 23 precision-gap QA, 175 original HOLD");

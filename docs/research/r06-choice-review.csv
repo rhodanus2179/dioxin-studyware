@@ -23,7 +23,7 @@
 "R06-G-Q05-C2","R06-G-Q05","2","no","カプロラクタムの硫酸濃縮施設が対象かを問う。","individual-reason-draft","DX-A04-013 DX-A04-014 DX-A04-017 DX-A02-018","needs-decree-check"
 "R06-G-Q05-C3","R06-G-Q05","3","no","硫酸カリウム製造の廃ガス洗浄施設を問う。","individual-reason-draft","DX-A04-013 DX-A04-014 DX-A04-017 DX-A02-018","needs-decree-check"
 "R06-G-Q05-C4","R06-G-Q05","4","no","VCM製造の二塩化エチレン洗浄施設を問う。","individual-reason-draft","DX-A04-013 DX-A04-014 DX-A04-017 DX-A02-018","needs-decree-check"
-"R06-G-Q05-C5","R06-G-Q05","5","yes","公害防止組織整備法施行令第5条の3が直接指定するダイオキシン類発生施設には、ダイ特法の大気別表第一第5号（廃棄物焼却炉）は含まれない。単なる焼却炉の規模下限の違いという説明は不十分。","individual-reason-draft","DX-A04-013 DX-A04-014 DX-A04-017 DX-A02-018 DX-G01-022","needs-decree-check"
+"R06-G-Q05-C5","R06-G-Q05","5","yes","令和6年9月時点の組織法施行令5条の3は大気1～4号、水質1～14号を引用。公開複製PDF印刷6頁の⑤は廃棄物焼却炉・火床面積0.5m²で、ダイ特法大気5号に当たるが組織法の指定対象ではない。単なる規模要件差との解説を訂正。","individual-reason-draft","DX-A04-013 DX-A04-014 DX-A04-017 DX-A02-018 DX-G01-022","needs-decree-check;V29-02;V29-03;reprint-page-image-inspected;official-JEMAI-identity-unverified"
 "R06-G-Q06-C1","R06-G-Q06","1","no","セベソが油症より先とするため誤り。","individual-reason-draft","DX-G02-001 DX-G02-002","needs-historical-source"
 "R06-G-Q06-C2","R06-G-Q06","2","no","セベソが先で油症が最後となり時系列に合わない。","individual-reason-draft","DX-G02-001 DX-G02-002","needs-historical-source"
 "R06-G-Q06-C3","R06-G-Q06","3","yes","油症→セベソ→国内飛灰検出→スウェーデンの時系列に合う。","individual-reason-draft","DX-G02-001 DX-G02-002","needs-historical-source"

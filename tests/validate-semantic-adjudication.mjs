@@ -53,7 +53,7 @@ for(const r of semantic){
 assert.equal(exact,182);assert.equal(open,23);
 for(const r of precision)assert.equal(byS.get(r[0])?.[7],"precision-gap-review-required",r[0]);
 for(const r of proof)assert.equal(precisionBy.get(r[0])?.[3],r[2],r[0]);
-assert.equal(links.filter(x=>x[8]==="semantic-reviewed-provisional").length,205);
+assert.equal(links.filter(x=>x[8]==="semantic-reviewed-provisional").length,207);
 for(const r of source)assert.ok(byS.has(r[0]),r[0]);
 assert.equal(new Set(source.map(r=>r[0])).size,205);
-console.log("PASS: 12 chapter decisions, 60 affected choices, 205 meaning audits (23 pass27 gaps resolved by pass28), 205 original source checks and original HOLD175 preserved");
+console.log("PASS: 12 chapter decisions, 60 affected choices, 205 meaning audits (23 pass27 gaps resolved by pass28), 205 pass27 review records, 2 new pass38 semantic classifications, and HOLD175 preserved");

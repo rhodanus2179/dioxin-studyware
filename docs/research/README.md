@@ -66,3 +66,7 @@ R04の200件全てに個別の理由草稿があり、うち30件は原題下線
 - [既存212知識IDの代表・別名統合](knowledge-normalization.csv)（代表204件）・[意味的な役割が異なる20組](knowledge-crossrefs.csv)
 - [過去問1,000選択肢の候補リンク](choice-knowledge-map-v1.csv)・[205件の要確認候補](choice-knowledge-review-queue.csv)・[知識別候補件数](knowledge-choice-coverage.csv)
 - 選択肢単位の紐付けは個別解説草稿に基づく**暫定的な編集用リンク**。未確認の科学・法令根拠・公式原本照合や掲載前HOLD175件を解除するものではない。
+
+## 第25パス：未対応6項の知識ID採択（2026-10-10）
+
+185項中、以前は知識IDに対応していなかった6項に新しいIDを付与。**218知識ID・210代表概念**となった。既存212 IDは維持し、6件は`candidate/to-verify`、選択肢への直接候補リンクは現時点で0。原題・科学的根拠を検証済みとは扱わない。205件の選択肢対応レビューと公開前HOLD175件は別々の品質ゲートのまま。詳細：[第25パス方針](../outline/outline-v4-next-steps-pass25.md)。

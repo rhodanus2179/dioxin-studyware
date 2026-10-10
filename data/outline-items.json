@@ -831,7 +831,9 @@
     "title": "前駆体とde novoの境界",
     "learning_focus": "複数反応の併存と異性体組成",
     "status": "editorial-outline",
-    "knowledge_ids": []
+    "knowledge_ids": [
+      "DX-G05-015"
+    ]
   },
   {
     "id": "5.3.1",
@@ -1291,7 +1293,9 @@
     "title": "電気集じんと粒子の比抵抗",
     "learning_focus": "放電・集じん・逆電離",
     "status": "editorial-outline",
-    "knowledge_ids": []
+    "knowledge_ids": [
+      "DX-A01-015"
+    ]
   },
   {
     "id": "8.3.3",
@@ -1399,7 +1403,9 @@
     "title": "施設別の技術を学ぶための分類",
     "learning_focus": "鉄鋼・非鉄・焼却の違い",
     "status": "editorial-outline",
-    "knowledge_ids": []
+    "knowledge_ids": [
+      "DX-A02-022"
+    ]
   },
   {
     "id": "9.2.1",
@@ -1650,7 +1656,9 @@
     "title": "水質特定施設19号の全体像",
     "learning_focus": "別表第二の用途・工程",
     "status": "editorial-outline",
-    "knowledge_ids": []
+    "knowledge_ids": [
+      "DX-A04-035"
+    ]
   },
   {
     "id": "11.1.2",
@@ -1659,7 +1667,9 @@
     "title": "施設と事業場排出水の違い",
     "learning_focus": "対象判定の前提",
     "status": "editorial-outline",
-    "knowledge_ids": []
+    "knowledge_ids": [
+      "DX-A04-036"
+    ]
   },
   {
     "id": "11.2.1",
@@ -1822,7 +1832,9 @@
     "title": "届出・測定・例外の整理",
     "learning_focus": "一律10と条件付きの区別",
     "status": "editorial-outline",
-    "knowledge_ids": []
+    "knowledge_ids": [
+      "DX-A04-037"
+    ]
   },
   {
     "id": "12.1.1",

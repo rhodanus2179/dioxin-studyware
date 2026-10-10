@@ -15,7 +15,7 @@ assert.equal(sections.length,65);assert.equal(items.length,185);
 const secMap=new Map(sections.map(s=>[s.id,s]));
 assert.equal(secMap.size,65);
 const km=csv("docs/research/knowledge-map.csv").slice(1), kmById=new Map(km.map(r=>[r[0],r]));
-assert.equal(kmById.size,212);
+assert.equal(kmById.size,218);
 const itemByK=new Map(),itemIDs=new Set(),secItemCount=new Map();
 for(const item of items){
  assert.ok(secMap.has(item.section_id),item.id);
@@ -33,13 +33,13 @@ for(const item of items){
 }
 assert.equal(secItemCount.size,65);
 for(const n of secItemCount.values())assert.ok(n>=2&&n<=4);
-assert.equal(itemByK.size,212);
-assert.equal(items.filter(i=>i.knowledge_ids.length===0).length,6);
+assert.equal(itemByK.size,218);
+assert.equal(items.filter(i=>i.knowledge_ids.length===0).length,0);
 const norm=csv("docs/research/knowledge-normalization.csv").slice(1),
  related=csv("docs/research/knowledge-crossrefs.csv").slice(1);
-assert.equal(norm.length,212);assert.equal(related.length,20);
+assert.equal(norm.length,218);assert.equal(related.length,26);
 const canonical=new Map(norm.map(r=>[r[0],r[1]]));
-assert.equal(canonical.size,212);
+assert.equal(canonical.size,218);
 assert.equal(norm.filter(r=>r[0]!==r[1]).length,8);
 for(const [id,to] of canonical){assert.ok(kmById.has(to),id);assert.equal(canonical.get(to),to);}
 for(const r of related)assert.ok(kmById.has(r[0])&&kmById.has(r[1]));
@@ -70,7 +70,13 @@ const review=csv("docs/research/choice-knowledge-review-queue.csv").slice(1),
 assert.equal(reviewNum,205);assert.equal(review.length,205);
 assert.equal(new Set(review.map(r=>r[0])).size,205);
 for(const r of review)assert.ok(linkMap.get(r[0])[8].includes("review-required"));
-assert.equal(coverage.length,212);
+assert.equal(coverage.length,218);
 for(const r of coverage)assert.equal(r[4],String(countByCanon.get(r[1])||0),r[0]);
 assert.equal(links.length-reviewNum,795);
-console.log("PASS: 65 sections, 185 items, 212 knowledge IDs, 204 canonical concepts, 1000 draft-option links, 205 semantic QA, 175 original HOLD");
+for(const id of ["DX-G05-015","DX-A01-015","DX-A02-022","DX-A04-035","DX-A04-036","DX-A04-037"]){
+ const k=kmById.get(id);assert.ok(k&&k[9]==="candidate"&&k[12]==="to-verify",id);
+ assert.ok(itemByK.has(id),id);
+ assert.ok(coverage.some(x=>x[0]===id&&x[4]==="0"),id);
+}
+
+console.log("PASS: 65 sections, 185 items, 218 knowledge IDs, 210 canonical concepts, 1000 draft-option links, 205 semantic QA, 175 original HOLD");

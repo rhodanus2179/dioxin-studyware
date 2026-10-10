@@ -22,6 +22,7 @@ assert.ok(changedIDs.has(id));assert.equal(map.get(id).primary_knowledge_id,"DX-
 for(let i=1;i<=3;i++)assert.equal(map.get("R05-G-Q09-C"+i).primary_knowledge_id,"DX-G04-010");
 assert.equal(map.get("R03-G-Q13-C1").primary_knowledge_id,"DX-G04-016");
 for(let i=1;i<=5;i++){
-assert.equal(ledger.get("R07-G-Q05-C"+i).review_priority,"P0-question-topic-vs-notification-mismatch");
+assert.equal(ledger.get("R07-G-Q05-C"+i).review_priority,"resolved-manager-duties-category-pass32");
+assert.equal(map.get("R07-G-Q05-C"+i).primary_knowledge_id,"DX-G01-024");
 assert.equal(ledger.get("R06-A-Q04-C"+i).review_priority,"P1-multiple-collector-types-vs-bag-filter");}
-console.log("PASS: 14 pass31 semantic corrections, 10 unresolved flagged, 795 choice ledger consistent");
+console.log("PASS: 14 pass31 semantic corrections, 5 remaining collector-comparison flags, 795 choice ledger consistent");

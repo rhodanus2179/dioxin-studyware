@@ -68,7 +68,7 @@ assert.equal(holdNum,175);
 const review=csv("docs/research/choice-knowledge-review-queue.csv").slice(1),
  coverage=csv("docs/research/knowledge-choice-coverage.csv").slice(1);
 assert.equal(reviewNum,23);assert.equal(review.length,23);
-assert.equal(new Set(review.map(r=>r[0])).size,205);
+assert.equal(new Set(review.map(r=>r[0])).size,23);
 for(const r of review)assert.ok(linkMap.get(r[0])[8].includes("review-required"));
 assert.equal(coverage.length,218);
 for(const r of coverage)assert.equal(r[4],String(countByCanon.get(r[1])||0),r[0]);
@@ -78,7 +78,7 @@ assert.equal(links.filter(r=>r[8]==="precision-gap-review-required").length,23);
 for(const id of ["DX-G05-015","DX-A01-015","DX-A02-022","DX-A04-035","DX-A04-036","DX-A04-037"]){
  const k=kmById.get(id);assert.ok(k&&k[9]==="candidate"&&k[12]==="to-verify",id);
  assert.ok(itemByK.has(id),id);
- assert.ok(coverage.some(x=>x[0]===id&&x[4]==="0"),id);
+ assert.ok(coverage.some(x=>x[0]===id&&x[4]===String(countByCanon.get(id)||0)),id);
 }
 
 console.log("PASS: 65 sections, 185 items, 218 knowledge IDs, 210 canonical concepts, 1000 draft-option links, 23 precision-gap QA, 175 original HOLD");

@@ -18,7 +18,7 @@ assert.equal(new Set(allQ.map(q=>q[0])).size,200);assert.equal(new Set(allC.map(
 assert.equal(draft,825);assert.equal(secondary,0);assert.equal(held,0);
 const additionalDrafts=allC.filter(c=>["reference-figure-rationale-draft","secondary-formula-rationale-draft","secondary-structure-rationale-draft","user-supplied-figure-visual-rationale-draft","drive-exam-page-visual-rationale-draft"].includes(c[5])).length;
 assert.equal(additionalDrafts,125);
-assert.equal(observed.size,96);assert.equal(knowledge.length,225);assert.equal(knowledge.length-observed.size,122);
+assert.equal(observed.size,96);assert.equal(knowledge.length,225);assert.equal(knowledge.length-observed.size,129);
 assert.equal([...observed.values()].filter(v=>v.size===5).length,21);
 const chapters=csv("docs/research/r03-r07-chapter-counts.csv").slice(1);assert.equal(chapters.reduce((t,r)=>t+Number(r[7]),0),200);
 const recurrence=csv("docs/research/r03-r07-knowledge-recurrence.csv").slice(1);assert.equal(recurrence.length,96);for(const r of recurrence)assert.ok(knowledgeIds.has(r[0]));

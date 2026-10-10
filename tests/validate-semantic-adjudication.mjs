@@ -14,7 +14,9 @@ const questions=csv("docs/research/past-exam-question-index.csv").slice(1),
  semantic=csv("docs/research/choice-semantic-audit-pass27.csv").slice(1),
  source=csv("docs/research/choice-semantic-source-followup-pass27.csv").slice(1),
  followups=csv("docs/research/choice-knowledge-review-queue.csv").slice(1),
- hold=csv("docs/research/review-queue.csv").slice(1);
+ hold=csv("docs/research/review-queue.csv").slice(1),
+ precision=csv("docs/research/choice-precision-audit-pass28.csv").slice(1),
+ proof=csv("docs/research/choice-precision-evidence-followup-pass28.csv").slice(1);
 assert.equal(questions.length,200);assert.equal(choices.length,1000);assert.equal(links.length,1000);
 assert.equal(resolved.length,12);assert.equal(semantic.length,205);assert.equal(source.length,205);
 assert.equal(followups.length,0);assert.equal(hold.length,175);

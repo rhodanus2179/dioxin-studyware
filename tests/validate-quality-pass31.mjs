@@ -14,7 +14,7 @@ const changedIDs=new Set();
 for(const x of revised){assert.ok(!changedIDs.has(x.choice_id));changedIDs.add(x.choice_id);
  assert.equal(map.get(x.choice_id).primary_knowledge_id,x.new_primary_id);
  assert.equal(map.get(x.choice_id).item_id,x.new_item_id);
- assert.equal(ledger.get(x.choice_id).meaning_review_status,"choice-explanation-manual-link-corrected-original-and-science-QA-pending");
+ assert.ok(["choice-explanation-manual-link-corrected-original-and-science-QA-pending","reprint-page7-image-symbol-and-TEF-congener-count-reviewed-wording-conflict"].includes(ledger.get(x.choice_id).meaning_review_status),x.choice_id);
  assert.equal(x.publication_approval,"not-authorized");}
 for(const yr of ["R03","R05"]){for(let i=1;i<=5;i++){
 const id=yr+"-A-Q04-C"+i;

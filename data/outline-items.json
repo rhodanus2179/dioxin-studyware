@@ -1,0 +1,2050 @@
+[
+  {
+    "id": "0.1.1",
+    "section_id": "0.1",
+    "chapter_id": "intro",
+    "title": "物質群としてのダイオキシン類",
+    "learning_focus": "単一化学種ではないことと法令上の対象を区別",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-I-001",
+      "DX-I-003"
+    ]
+  },
+  {
+    "id": "0.1.2",
+    "section_id": "0.1",
+    "chapter_id": "intro",
+    "title": "PCDD・PCDFの基本的な違い",
+    "learning_focus": "酸素架橋の数と塩素置換を予告",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-I-002"
+    ]
+  },
+  {
+    "id": "0.1.3",
+    "section_id": "0.1",
+    "chapter_id": "intro",
+    "title": "DL-PCBの位置付け",
+    "learning_focus": "PCBの一部が毒性等価に含まれる理由を導入",
+    "status": "editorial-outline",
+    "knowledge_ids": []
+  },
+  {
+    "id": "0.2.1",
+    "section_id": "0.2",
+    "chapter_id": "intro",
+    "title": "異性体によって異なる毒性",
+    "learning_focus": "同一濃度を同じ影響と見なせない理由",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-I-004"
+    ]
+  },
+  {
+    "id": "0.2.2",
+    "section_id": "0.2",
+    "chapter_id": "intro",
+    "title": "TEFとTEQの入口",
+    "learning_focus": "係数の乗算と合計を概念だけ示す",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-I-005"
+    ]
+  },
+  {
+    "id": "0.3.1",
+    "section_id": "0.3",
+    "chapter_id": "intro",
+    "title": "生成・排出と環境残留",
+    "learning_focus": "発生源から環境媒体までのつながり",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-I-006"
+    ]
+  },
+  {
+    "id": "0.3.2",
+    "section_id": "0.3",
+    "chapter_id": "intro",
+    "title": "食物連鎖と生物蓄積",
+    "learning_focus": "水や土壌から食物への移動を概観",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-I-007"
+    ]
+  },
+  {
+    "id": "0.3.3",
+    "section_id": "0.3",
+    "chapter_id": "intro",
+    "title": "人が取り込むまでの経路",
+    "learning_focus": "食事を中心とした曝露の見取り図",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-I-008"
+    ]
+  },
+  {
+    "id": "0.4.1",
+    "section_id": "0.4",
+    "chapter_id": "intro",
+    "title": "焼却由来問題の顕在化",
+    "learning_focus": "日本の焼却依存と社会的な対策強化",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-I-009"
+    ]
+  },
+  {
+    "id": "0.4.2",
+    "section_id": "0.4",
+    "chapter_id": "intro",
+    "title": "国際条約との接続",
+    "learning_focus": "POPsとストックホルム条約を背景として紹介",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-I-010"
+    ]
+  },
+  {
+    "id": "0.5.1",
+    "section_id": "0.5",
+    "chapter_id": "intro",
+    "title": "指標と基準を混同しない",
+    "learning_focus": "TDI・環境基準・排出基準の役割を対比",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-I-011"
+    ]
+  },
+  {
+    "id": "0.5.2",
+    "section_id": "0.5",
+    "chapter_id": "intro",
+    "title": "概論から特論へ",
+    "learning_focus": "機構・施設・対策・測定の学習ルート",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-I-012"
+    ]
+  },
+  {
+    "id": "1.1.1",
+    "section_id": "1.1",
+    "chapter_id": "g01",
+    "title": "法律と基本指針の関係",
+    "learning_focus": "ダイ特法の目的と国の基本指針",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G01-001"
+    ]
+  },
+  {
+    "id": "1.1.2",
+    "section_id": "1.1",
+    "chapter_id": "g01",
+    "title": "法令の階層と施行時点",
+    "learning_focus": "法律・施行令・規則・告示の読み分け",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G01-002"
+    ]
+  },
+  {
+    "id": "1.1.3",
+    "section_id": "1.1",
+    "chapter_id": "g01",
+    "title": "国の基準と条例の関係",
+    "learning_focus": "上乗せや横出しとの区別",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G01-003"
+    ]
+  },
+  {
+    "id": "1.2.1",
+    "section_id": "1.2",
+    "chapter_id": "g01",
+    "title": "対象物質の法的定義",
+    "learning_focus": "PCDD・PCDF・DL-PCBを法令に結びつける",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G01-004"
+    ]
+  },
+  {
+    "id": "1.2.2",
+    "section_id": "1.2",
+    "chapter_id": "g01",
+    "title": "TDIの意味と数値",
+    "learning_focus": "摂取指標と環境媒体濃度を混同しない",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G01-005"
+    ]
+  },
+  {
+    "id": "1.2.3",
+    "section_id": "1.2",
+    "chapter_id": "g01",
+    "title": "TEQを使う基準の構造",
+    "learning_focus": "毒性等価の概念と規制値の関係",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G01-006"
+    ]
+  },
+  {
+    "id": "1.3.1",
+    "section_id": "1.3",
+    "chapter_id": "g01",
+    "title": "大気の環境基準と評価",
+    "learning_focus": "年間平均・適用地域・単位",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G01-007"
+    ]
+  },
+  {
+    "id": "1.3.2",
+    "section_id": "1.3",
+    "chapter_id": "g01",
+    "title": "水質・地下水の環境基準",
+    "learning_focus": "公共用水域と地下水を区別",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G01-008"
+    ]
+  },
+  {
+    "id": "1.3.3",
+    "section_id": "1.3",
+    "chapter_id": "g01",
+    "title": "底質の環境基準",
+    "learning_focus": "底質の対象と単位",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G01-009"
+    ]
+  },
+  {
+    "id": "1.3.4",
+    "section_id": "1.3",
+    "chapter_id": "g01",
+    "title": "土壌の環境基準・調査指標",
+    "learning_focus": "1000と250の意味を分ける",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G01-010"
+    ]
+  },
+  {
+    "id": "1.4.1",
+    "section_id": "1.4",
+    "chapter_id": "g01",
+    "title": "大気の特定施設という仕組み",
+    "learning_focus": "対象施設の指定概念だけを説明",
+    "status": "editorial-outline",
+    "knowledge_ids": []
+  },
+  {
+    "id": "1.4.2",
+    "section_id": "1.4",
+    "chapter_id": "g01",
+    "title": "水質の特定施設と事業場",
+    "learning_focus": "対象施設と排出水の規制単位を分ける",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G01-012"
+    ]
+  },
+  {
+    "id": "1.4.3",
+    "section_id": "1.4",
+    "chapter_id": "g01",
+    "title": "大気排出基準の読み方",
+    "learning_focus": "施設別・新設既設の基本",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G01-011",
+      "DX-G01-013"
+    ]
+  },
+  {
+    "id": "1.4.4",
+    "section_id": "1.4",
+    "chapter_id": "g01",
+    "title": "水質排出基準の読み方",
+    "learning_focus": "環境基準と排出水の基準を区別",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G01-014"
+    ]
+  },
+  {
+    "id": "1.5.1",
+    "section_id": "1.5",
+    "chapter_id": "g01",
+    "title": "設置・変更届と実施制限",
+    "learning_focus": "届出と時期の関係",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G01-015"
+    ]
+  },
+  {
+    "id": "1.5.2",
+    "section_id": "1.5",
+    "chapter_id": "g01",
+    "title": "改善命令・事故対応",
+    "learning_focus": "行政命令と事故時義務の関係",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G01-016"
+    ]
+  },
+  {
+    "id": "1.5.3",
+    "section_id": "1.5",
+    "chapter_id": "g01",
+    "title": "事業者測定と公表",
+    "learning_focus": "測定義務・報告と公開主体",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G01-017"
+    ]
+  },
+  {
+    "id": "1.5.4",
+    "section_id": "1.5",
+    "chapter_id": "g01",
+    "title": "報告徴収・立入検査",
+    "learning_focus": "監督権限の目的と対象",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G01-018"
+    ]
+  },
+  {
+    "id": "1.6.1",
+    "section_id": "1.6",
+    "chapter_id": "g01",
+    "title": "土壌汚染対策地域と計画",
+    "learning_focus": "指定と対策の法的手順",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G01-019"
+    ]
+  },
+  {
+    "id": "1.6.2",
+    "section_id": "1.6",
+    "chapter_id": "g01",
+    "title": "焼却灰・ばいじんの扱い",
+    "learning_focus": "媒体を移すことで終わらない規制",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G01-020"
+    ]
+  },
+  {
+    "id": "1.6.3",
+    "section_id": "1.6",
+    "chapter_id": "g01",
+    "title": "他法令との関係",
+    "learning_focus": "廃棄物処理法・公害防止組織整備法等との境界",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G01-021"
+    ]
+  },
+  {
+    "id": "2.1.1",
+    "section_id": "2.1",
+    "chapter_id": "g02",
+    "title": "事故・事件が明らかにした影響",
+    "learning_focus": "化学物質事故と健康影響の歴史",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G02-001"
+    ]
+  },
+  {
+    "id": "2.1.2",
+    "section_id": "2.1",
+    "chapter_id": "g02",
+    "title": "日本の問題認識の変化",
+    "learning_focus": "国内の社会的関心と調査の契機",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G02-002"
+    ]
+  },
+  {
+    "id": "2.2.1",
+    "section_id": "2.2",
+    "chapter_id": "g02",
+    "title": "焼却工程が注目された背景",
+    "learning_focus": "発生源としての焼却の位置付け",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G02-003"
+    ]
+  },
+  {
+    "id": "2.2.2",
+    "section_id": "2.2",
+    "chapter_id": "g02",
+    "title": "ガイドラインから規制へ",
+    "learning_focus": "燃焼管理と排出対策が進んだ流れ",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G02-004"
+    ]
+  },
+  {
+    "id": "2.3.1",
+    "section_id": "2.3",
+    "chapter_id": "g02",
+    "title": "国内の制度化の時間軸",
+    "learning_focus": "基本指針と特別措置法が成立する経緯",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G02-005"
+    ]
+  },
+  {
+    "id": "2.3.2",
+    "section_id": "2.3",
+    "chapter_id": "g02",
+    "title": "規制後の改善と残課題",
+    "learning_focus": "排出削減を制度史に結びつける",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G02-006"
+    ]
+  },
+  {
+    "id": "2.4.1",
+    "section_id": "2.4",
+    "chapter_id": "g02",
+    "title": "POPsの性質と国際枠組み",
+    "learning_focus": "残留性・生物蓄積性・長距離移動性",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G02-007"
+    ]
+  },
+  {
+    "id": "2.4.2",
+    "section_id": "2.4",
+    "chapter_id": "g02",
+    "title": "附属書Cの非意図的生成物",
+    "learning_focus": "対象物と管理の考え方",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G02-008"
+    ]
+  },
+  {
+    "id": "2.4.3",
+    "section_id": "2.4",
+    "chapter_id": "g02",
+    "title": "BATとBEPの位置付け",
+    "learning_focus": "技術と操業の国際的な対策概念",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G02-009"
+    ]
+  },
+  {
+    "id": "3.1.1",
+    "section_id": "3.1",
+    "chapter_id": "g03",
+    "title": "排出量の単位・合算",
+    "learning_focus": "g-TEQと媒体別集計",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G03-001"
+    ]
+  },
+  {
+    "id": "3.1.2",
+    "section_id": "3.1",
+    "chapter_id": "g03",
+    "title": "インベントリーの対象と推計",
+    "learning_focus": "排出係数・活動量などの構成",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G03-002",
+      "DX-G03-003"
+    ]
+  },
+  {
+    "id": "3.1.3",
+    "section_id": "3.1",
+    "chapter_id": "g03",
+    "title": "実測濃度との違い",
+    "learning_focus": "施設測定値と推計総量の扱い",
+    "status": "editorial-outline",
+    "knowledge_ids": []
+  },
+  {
+    "id": "3.2.1",
+    "section_id": "3.2",
+    "chapter_id": "g03",
+    "title": "廃棄物焼却の排出",
+    "learning_focus": "施設類型と大気・水への関係",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G03-004"
+    ]
+  },
+  {
+    "id": "3.2.2",
+    "section_id": "3.2",
+    "chapter_id": "g03",
+    "title": "鉄鋼・非鉄等の産業工程",
+    "learning_focus": "工程別の発生源区分",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G03-005"
+    ]
+  },
+  {
+    "id": "3.2.3",
+    "section_id": "3.2",
+    "chapter_id": "g03",
+    "title": "その他の発生源と水系",
+    "learning_focus": "化学工程等の位置付け",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G03-006"
+    ]
+  },
+  {
+    "id": "3.3.1",
+    "section_id": "3.3",
+    "chapter_id": "g03",
+    "title": "排出量削減の長期動向",
+    "learning_focus": "規制前後の比較と定義",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G03-007"
+    ]
+  },
+  {
+    "id": "3.3.2",
+    "section_id": "3.3",
+    "chapter_id": "g03",
+    "title": "発生源別構成の変化",
+    "learning_focus": "分母と内訳の変動を区別",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G03-008"
+    ]
+  },
+  {
+    "id": "3.4.1",
+    "section_id": "3.4",
+    "chapter_id": "g03",
+    "title": "環境媒体別の濃度実態",
+    "learning_focus": "大気・水・底質・土壌の調査",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G03-009"
+    ]
+  },
+  {
+    "id": "3.4.2",
+    "section_id": "3.4",
+    "chapter_id": "g03",
+    "title": "基準の達成状況",
+    "learning_focus": "測定地点と超過の解釈",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G03-010"
+    ]
+  },
+  {
+    "id": "3.5.1",
+    "section_id": "3.5",
+    "chapter_id": "g03",
+    "title": "年度と統計系列",
+    "learning_focus": "調査対象年と暦年の区別",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G03-011"
+    ]
+  },
+  {
+    "id": "3.5.2",
+    "section_id": "3.5",
+    "chapter_id": "g03",
+    "title": "公表と差替えの履歴",
+    "learning_focus": "発表年月日と改訂",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G03-012"
+    ]
+  },
+  {
+    "id": "3.5.3",
+    "section_id": "3.5",
+    "chapter_id": "g03",
+    "title": "単位・母集団の整合",
+    "learning_focus": "設備基数と生産量比などの違い",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G03-013"
+    ]
+  },
+  {
+    "id": "4.1.1",
+    "section_id": "4.1",
+    "chapter_id": "g04",
+    "title": "PCDDの二つの酸素架橋",
+    "learning_focus": "骨格と塩素置換部位",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G04-001"
+    ]
+  },
+  {
+    "id": "4.1.2",
+    "section_id": "4.1",
+    "chapter_id": "g04",
+    "title": "PCDFの一つの酸素架橋",
+    "learning_focus": "骨格とPCDDとの相違",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G04-002"
+    ]
+  },
+  {
+    "id": "4.1.3",
+    "section_id": "4.1",
+    "chapter_id": "g04",
+    "title": "PCBとDL-PCB",
+    "learning_focus": "ビフェニル結合と毒性等価対象",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G04-003"
+    ]
+  },
+  {
+    "id": "4.2.1",
+    "section_id": "4.2",
+    "chapter_id": "g04",
+    "title": "同族体と異性体",
+    "learning_focus": "塩素数と置換位置による分類",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G04-004"
+    ]
+  },
+  {
+    "id": "4.2.2",
+    "section_id": "4.2",
+    "chapter_id": "g04",
+    "title": "2,3,7,8位と毒性",
+    "learning_focus": "位置の重要性",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G04-005"
+    ]
+  },
+  {
+    "id": "4.2.3",
+    "section_id": "4.2",
+    "chapter_id": "g04",
+    "title": "非オルト・モノオルトPCB",
+    "learning_focus": "共平面性と分類",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G04-006"
+    ]
+  },
+  {
+    "id": "4.3.1",
+    "section_id": "4.3",
+    "chapter_id": "g04",
+    "title": "TEFを使う理由",
+    "learning_focus": "基準物質と相対毒性",
+    "status": "editorial-outline",
+    "knowledge_ids": []
+  },
+  {
+    "id": "4.3.2",
+    "section_id": "4.3",
+    "chapter_id": "g04",
+    "title": "TEQの算定",
+    "learning_focus": "濃度に係数を乗じて合算",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G04-008"
+    ]
+  },
+  {
+    "id": "4.3.3",
+    "section_id": "4.3",
+    "chapter_id": "g04",
+    "title": "TEFの版と適用日",
+    "learning_focus": "WHO更新版と法令適用版を区別",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G04-007",
+      "DX-G04-009"
+    ]
+  },
+  {
+    "id": "4.4.1",
+    "section_id": "4.4",
+    "chapter_id": "g04",
+    "title": "疎水性・溶解性",
+    "learning_focus": "水相と有機相への分配",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G04-010"
+    ]
+  },
+  {
+    "id": "4.4.2",
+    "section_id": "4.4",
+    "chapter_id": "g04",
+    "title": "蒸気圧・気粒分配",
+    "learning_focus": "塩素化数と浮遊粒子の関係",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G04-011"
+    ]
+  },
+  {
+    "id": "4.4.3",
+    "section_id": "4.4",
+    "chapter_id": "g04",
+    "title": "残留性と分解",
+    "learning_focus": "媒体で変わる挙動",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G04-012"
+    ]
+  },
+  {
+    "id": "4.5.1",
+    "section_id": "4.5",
+    "chapter_id": "g04",
+    "title": "媒体間の移動",
+    "learning_focus": "大気から土壌・水域への沈着",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G04-013"
+    ]
+  },
+  {
+    "id": "4.5.2",
+    "section_id": "4.5",
+    "chapter_id": "g04",
+    "title": "生物濃縮・生物蓄積",
+    "learning_focus": "食物網への移動",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G04-014"
+    ]
+  },
+  {
+    "id": "4.5.3",
+    "section_id": "4.5",
+    "chapter_id": "g04",
+    "title": "異性体組成の解釈",
+    "learning_focus": "発生源推定の限界",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G04-015"
+    ]
+  },
+  {
+    "id": "5.1.1",
+    "section_id": "5.1",
+    "chapter_id": "g05",
+    "title": "燃焼過程での非意図的生成",
+    "learning_focus": "廃棄物や有機物の燃焼",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G05-001"
+    ]
+  },
+  {
+    "id": "5.1.2",
+    "section_id": "5.1",
+    "chapter_id": "g05",
+    "title": "工業プロセスの副生",
+    "learning_focus": "化学製造・金属工程など",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G05-002"
+    ]
+  },
+  {
+    "id": "5.1.3",
+    "section_id": "5.1",
+    "chapter_id": "g05",
+    "title": "自然起源との区別",
+    "learning_focus": "人為起源との比較",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G05-003"
+    ]
+  },
+  {
+    "id": "5.2.1",
+    "section_id": "5.2",
+    "chapter_id": "g05",
+    "title": "前駆体反応",
+    "learning_focus": "クロロフェノール等の反応経路",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G05-004"
+    ]
+  },
+  {
+    "id": "5.2.2",
+    "section_id": "5.2",
+    "chapter_id": "g05",
+    "title": "de novo合成",
+    "learning_focus": "飛灰・未燃炭素からの生成",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G05-005"
+    ]
+  },
+  {
+    "id": "5.2.3",
+    "section_id": "5.2",
+    "chapter_id": "g05",
+    "title": "前駆体とde novoの境界",
+    "learning_focus": "複数反応の併存と異性体組成",
+    "status": "editorial-outline",
+    "knowledge_ids": []
+  },
+  {
+    "id": "5.3.1",
+    "section_id": "5.3",
+    "chapter_id": "g05",
+    "title": "温度・時間履歴",
+    "learning_focus": "冷却域と滞留条件",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G05-006"
+    ]
+  },
+  {
+    "id": "5.3.2",
+    "section_id": "5.3",
+    "chapter_id": "g05",
+    "title": "炭素と飛灰表面",
+    "learning_focus": "未燃炭素と吸着面",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G05-007"
+    ]
+  },
+  {
+    "id": "5.3.3",
+    "section_id": "5.3",
+    "chapter_id": "g05",
+    "title": "塩素源・金属触媒",
+    "learning_focus": "塩素の活性化と触媒能",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G05-008"
+    ]
+  },
+  {
+    "id": "5.3.4",
+    "section_id": "5.3",
+    "chapter_id": "g05",
+    "title": "燃焼完全性と未燃物",
+    "learning_focus": "COなどの指標との関係",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G05-009"
+    ]
+  },
+  {
+    "id": "5.4.1",
+    "section_id": "5.4",
+    "chapter_id": "g05",
+    "title": "排ガスへの移行",
+    "learning_focus": "気相・粒子相の排出",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G05-010"
+    ]
+  },
+  {
+    "id": "5.4.2",
+    "section_id": "5.4",
+    "chapter_id": "g05",
+    "title": "飛灰・焼却灰への分配",
+    "learning_focus": "固形残渣の汚染",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G05-011"
+    ]
+  },
+  {
+    "id": "5.4.3",
+    "section_id": "5.4",
+    "chapter_id": "g05",
+    "title": "排水への移行",
+    "learning_focus": "湿式処理での媒体移動",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G05-012"
+    ]
+  },
+  {
+    "id": "5.5.1",
+    "section_id": "5.5",
+    "chapter_id": "g05",
+    "title": "炉内生成抑制と後段再生成",
+    "learning_focus": "完全燃焼だけでは不十分な理由",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G05-013"
+    ]
+  },
+  {
+    "id": "5.5.2",
+    "section_id": "5.5",
+    "chapter_id": "g05",
+    "title": "急冷・捕集への展開",
+    "learning_focus": "生成領域を短縮し除去する対策",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G05-014"
+    ]
+  },
+  {
+    "id": "6.1.1",
+    "section_id": "6.1",
+    "chapter_id": "g06",
+    "title": "毒性の種類と代表物質",
+    "learning_focus": "TCDDを例に毒性概念を導入",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G06-001"
+    ]
+  },
+  {
+    "id": "6.1.2",
+    "section_id": "6.1",
+    "chapter_id": "g06",
+    "title": "AhRと生物作用",
+    "learning_focus": "受容体依存の機序",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G06-002"
+    ]
+  },
+  {
+    "id": "6.1.3",
+    "section_id": "6.1",
+    "chapter_id": "g06",
+    "title": "毒性等価の仮定と限界",
+    "learning_focus": "TEFを生物学的に読むときの注意",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G06-003"
+    ]
+  },
+  {
+    "id": "6.2.1",
+    "section_id": "6.2",
+    "chapter_id": "g06",
+    "title": "高濃度曝露による所見",
+    "learning_focus": "皮膚症状などの歴史的知見",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G06-004"
+    ]
+  },
+  {
+    "id": "6.2.2",
+    "section_id": "6.2",
+    "chapter_id": "g06",
+    "title": "慢性・発達などの影響",
+    "learning_focus": "生殖・免疫等の影響",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G06-005"
+    ]
+  },
+  {
+    "id": "6.2.3",
+    "section_id": "6.2",
+    "chapter_id": "g06",
+    "title": "発がん性の評価",
+    "learning_focus": "根拠レベルと種差",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G06-006"
+    ]
+  },
+  {
+    "id": "6.3.1",
+    "section_id": "6.3",
+    "chapter_id": "g06",
+    "title": "食品経由の曝露",
+    "learning_focus": "食事からの摂取の位置付け",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G06-007"
+    ]
+  },
+  {
+    "id": "6.3.2",
+    "section_id": "6.3",
+    "chapter_id": "g06",
+    "title": "体内蓄積と半減期",
+    "learning_focus": "脂質への分配と排泄",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G06-008"
+    ]
+  },
+  {
+    "id": "6.3.3",
+    "section_id": "6.3",
+    "chapter_id": "g06",
+    "title": "摂取量と体内負荷",
+    "learning_focus": "推定値と測定値の区別",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G06-009"
+    ]
+  },
+  {
+    "id": "6.4.1",
+    "section_id": "6.4",
+    "chapter_id": "g06",
+    "title": "TDIと慢性摂取",
+    "learning_focus": "一日耐容摂取量のリスク管理上の意味",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G06-010",
+      "DX-G06-011"
+    ]
+  },
+  {
+    "id": "6.4.2",
+    "section_id": "6.4",
+    "chapter_id": "g06",
+    "title": "曝露量とリスクの判断",
+    "learning_focus": "ハザードと実際の摂取量",
+    "status": "editorial-outline",
+    "knowledge_ids": []
+  },
+  {
+    "id": "6.4.3",
+    "section_id": "6.4",
+    "chapter_id": "g06",
+    "title": "推定不確実性",
+    "learning_focus": "調査法・前提条件と安全境界",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G06-012"
+    ]
+  },
+  {
+    "id": "6.5.1",
+    "section_id": "6.5",
+    "chapter_id": "g06",
+    "title": "野生生物への蓄積",
+    "learning_focus": "生物種・食物網での違い",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G06-013"
+    ]
+  },
+  {
+    "id": "6.5.2",
+    "section_id": "6.5",
+    "chapter_id": "g06",
+    "title": "生態毒性の読み方",
+    "learning_focus": "作用と濃度の関係を慎重に評価",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G06-014"
+    ]
+  },
+  {
+    "id": "7.1.1",
+    "section_id": "7.1",
+    "chapter_id": "g07",
+    "title": "国の排出削減目標・計画",
+    "learning_focus": "基本指針と実行計画",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G07-001"
+    ]
+  },
+  {
+    "id": "7.1.2",
+    "section_id": "7.1",
+    "chapter_id": "g07",
+    "title": "排出推計による進捗管理",
+    "learning_focus": "インベントリーと行政上の利用",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G07-002"
+    ]
+  },
+  {
+    "id": "7.1.3",
+    "section_id": "7.1",
+    "chapter_id": "g07",
+    "title": "対策効果の評価",
+    "learning_focus": "施策実施後の検証",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G07-003"
+    ]
+  },
+  {
+    "id": "7.2.1",
+    "section_id": "7.2",
+    "chapter_id": "g07",
+    "title": "自治体による検査と指導",
+    "learning_focus": "法的権限と現場での運用を区別",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G07-004"
+    ]
+  },
+  {
+    "id": "7.2.2",
+    "section_id": "7.2",
+    "chapter_id": "g07",
+    "title": "改善命令と条例",
+    "learning_focus": "法律の規定と自治体実務の関係",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G07-005"
+    ]
+  },
+  {
+    "id": "7.2.3",
+    "section_id": "7.2",
+    "chapter_id": "g07",
+    "title": "地域の防止対策",
+    "learning_focus": "情報提供と事業者支援",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G07-006"
+    ]
+  },
+  {
+    "id": "7.3.1",
+    "section_id": "7.3",
+    "chapter_id": "g07",
+    "title": "環境監視の行政体制",
+    "learning_focus": "媒体別常時監視の実施",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G07-007"
+    ]
+  },
+  {
+    "id": "7.3.2",
+    "section_id": "7.3",
+    "chapter_id": "g07",
+    "title": "測定結果の公表",
+    "learning_focus": "住民への情報提供",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G07-008"
+    ]
+  },
+  {
+    "id": "7.3.3",
+    "section_id": "7.3",
+    "chapter_id": "g07",
+    "title": "施行状況の把握",
+    "learning_focus": "事業場報告の集計・評価",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G07-009"
+    ]
+  },
+  {
+    "id": "7.4.1",
+    "section_id": "7.4",
+    "chapter_id": "g07",
+    "title": "汚染発見後の対応",
+    "learning_focus": "土壌対策地域などの措置",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G07-010"
+    ]
+  },
+  {
+    "id": "7.4.2",
+    "section_id": "7.4",
+    "chapter_id": "g07",
+    "title": "底質・関連媒体の改善",
+    "learning_focus": "汚染拡散の防止",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G07-011"
+    ]
+  },
+  {
+    "id": "7.4.3",
+    "section_id": "7.4",
+    "chapter_id": "g07",
+    "title": "住民との対話と経済的措置",
+    "learning_focus": "説明と事業費負担の考え方",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-G07-012"
+    ]
+  },
+  {
+    "id": "8.1.1",
+    "section_id": "8.1",
+    "chapter_id": "a01",
+    "title": "燃焼形態・炉形式",
+    "learning_focus": "固体燃料とストーカ・流動床等",
+    "status": "editorial-outline",
+    "knowledge_ids": []
+  },
+  {
+    "id": "8.1.2",
+    "section_id": "8.1",
+    "chapter_id": "a01",
+    "title": "燃焼安定化の基本条件",
+    "learning_focus": "温度・時間・混合・空気比",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A01-001",
+      "DX-A01-002"
+    ]
+  },
+  {
+    "id": "8.1.3",
+    "section_id": "8.1",
+    "chapter_id": "a01",
+    "title": "CO等による運転把握",
+    "learning_focus": "未燃分・燃焼不良の指標",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A01-003"
+    ]
+  },
+  {
+    "id": "8.2.1",
+    "section_id": "8.2",
+    "chapter_id": "a01",
+    "title": "排ガスの冷却速度",
+    "learning_focus": "急冷と滞留時間",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A01-004"
+    ]
+  },
+  {
+    "id": "8.2.2",
+    "section_id": "8.2",
+    "chapter_id": "a01",
+    "title": "再生成域と集じん温度",
+    "learning_focus": "de novoを抑える運転条件",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A01-005"
+    ]
+  },
+  {
+    "id": "8.3.1",
+    "section_id": "8.3",
+    "chapter_id": "a01",
+    "title": "バグフィルターの捕集",
+    "learning_focus": "ろ布・ダスト層・払落し",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A01-006"
+    ]
+  },
+  {
+    "id": "8.3.2",
+    "section_id": "8.3",
+    "chapter_id": "a01",
+    "title": "電気集じんと粒子の比抵抗",
+    "learning_focus": "放電・集じん・逆電離",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A01-009"
+    ]
+  },
+  {
+    "id": "8.3.3",
+    "section_id": "8.3",
+    "chapter_id": "a01",
+    "title": "湿式スクラバーと捕集機構",
+    "learning_focus": "慣性・拡散等の作用",
+    "status": "editorial-outline",
+    "knowledge_ids": []
+  },
+  {
+    "id": "8.4.1",
+    "section_id": "8.4",
+    "chapter_id": "a01",
+    "title": "活性炭への吸着",
+    "learning_focus": "細孔・等温式・発熱と安全",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A01-007"
+    ]
+  },
+  {
+    "id": "8.4.2",
+    "section_id": "8.4",
+    "chapter_id": "a01",
+    "title": "触媒による酸化分解",
+    "learning_focus": "空間速度と触媒機構",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A01-008"
+    ]
+  },
+  {
+    "id": "8.5.1",
+    "section_id": "8.5",
+    "chapter_id": "a01",
+    "title": "焼却灰と飛灰の分配",
+    "learning_focus": "排ガスから残渣への移行",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A01-010"
+    ]
+  },
+  {
+    "id": "8.5.2",
+    "section_id": "8.5",
+    "chapter_id": "a01",
+    "title": "飛灰処理・分解・安定化",
+    "learning_focus": "灰の安全な取扱い",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A01-011"
+    ]
+  },
+  {
+    "id": "8.6.1",
+    "section_id": "8.6",
+    "chapter_id": "a01",
+    "title": "燃焼・集じんの運転監視",
+    "learning_focus": "温度・CO・差圧等の継続把握",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A01-012"
+    ]
+  },
+  {
+    "id": "8.6.2",
+    "section_id": "8.6",
+    "chapter_id": "a01",
+    "title": "性能測定と原因調査",
+    "learning_focus": "検査頻度と性能診断",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A01-013"
+    ]
+  },
+  {
+    "id": "8.6.3",
+    "section_id": "8.6",
+    "chapter_id": "a01",
+    "title": "停止・異常時の安全確保",
+    "learning_focus": "活性炭発火・設備トラブル",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A01-014"
+    ]
+  },
+  {
+    "id": "9.1.1",
+    "section_id": "9.1",
+    "chapter_id": "a02",
+    "title": "大気特定施設5号の全体像",
+    "learning_focus": "別表第一の工程と指定の関係",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A02-003"
+    ]
+  },
+  {
+    "id": "9.1.2",
+    "section_id": "9.1",
+    "chapter_id": "a02",
+    "title": "施設別の技術を学ぶための分類",
+    "learning_focus": "鉄鋼・非鉄・焼却の違い",
+    "status": "editorial-outline",
+    "knowledge_ids": []
+  },
+  {
+    "id": "9.2.1",
+    "section_id": "9.2",
+    "chapter_id": "a02",
+    "title": "焼結炉の工程と生成",
+    "learning_focus": "焼結層・排ガス条件・抑制",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A02-001"
+    ]
+  },
+  {
+    "id": "9.2.2",
+    "section_id": "9.2",
+    "chapter_id": "a02",
+    "title": "製鋼用電気炉",
+    "learning_focus": "原料・ダスト・排ガス対策",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A02-002",
+      "DX-A02-014",
+      "DX-A02-015",
+      "DX-A02-016"
+    ]
+  },
+  {
+    "id": "9.2.3",
+    "section_id": "9.2",
+    "chapter_id": "a02",
+    "title": "亜鉛回収の工程",
+    "learning_focus": "電炉ばいじんと還元揮発等",
+    "status": "editorial-outline",
+    "knowledge_ids": []
+  },
+  {
+    "id": "9.3.1",
+    "section_id": "9.3",
+    "chapter_id": "a02",
+    "title": "アルミ合金製造工程",
+    "learning_focus": "アルミくず・フラックス・焙焼と溶解",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A02-017"
+    ]
+  },
+  {
+    "id": "9.3.2",
+    "section_id": "9.3",
+    "chapter_id": "a02",
+    "title": "廃棄物焼却施設",
+    "learning_focus": "燃焼方式・排ガス対策と灰管理",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A02-004",
+      "DX-A02-018"
+    ]
+  },
+  {
+    "id": "9.4.1",
+    "section_id": "9.4",
+    "chapter_id": "a02",
+    "title": "規模要件と施設該当性",
+    "learning_focus": "火床面積・能力・変圧器容量等",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A02-005",
+      "DX-A02-007"
+    ]
+  },
+  {
+    "id": "9.4.2",
+    "section_id": "9.4",
+    "chapter_id": "a02",
+    "title": "複数炉合算と適用判断",
+    "learning_focus": "能力基準の判定順",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A02-006",
+      "DX-A02-010",
+      "DX-A02-020"
+    ]
+  },
+  {
+    "id": "9.4.3",
+    "section_id": "9.4",
+    "chapter_id": "a02",
+    "title": "新設既設と排出基準",
+    "learning_focus": "適用時点・規模区分",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A02-008",
+      "DX-A02-009",
+      "DX-A02-011",
+      "DX-A02-012",
+      "DX-A02-013",
+      "DX-A02-019"
+    ]
+  },
+  {
+    "id": "9.4.4",
+    "section_id": "9.4",
+    "chapter_id": "a02",
+    "title": "基準換算・測定点・周辺法",
+    "learning_focus": "濃度単位・酸素補正・関連法令",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A02-021"
+    ]
+  },
+  {
+    "id": "10.1.1",
+    "section_id": "10.1",
+    "chapter_id": "a03",
+    "title": "湿式排ガス処理からの流入",
+    "learning_focus": "洗浄排水に移る汚染物",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A03-001"
+    ]
+  },
+  {
+    "id": "10.1.2",
+    "section_id": "10.1",
+    "chapter_id": "a03",
+    "title": "化学品製造工程からの排水",
+    "learning_focus": "副生成物・汚水の発生",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A03-002"
+    ]
+  },
+  {
+    "id": "10.1.3",
+    "section_id": "10.1",
+    "chapter_id": "a03",
+    "title": "水中での存在形態",
+    "learning_focus": "懸濁態・溶存態・微粒子態",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A03-003"
+    ]
+  },
+  {
+    "id": "10.2.1",
+    "section_id": "10.2",
+    "chapter_id": "a03",
+    "title": "凝集沈殿・固液分離",
+    "learning_focus": "SSに吸着した汚染物の除去",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A03-004"
+    ]
+  },
+  {
+    "id": "10.2.2",
+    "section_id": "10.2",
+    "chapter_id": "a03",
+    "title": "ろ過と膜分離",
+    "learning_focus": "粒子径・透過性の違い",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A03-005"
+    ]
+  },
+  {
+    "id": "10.2.3",
+    "section_id": "10.2",
+    "chapter_id": "a03",
+    "title": "活性炭等の吸着",
+    "learning_focus": "溶存態と処理の限界",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A03-006"
+    ]
+  },
+  {
+    "id": "10.3.1",
+    "section_id": "10.3",
+    "chapter_id": "a03",
+    "title": "前処理・主要処理・仕上げ",
+    "learning_focus": "処理段の組合せ",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A03-007",
+      "DX-A03-009"
+    ]
+  },
+  {
+    "id": "10.3.2",
+    "section_id": "10.3",
+    "chapter_id": "a03",
+    "title": "汚泥への移行",
+    "learning_focus": "汚泥・残渣中の汚染管理",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A03-008"
+    ]
+  },
+  {
+    "id": "10.3.3",
+    "section_id": "10.3",
+    "chapter_id": "a03",
+    "title": "処理系統全体の最適化",
+    "learning_focus": "単位操作の役割分担",
+    "status": "editorial-outline",
+    "knowledge_ids": []
+  },
+  {
+    "id": "10.4.1",
+    "section_id": "10.4",
+    "chapter_id": "a03",
+    "title": "放流水の代表性と変動",
+    "learning_focus": "採水・負荷変動の把握",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A03-010"
+    ]
+  },
+  {
+    "id": "10.4.2",
+    "section_id": "10.4",
+    "chapter_id": "a03",
+    "title": "排出基準への適合管理",
+    "learning_focus": "運転条件と測定",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A03-011"
+    ]
+  },
+  {
+    "id": "10.4.3",
+    "section_id": "10.4",
+    "chapter_id": "a03",
+    "title": "異常値の調査・再発防止",
+    "learning_focus": "工程へ遡る管理",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A03-012"
+    ]
+  },
+  {
+    "id": "11.1.1",
+    "section_id": "11.1",
+    "chapter_id": "a04",
+    "title": "水質特定施設19号の全体像",
+    "learning_focus": "別表第二の用途・工程",
+    "status": "editorial-outline",
+    "knowledge_ids": []
+  },
+  {
+    "id": "11.1.2",
+    "section_id": "11.1",
+    "chapter_id": "a04",
+    "title": "施設と事業場排出水の違い",
+    "learning_focus": "対象判定の前提",
+    "status": "editorial-outline",
+    "knowledge_ids": []
+  },
+  {
+    "id": "11.2.1",
+    "section_id": "11.2",
+    "chapter_id": "a04",
+    "title": "パルプ漂白工程",
+    "learning_focus": "ECF・TCF・塩素化と副生",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A04-001",
+      "DX-A04-012"
+    ]
+  },
+  {
+    "id": "11.2.2",
+    "section_id": "11.2",
+    "chapter_id": "a04",
+    "title": "カーバイド法アセチレン",
+    "learning_focus": "洗浄・精製とPCDF形成仮説",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A04-013",
+      "DX-A04-015",
+      "DX-A04-016"
+    ]
+  },
+  {
+    "id": "11.2.3",
+    "section_id": "11.2",
+    "chapter_id": "a04",
+    "title": "塩化ビニル・クロロベンゼン工程",
+    "learning_focus": "酸化塩素化・塩素化等",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A04-017",
+      "DX-A04-018",
+      "DX-A04-019"
+    ]
+  },
+  {
+    "id": "11.2.4",
+    "section_id": "11.2",
+    "chapter_id": "a04",
+    "title": "その他の化学品製造・洗浄",
+    "learning_focus": "硫酸カリウムから染料工程までの指定施設",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A04-002",
+      "DX-A04-014",
+      "DX-A04-020",
+      "DX-A04-021",
+      "DX-A04-022"
+    ]
+  },
+  {
+    "id": "11.3.1",
+    "section_id": "11.3",
+    "chapter_id": "a04",
+    "title": "金属製造・回収工程",
+    "learning_focus": "アルミ・亜鉛・触媒金属回収の洗浄",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A04-003",
+      "DX-A04-025"
+    ]
+  },
+  {
+    "id": "11.3.2",
+    "section_id": "11.3",
+    "chapter_id": "a04",
+    "title": "廃棄物焼却・灰貯留",
+    "learning_focus": "湿式排ガス処理と排水",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A04-004",
+      "DX-A04-023",
+      "DX-A04-024",
+      "DX-A04-026"
+    ]
+  },
+  {
+    "id": "11.3.3",
+    "section_id": "11.3",
+    "chapter_id": "a04",
+    "title": "PCB処理・フロン破壊",
+    "learning_focus": "指定される処理方法と条件",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A04-005",
+      "DX-A04-027",
+      "DX-A04-028"
+    ]
+  },
+  {
+    "id": "11.4.1",
+    "section_id": "11.4",
+    "chapter_id": "a04",
+    "title": "下水道終末処理施設",
+    "learning_focus": "対象汚水を受け入れるときの指定",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A04-006",
+      "DX-A04-029"
+    ]
+  },
+  {
+    "id": "11.4.2",
+    "section_id": "11.4",
+    "chapter_id": "a04",
+    "title": "事業場排水の二次処理施設",
+    "learning_focus": "由来による指定と適用除外",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A04-007",
+      "DX-A04-008",
+      "DX-A04-030"
+    ]
+  },
+  {
+    "id": "11.4.3",
+    "section_id": "11.4",
+    "chapter_id": "a04",
+    "title": "対象排水と適用条件",
+    "learning_focus": "第18・19号の違い",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A04-033"
+    ]
+  },
+  {
+    "id": "11.5.1",
+    "section_id": "11.5",
+    "chapter_id": "a04",
+    "title": "水質対象施設と事業場の判定",
+    "learning_focus": "用途・由来・排水先の条件",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A04-010",
+      "DX-A04-034"
+    ]
+  },
+  {
+    "id": "11.5.2",
+    "section_id": "11.5",
+    "chapter_id": "a04",
+    "title": "水質排出基準と環境基準",
+    "learning_focus": "事業場排出水と河川等の基準",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A04-009",
+      "DX-A04-011",
+      "DX-A04-031",
+      "DX-A04-032"
+    ]
+  },
+  {
+    "id": "11.5.3",
+    "section_id": "11.5",
+    "chapter_id": "a04",
+    "title": "届出・測定・例外の整理",
+    "learning_focus": "一律10と条件付きの区別",
+    "status": "editorial-outline",
+    "knowledge_ids": []
+  },
+  {
+    "id": "12.1.1",
+    "section_id": "12.1",
+    "chapter_id": "a05",
+    "title": "測定する対象と媒体",
+    "learning_focus": "排ガス・排水・灰・土壌等",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A05-001"
+    ]
+  },
+  {
+    "id": "12.1.2",
+    "section_id": "12.1",
+    "chapter_id": "a05",
+    "title": "異性体別定量とTEQ",
+    "learning_focus": "化合物別測定値をまとめる",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A05-002"
+    ]
+  },
+  {
+    "id": "12.1.3",
+    "section_id": "12.1",
+    "chapter_id": "a05",
+    "title": "単位・標準状態・採取量",
+    "learning_focus": "濃度換算の全体像",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A05-003"
+    ]
+  },
+  {
+    "id": "12.2.1",
+    "section_id": "12.2",
+    "chapter_id": "a05",
+    "title": "排ガスの試料採取",
+    "learning_focus": "等速吸引と代表性",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A05-004"
+    ]
+  },
+  {
+    "id": "12.2.2",
+    "section_id": "12.2",
+    "chapter_id": "a05",
+    "title": "気相・粒子相の捕集",
+    "learning_focus": "採取系の構成",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A05-005"
+    ]
+  },
+  {
+    "id": "12.2.3",
+    "section_id": "12.2",
+    "chapter_id": "a05",
+    "title": "水・土壌等の試料採取",
+    "learning_focus": "媒体による試料の違い",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A05-006"
+    ]
+  },
+  {
+    "id": "12.3.1",
+    "section_id": "12.3",
+    "chapter_id": "a05",
+    "title": "抽出・溶媒処理",
+    "learning_focus": "試料から対象成分を回収",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A05-007"
+    ]
+  },
+  {
+    "id": "12.3.2",
+    "section_id": "12.3",
+    "chapter_id": "a05",
+    "title": "クリーンアップ",
+    "learning_focus": "シリカ・アルミナ・活性炭等",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A05-008"
+    ]
+  },
+  {
+    "id": "12.3.3",
+    "section_id": "12.3",
+    "chapter_id": "a05",
+    "title": "内標準物質の添加段階",
+    "learning_focus": "サンプリングとクリーンアップスパイク",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A05-009"
+    ]
+  },
+  {
+    "id": "12.4.1",
+    "section_id": "12.4",
+    "chapter_id": "a05",
+    "title": "GCによる異性体分離",
+    "learning_focus": "保持時間と分離",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A05-010"
+    ]
+  },
+  {
+    "id": "12.4.2",
+    "section_id": "12.4",
+    "chapter_id": "a05",
+    "title": "質量分析・同定",
+    "learning_focus": "HRMS・同位体比・ロックマス",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A05-011"
+    ]
+  },
+  {
+    "id": "12.4.3",
+    "section_id": "12.4",
+    "chapter_id": "a05",
+    "title": "同位体希釈定量",
+    "learning_focus": "検量・相対感度係数",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A05-012"
+    ]
+  },
+  {
+    "id": "12.5.1",
+    "section_id": "12.5",
+    "chapter_id": "a05",
+    "title": "濃度・TEQ・酸素補正",
+    "learning_focus": "採取量・濃度の数値処理",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A05-013"
+    ]
+  },
+  {
+    "id": "12.5.2",
+    "section_id": "12.5",
+    "chapter_id": "a05",
+    "title": "装置と試料の検出下限",
+    "learning_focus": "分取・注入・濃度の逆算",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A05-014"
+    ]
+  },
+  {
+    "id": "12.5.3",
+    "section_id": "12.5",
+    "chapter_id": "a05",
+    "title": "未検出値と判定",
+    "learning_focus": "NDの代入規則とTEQ集計",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A05-015"
+    ]
+  },
+  {
+    "id": "12.6.1",
+    "section_id": "12.6",
+    "chapter_id": "a05",
+    "title": "空試験と回収率",
+    "learning_focus": "ブランク・内標準スパイク",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A05-016"
+    ]
+  },
+  {
+    "id": "12.6.2",
+    "section_id": "12.6",
+    "chapter_id": "a05",
+    "title": "精度管理と検量線",
+    "learning_focus": "校正・二重測定",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A05-017"
+    ]
+  },
+  {
+    "id": "12.6.3",
+    "section_id": "12.6",
+    "chapter_id": "a05",
+    "title": "簡易法と公定法",
+    "learning_focus": "適用目的による選択",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A05-018"
+    ]
+  },
+  {
+    "id": "12.7.1",
+    "section_id": "12.7",
+    "chapter_id": "a05",
+    "title": "排ガスJISの適用",
+    "learning_focus": "JIS K 0311と版管理",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A05-019"
+    ]
+  },
+  {
+    "id": "12.7.2",
+    "section_id": "12.7",
+    "chapter_id": "a05",
+    "title": "排水JISの適用",
+    "learning_focus": "JIS K 0312と版管理",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A05-020"
+    ]
+  },
+  {
+    "id": "12.7.3",
+    "section_id": "12.7",
+    "chapter_id": "a05",
+    "title": "環境媒体別測定マニュアル",
+    "learning_focus": "大気・土壌・底質等の方法",
+    "status": "editorial-outline",
+    "knowledge_ids": [
+      "DX-A05-021"
+    ]
+  }
+]

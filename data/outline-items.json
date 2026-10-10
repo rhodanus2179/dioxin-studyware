@@ -313,11 +313,12 @@
     "id": "1.5.3",
     "section_id": "1.5",
     "chapter_id": "g01",
-    "title": "事業者測定と公表",
-    "learning_focus": "測定義務・報告と公開主体",
+    "title": "公害防止管理者の業務と事業者測定・公表",
+    "learning_focus": "公害防止組織整備法の管理業務とダイ特法の事業者測定義務を区別する",
     "status": "editorial-outline",
     "knowledge_ids": [
-      "DX-G01-017"
+      "DX-G01-017",
+      "DX-G01-024"
     ]
   },
   {

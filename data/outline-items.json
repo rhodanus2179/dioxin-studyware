@@ -139,7 +139,8 @@
     "learning_focus": "ダイ特法の目的と国の基本指針",
     "status": "editorial-outline",
     "knowledge_ids": [
-      "DX-G01-001"
+      "DX-G01-001",
+      "DX-G01-023"
     ]
   },
   {
@@ -249,7 +250,8 @@
     "learning_focus": "対象施設の指定概念だけを説明",
     "status": "editorial-outline",
     "knowledge_ids": [
-      "DX-G01-011"
+      "DX-G01-011",
+      "DX-G01-022"
     ]
   },
   {
@@ -601,7 +603,8 @@
     "learning_focus": "設備基数と生産量比などの違い",
     "status": "editorial-outline",
     "knowledge_ids": [
-      "DX-G03-013"
+      "DX-G03-013",
+      "DX-G03-014"
     ]
   },
   {
@@ -645,7 +648,8 @@
     "learning_focus": "塩素数と置換位置による分類",
     "status": "editorial-outline",
     "knowledge_ids": [
-      "DX-G04-004"
+      "DX-G04-004",
+      "DX-G04-016"
     ]
   },
   {
@@ -700,7 +704,8 @@
     "learning_focus": "WHO更新版と法令適用版を区別",
     "status": "editorial-outline",
     "knowledge_ids": [
-      "DX-G04-009"
+      "DX-G04-009",
+      "DX-G04-018"
     ]
   },
   {
@@ -722,7 +727,8 @@
     "learning_focus": "塩素化数と浮遊粒子の関係",
     "status": "editorial-outline",
     "knowledge_ids": [
-      "DX-G04-011"
+      "DX-G04-011",
+      "DX-G04-017"
     ]
   },
   {
@@ -1327,7 +1333,8 @@
     "learning_focus": "空間速度と触媒機構",
     "status": "editorial-outline",
     "knowledge_ids": [
-      "DX-A01-008"
+      "DX-A01-008",
+      "DX-A01-016"
     ]
   },
   {

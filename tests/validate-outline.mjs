@@ -34,10 +34,10 @@ const km=csv("docs/research/knowledge-map.csv").slice(1),
  choices=csv("docs/research/past-exam-choice-index.csv").slice(1),
  gaps=csv("docs/research/past-exam-gap-proposals.csv").slice(1),
  moves=csv("docs/outline/outline-v3-section-migration.csv").slice(1);
-assert.equal(km.length,218);assert.equal(coverage.length,218);
+assert.equal(km.length,225);assert.equal(coverage.length,225);
 assert.equal(q.length,200);assert.equal(choices.length,1000);
 const kMap=new Map(km.map(r=>[r[0],r])),qMap=new Map(q.map(r=>[r[0],r[6]]));
-assert.equal(kMap.size,218);assert.equal(qMap.size,200);
+assert.equal(kMap.size,225);assert.equal(qMap.size,200);
 for(const r of km){const s=sectionMap.get(r[3]);assert.ok(s,r[0]);assert.equal(r[4],s.title,r[0]);}
 for(const r of coverage){assert.equal(r[2],kMap.get(r[0])?.[3],r[0]);}
 const chapMap={G01:"g01",G02:"g02",G03:"g03",G04:"g04",G05:"g05",G06:"g06",G07:"g07",A01:"a01",A02:"a02",A03:"a03",A04:"a04",A05:"a05"};
@@ -55,5 +55,5 @@ for(const r of resolutions){const qrow=q.find(x=>x[0]===r[0]);assert.ok(qrow,r[0
 for(const d of chapterDiscrepancies){assert.ok(qMap.has(d[0]));assert.notEqual(d[1],d[2]);}
 for(const [qid,sec] of [["R03-A-Q01","8.3"],["R03-A-Q02","8.3"],["R03-A-Q04","8.3"],["R04-A-Q01","8.1"],["R05-A-Q07","8.4"],["R03-A-Q11","9.3"],["R05-A-Q12","9.3"]])assert.equal(qMap.get(qid),sec,qid);
 assert.ok(moves.length>100);for(const r of moves)assert.equal(r[3],kMap.get(r[0])?.[3],r[0]);
-assert.equal(coverage.filter(r=>r[7]==="no-primary-question-link").length,122);
-console.log("PASS: v3 outline 13 chapters / 65 sections, 218 knowledge, 200 questions and 1000 provisional choice links");
+assert.equal(coverage.filter(r=>r[7]==="no-primary-question-link").length,129);
+console.log("PASS: v3 outline 13 chapters / 65 sections, 225 knowledge, 200 questions and 1000 provisional choice links");

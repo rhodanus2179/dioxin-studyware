@@ -17,7 +17,8 @@ const questions=csv("docs/research/past-exam-question-index.csv").slice(1),
  hold=csv("docs/research/review-queue.csv").slice(1);
 assert.equal(questions.length,200);assert.equal(choices.length,1000);assert.equal(links.length,1000);
 assert.equal(resolved.length,12);assert.equal(semantic.length,205);assert.equal(source.length,205);
-assert.equal(followups.length,23);assert.equal(hold.length,175);
+assert.equal(followups.length,0);assert.equal(hold.length,175);
+assert.equal(precision.length,23);assert.equal(proof.length,23);
 const qmap=new Map(questions.map(x=>[x[0],x])),linksBy=new Map(links.map(x=>[x[0],x]));
 const selected=new Set(semantic.map(x=>x[0])),q12=new Map(resolved.map(x=>[x[0],x]));
 assert.equal(selected.size,205);assert.equal(q12.size,12);
@@ -34,18 +35,23 @@ for(const r of resolved){
  assert.ok(qr[8].split(" ").includes(r[6]),r[0]);
 }
 const byS=new Map(semantic.map(x=>[x[0],x]));
+const precisionBy=new Map(precision.map(x=>[x[0],x]));
 let exact=0,open=0;
 for(const r of semantic){
  assert.equal(r.length,15,r[0]);
  const l=linksBy.get(r[0]);assert.ok(l,r[0]);
- assert.equal(r[4],l[4]);assert.equal(r[5],l[5]);assert.equal(r[6],l[7]);assert.equal(r[7],l[8]);
+ if(r[7]==="precision-gap-review-required"){
+  const p=precisionBy.get(r[0]);assert.ok(p,r[0]);assert.equal(p[2],r[4]);assert.equal(p[3],l[4]);assert.equal(p[4],l[7]);assert.equal(l[8],"semantic-reviewed-provisional");
+ }else{assert.equal(r[4],l[4]);assert.equal(r[5],l[5]);assert.equal(r[6],l[7]);assert.equal(r[7],l[8]);}
  assert.ok(r[9].length>5&&r[10].length>25,r[0]);
  if(r[7]==="semantic-reviewed-provisional")exact++;
  else if(r[7]==="precision-gap-review-required")open++;
  else throw Error(r[0]+" unexpected status");
 }
 assert.equal(exact,182);assert.equal(open,23);
-for(const r of followups)assert.equal(byS.get(r[0])?.[7],"precision-gap-review-required",r[0]);
+for(const r of precision)assert.equal(byS.get(r[0])?.[7],"precision-gap-review-required",r[0]);
+for(const r of proof)assert.equal(precisionBy.get(r[0])?.[3],r[2],r[0]);
+assert.equal(links.filter(x=>x[8]==="semantic-reviewed-provisional").length,205);
 for(const r of source)assert.ok(byS.has(r[0]),r[0]);
 assert.equal(new Set(source.map(r=>r[0])).size,205);
-console.log("PASS: 12 chapter decisions, 60 affected choices, 205 meaning audits (182 provisional, 23 gaps), 205 source checks and original HOLD175 preserved");
+console.log("PASS: 12 chapter decisions, 60 affected choices, 205 meaning audits (23 pass27 gaps resolved by pass28), 205 original source checks and original HOLD175 preserved");

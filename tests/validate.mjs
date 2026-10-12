@@ -28,6 +28,7 @@ for(const q of questions) {
   }
   assert.ok(q.references.every(x=>sources.has(x)),"出典IDが不正: "+q.id);
   assert.equal(q.source_type,"original","公開教材はオリジナル問題のみ: "+q.id);
+  assert.equal(q.publication_approval,"approved-original-prototype-v1","試作画面への公開は明示的承認が必要: "+q.id);
 }
 for(const r of references)assert.ok(/^https:\/\//.test(r.url),"URLはHTTPS: "+r.id);
 console.log("PASS: "+chapters.length+" chapters, "+questions.length+" original questions, "+references.length+" references");

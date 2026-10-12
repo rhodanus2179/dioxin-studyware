@@ -24,7 +24,9 @@ Pages設定を有効にするまでは公開ページが表示されません。
 
 ## 正式目次v3
 
-[正式目次v3（13章65節）](docs/outline/outline-v3.md)を採択済み。学習サイトの章ページに正式な節構成を表示します。[185項の詳細目次](docs/outline/outline-v4-item-detail.md)・**知識218 ID（追加6件）**・[知識ID統合台帳](docs/research/knowledge-normalization.csv)・[過去問1,000選択肢との暫定対応表](docs/research/choice-knowledge-map-v1.csv)を整備済みです。候補リンク205件は対応関係の個別確認待ちであり、公式試験の科学・法令監査の完了とは別です。旧[63節の目次](docs/outline/outline-v2.md)は履歴資料として保存し、旧形式で書いた本文草稿は次の執筆工程で整合させます。共通科目「公害総論」は本Studywareの対象外です。
+[正式目次v3（13章65節）](docs/outline/outline-v3.md)を採択済み。学習サイトの章ページに正式な節構成を表示します。[185項の詳細目次](docs/outline/outline-v4-item-detail.md)・**知識227 ID**・[知識ID統合台帳](docs/research/knowledge-normalization.csv)・[過去問1,000選択肢との暫定対応表](docs/research/choice-knowledge-map-v1.csv)を整備済みです。意味的対応を個別に整理した205選択肢は、独立した原題・法令・規格・科学監査の完了とは別です。**当初特定した知識粒度の課題23件は裁定済み（その対象内の残件0件）**ですが、別集計の795選択肢では**727件の意味的個別点検が未了**です。**掲載前HOLD175件**も維持しています。旧[63節の目次](docs/outline/outline-v2.md)は履歴資料として保存し、旧形式で書いた本文草稿は次の執筆工程で整合させます。共通科目「公害総論」は本Studywareの対象外です。
+
+**研究監査状況（2026-10-12）**：PR #3の[マージ品質監査・必要条件](docs/research/pr3-quality-audit-and-merge-gates.md)を参照。現在P0 0件、175件HOLD、205件の出典点検では122件が独立出典未参照。研究マップの統合と教材の最終公開審査は別です。[科学データと国家試験の解説に関する編集規則](docs/editorial/scientific-evidence-and-exam-interpretation-policy.md)も適用します。
 
 ## ローカルでの起動
 

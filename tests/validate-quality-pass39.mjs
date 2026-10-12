@@ -1,0 +1,6 @@
+import assert from "node:assert/strict";import fs from "node:fs";
+function csv(p){const s=fs.readFileSync(p,"utf8"),rows=[];let r=[],v="",q=false;for(let i=0;i<s.length;i++){const c=s[i];if(c==='"'){if(q&&s[i+1]==='"'){v+='"';i++}else q=!q}else if(c===','&&!q){r.push(v);v=""}else if(c==='\n'&&!q){r.push(v);v="";if(r.some(Boolean))rows.push(r);r=[]}else if(c!=='\r')v+=c}assert.equal(q,false);let h=rows.shift();return rows.map(x=>Object.fromEntries(h.map((k,i)=>[k,x[i]??""])));}
+const root="docs/research/",e=csv(root+"choice-evidence-dashboard-205-pass30.csv"),src=csv(root+"source-register.csv"),b=csv(root+"choice-independent-evidence-pass39.csv"),hold=csv(root+"review-queue.csv");
+assert.equal(e.length,205);assert.equal(b.length,5);assert.equal(hold.length,175);
+assert.equal(e.filter(x=>x.external_evidence_scope==="not-independently-verified").length,122);
+const by=new Map(e.map(x=>[x.choice_id,x])),sourceIDs=new Set(src.map(x=>x.source_id));for(const x of b){assert.equal(x.publication_approval,"not-authorized");assert.equal(by.get(x.choice_id).external_evidence_scope,x.scope);assert.ok(sourceIDs.has(x.source_ids));}console.log("PASS39 5 distinct official-decree choice-source audits, remaining 122, HOLD175");

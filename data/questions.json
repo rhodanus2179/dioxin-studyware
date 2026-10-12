@@ -16,6 +16,7 @@
     "answer": 1,
     "explanation": "ダイオキシン類は単一物質ではありません。日本の法制度ではPCDD、PCDFおよびコプラナーPCBを含む総称として扱います。異性体によって毒性が異なることも、TEF・TEQを学ぶ理由です。",
     "source_type": "original",
+    "publication_approval": "approved-original-prototype-v1",
     "references": [
       "env-dioxin"
     ]
@@ -37,6 +38,7 @@
     "answer": 2,
     "explanation": "TEQは、毒性等価係数（TEF）を用いて各化合物の寄与を換算し、合算した値です。濃度が同じでも化合物の種類が違えば、毒性への寄与は違います。",
     "source_type": "original",
+    "publication_approval": "approved-original-prototype-v1",
     "references": [
       "env-dioxin"
     ]
@@ -58,6 +60,7 @@
     "answer": 2,
     "explanation": "対策は発生源から人・環境への曝露までつながっています。排出の抑制だけでなく、環境調査や摂取・影響評価も全体像の一部です。",
     "source_type": "original",
+    "publication_approval": "approved-original-prototype-v1",
     "references": [
       "env-dioxin"
     ]
@@ -79,6 +82,7 @@
     "answer": 1,
     "explanation": "両者は規制体系の中で担当する場所が違います。『環境をどんな状態に保つか』と『発生源からどこまで出してよいか』を区別すると、その後の細かな基準値も整理できます。",
     "source_type": "original",
+    "publication_approval": "approved-original-prototype-v1",
     "references": [
       "env-dioxin"
     ]
@@ -100,6 +104,7 @@
     "answer": 1,
     "explanation": "高温で分解できても、排ガスの冷却過程で飛灰上などに再生成する場合があります。『よく燃やす』『再生成しやすい条件を避ける』『適切に除去する』を一連のプロセスとして理解しましょう。",
     "source_type": "original",
+    "publication_approval": "approved-original-prototype-v1",
     "references": [
       "env-dioxin"
     ]
@@ -121,6 +126,7 @@
     "answer": 2,
     "explanation": "de novo 合成は、飛灰中の炭素・塩素や金属触媒などが関係する生成経路です。単に炉内温度だけを覚えるのではなく、排ガス冷却設備と結びつけて理解するのが重要です。",
     "source_type": "original",
+    "publication_approval": "approved-original-prototype-v1",
     "references": [
       "env-dioxin"
     ]
@@ -149,6 +155,7 @@
       "⑤ 指定範囲・例外・施行時点を省略すると誤判定につながります。"
     ],
     "source_type": "original",
+    "publication_approval": "approved-original-prototype-v1",
     "references": [
       "egov-dioxin-law",
       "env-dioxin-standard"
@@ -178,6 +185,7 @@
       "⑤ 排出基準は対象施設に係る排ガス・排出水の基準です。"
     ],
     "source_type": "original",
+    "publication_approval": "approved-original-prototype-v1",
     "references": [
       "egov-dioxin-law",
       "env-dioxin-standard",
@@ -208,6 +216,7 @@
       "⑤ 環境基準と対象施設の排出水に適用される排出基準を混同しています。"
     ],
     "source_type": "original",
+    "publication_approval": "approved-original-prototype-v1",
     "references": [
       "env-dioxin-standard"
     ]

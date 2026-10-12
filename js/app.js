@@ -1,4 +1,5 @@
 import {readProgress,saveAnswer,summary} from "./storage.js";
+import {selectPublicPrototypeExercises} from "./publication.js";
 const root=document.getElementById("app");
 const nav=document.getElementById("navigation");
 const catalog={chapters:[],questions:[],references:[],sections:[],outlineItems:[]};
@@ -146,7 +147,9 @@ async function load(){
   try{
     const files=["./data/chapters.json","./data/questions.json","./data/references.json","./data/sections.json","./data/outline-items.json"];
     const results=await Promise.all(files.map(async url=>{const r=await fetch(url);if(!r.ok)throw Error(url+" "+r.status);return r.json();}));
-    [catalog.chapters,catalog.questions,catalog.references,catalog.sections,catalog.outlineItems]=results;
+    [catalog.chapters,,catalog.references,catalog.sections,catalog.outlineItems]=results;
+    // Fail closed: the research CSV status no-explicit-HOLD never grants publishing permission.
+    catalog.questions=selectPublicPrototypeExercises(results[1]);
     window.addEventListener("hashchange",route);
     route();
   }catch(e){root.innerHTML='<section class="panel"><h1>データの読み込みに失敗しました</h1><p>GitHub PagesまたはローカルHTTPサーバーで開いてください。</p><pre>'+escapeHtml(e.message)+'</pre></section>';}

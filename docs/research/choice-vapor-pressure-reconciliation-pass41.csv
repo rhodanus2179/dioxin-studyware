@@ -1,0 +1,6 @@
+"choice_id","claim_scope","official_wrong_choice","ministry_document","key_numeric_reference_pa","scope_status","priority","publication_state","remaining_review"
+"R05-G-Q10-C1","Molecular weight / chlorination vs pressure","1","MOE-2004-table8.3","PCDD 2,3,7,8-TCDD 2.0e-7; OCDD 1.1e-10","scoped-trend-supported","P1","HOLD","final-original-PDF-and-publication-QA"
+"R05-G-Q10-C2","OCDD order vs TeCDD and TeCDF","2","MOE-2004-table8.3","TeCDD mean 1.9e-6; TeCDF mean 3.3e-6; OCDD 1.1e-10; ratio 1.73e4 / 3.0e4","official-wrong-answer-corrob-4-orders","P1","HOLD","final-original-PDF-and-publication-QA"
+"R05-G-Q10-C3","Co-PCB vs PCDD PCDF tendency","2","MOE-2004-sec8.1-and-tables8.3-8.4","PCB77 6.0e-5; TCDD 2.0e-7; ministry-text-higher-tendency","scoped-tendency-supported","P1","HOLD","final-original-PDF-and-publication-QA"
+"R05-G-Q10-C4","tetra-penta Co-PCB order","2","MOE-2004-table8.4","PCB77 6e-5; PCB81 1e-4; PCB105 1.1e-4; PCB114 5.6e-5; PCB118 4.2e-5; PCB126 3.9e-5","target-orders-supported","P1","HOLD","final-original-PDF-and-publication-QA"
+"R05-G-Q10-C5","hepta Co-PCB order","2","MOE-2004-table8.4","PCB189 1.7e-6 Pa at25C; Foreman and Bidleman 1985 estimate","target-orders-supported-estimated","P1","HOLD","final-original-PDF-and-publication-QA"

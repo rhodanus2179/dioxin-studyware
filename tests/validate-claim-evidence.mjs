@@ -76,7 +76,8 @@ assert.equal(allChoices.get("R05-G-Q12-C4")[5],"user-supplied-figure-visual-rati
 assert.ok(allQuestions.get("R05-G-Q12")[6].includes("exam-paper-image-and-publisher-reprint-erratum-both-visually-compared"));
 assert.ok(audits.find(r=>r[1]==="R05-G-Q12")[3].includes("JEMAI-ERRATA-2025-DXN"));
 assert.equal(reviewQueue.filter(r=>r[1]==="R05-G-Q12"&&r[9]==="P1-final-publication-QA-and-official-PDF-byte-identity").length,5);
-assert.equal(reviewQueue.filter(r=>r[9].startsWith("P0-")).length,0);
+// The publisher's R05-Q12 figure P0 was resolved in pass14; pass40 has three separate physicochemical P0 discrepancies.
+assert.equal(reviewQueue.filter(r=>r[9].startsWith("P0-")).length,0); // Pass41: three vapor-pressure P0 flags resolved against MOE handbook.
 assert.ok(sources.get("JEMAI-ERRATA-2025-DXN")[6].includes("old-new-book-figure-image-inspected"));
 assert.ok(sources.has("R05-EXAM-PAPER-2023-USER-PAGE10-VISUAL"));
 for(const id of ["R06-ZN-JST01","R06-ZN-OPERATOR01","R06-ZN-PAPER01","R06-MEM-EPA01","R06-MEM-EPA02","R06-JIS-K0311-SECONDARY"])assert.ok(sources.has(id),id);

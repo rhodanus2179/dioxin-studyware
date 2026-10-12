@@ -139,7 +139,8 @@
     "learning_focus": "ダイ特法の目的と国の基本指針",
     "status": "editorial-outline",
     "knowledge_ids": [
-      "DX-G01-001"
+      "DX-G01-001",
+      "DX-G01-023"
     ]
   },
   {
@@ -249,7 +250,8 @@
     "learning_focus": "対象施設の指定概念だけを説明",
     "status": "editorial-outline",
     "knowledge_ids": [
-      "DX-G01-011"
+      "DX-G01-011",
+      "DX-G01-022"
     ]
   },
   {
@@ -311,11 +313,12 @@
     "id": "1.5.3",
     "section_id": "1.5",
     "chapter_id": "g01",
-    "title": "事業者測定と公表",
-    "learning_focus": "測定義務・報告と公開主体",
+    "title": "公害防止管理者の業務と事業者測定・公表",
+    "learning_focus": "公害防止組織整備法の管理業務とダイ特法の事業者測定義務を区別する",
     "status": "editorial-outline",
     "knowledge_ids": [
-      "DX-G01-017"
+      "DX-G01-017",
+      "DX-G01-024"
     ]
   },
   {
@@ -601,7 +604,8 @@
     "learning_focus": "設備基数と生産量比などの違い",
     "status": "editorial-outline",
     "knowledge_ids": [
-      "DX-G03-013"
+      "DX-G03-013",
+      "DX-G03-014"
     ]
   },
   {
@@ -645,7 +649,8 @@
     "learning_focus": "塩素数と置換位置による分類",
     "status": "editorial-outline",
     "knowledge_ids": [
-      "DX-G04-004"
+      "DX-G04-004",
+      "DX-G04-016"
     ]
   },
   {
@@ -700,7 +705,8 @@
     "learning_focus": "WHO更新版と法令適用版を区別",
     "status": "editorial-outline",
     "knowledge_ids": [
-      "DX-G04-009"
+      "DX-G04-009",
+      "DX-G04-018"
     ]
   },
   {
@@ -722,7 +728,8 @@
     "learning_focus": "塩素化数と浮遊粒子の関係",
     "status": "editorial-outline",
     "knowledge_ids": [
-      "DX-G04-011"
+      "DX-G04-011",
+      "DX-G04-017"
     ]
   },
   {
@@ -1301,11 +1308,12 @@
     "id": "8.3.3",
     "section_id": "8.3",
     "chapter_id": "a01",
-    "title": "湿式スクラバーと捕集機構",
-    "learning_focus": "慣性・拡散等の作用",
+    "title": "集じん方式の部分捕集効率と湿式スクラバー",
+    "learning_focus": "バグフィルター・電気・サイクロン・慣性・重力・湿式の粒径依存性を比較する",
     "status": "editorial-outline",
     "knowledge_ids": [
-      "DX-A01-009"
+      "DX-A01-009",
+      "DX-A01-017"
     ]
   },
   {
@@ -1327,7 +1335,8 @@
     "learning_focus": "空間速度と触媒機構",
     "status": "editorial-outline",
     "knowledge_ids": [
-      "DX-A01-008"
+      "DX-A01-008",
+      "DX-A01-016"
     ]
   },
   {

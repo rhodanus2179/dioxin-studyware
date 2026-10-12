@@ -10,7 +10,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - run: node --check js/app.js && node --check js/storage.js
+      - run: node --check js/app.js && node --check js/storage.js && node --check js/markdown.js
+      - run: node tests/validate-chapter4.mjs
       - run: node tests/validate.mjs
       - run: node tests/validate-outline.mjs
       - run: node tests/validate-knowledge-linkage.mjs

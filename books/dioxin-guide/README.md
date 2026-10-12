@@ -22,6 +22,8 @@
 - [第0章 初稿「ダイオキシン類を学ぶ前に」（8頁想定）](manuscript/chapter-00.md)
 - [第1章 初稿「ダイオキシン類対策の法規制」（18頁目標）](manuscript/chapter-01.md)
 - [第1章 執筆時点の構造・出典・誌面量QA](reviews/chapter-01-review-v0.1.md)
+- [第2章 初稿「ダイオキシン類問題の背景」（8頁目標）](manuscript/chapter-02.md)
+- [第2章 初稿品質確認記録](reviews/chapter-02-review-v0.1.md)
 - [図表の作成・管理](figures/README.md)
 - [演習問題の作成・管理](exercises/README.md)
 

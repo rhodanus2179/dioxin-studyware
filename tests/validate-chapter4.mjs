@@ -40,4 +40,13 @@ assert.match(html,/<strong>重要<\/strong>/);
 assert.ok(!html.includes("<script>"),"raw HTML must remain escaped");
 const blocked=mdRender("[不正](javascript:alert(1))");
 assert.ok(!blocked.includes("<a href="),"reject non-HTTPS links");
+const s44=text.slice(text.indexOf("## 4.4　"),text.indexOf("## 4.5　"));
+assert.ok([...s44].length>=5000,"4.4 must be a substantive explanation, not an outline");
+assert.deepEqual((s44.match(/^### 4\.4\.\d+/gm)||[]),["### 4.4.1","### 4.4.2","### 4.4.3"],"4.4 preserves exactly three official items");
+for(const term of ["溶解度","Kow","Koc","Kd","蒸気圧","気粒","ヘンリー定数","過冷却液体","光分解","半減期","活性炭"]){
+  assert.ok(s44.includes(term),"missing connected scientific discussion: "+term);
+}
+assert.ok(s44.includes("架空")&&s44.includes("推算値"),"worked examples and evidence types must be differentiated");
+assert.ok(s44.includes("原表の画像目視再確認は未実施"),"original PDF visual-verification caveat required");
+assert.ok(!s44.includes("[[figure:"),"unsupported figure tokens must not be embedded");
 console.log("PASS: chapter 4 5 sections/15 items/18 IDs, 7 HOLD exercises, 65-section tracker and safe Markdown.");

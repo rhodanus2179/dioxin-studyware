@@ -29,4 +29,5 @@ for(const p of roots)if(fs.existsSync(p))scan(p);
 assert.deepEqual(flagged,[],flagged.join("\n"));
 const questions=JSON.parse(fs.readFileSync("data/questions.json","utf8"));
 assert.equal(questions.length,9,"Only original practice questions belong in the public app at this stage");
+assert.ok(questions.every(q=>q.source_type==="original"&&q.publication_approval==="approved-original-prototype-v1"),"prototype publication requires positive original approval");
 console.log("PASS public source boundary: "+checked+" checked text files, no private Drive IDs, mounted files or embedded exam images; 9 original questions.");

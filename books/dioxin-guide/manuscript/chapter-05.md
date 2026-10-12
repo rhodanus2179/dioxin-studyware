@@ -400,15 +400,15 @@ PCDD・PCDFの化学量論的な生成機構を完全に解明していなくて
 - **S02** 環境省『平成19年版 環境／循環白書』第2部第1章第2節（800℃以上の燃焼、300℃前後での生成、200℃以下への冷却、活性炭等の技術例。2007年当時の整理）：https://www.env.go.jp/policy/hakusyo/h19/html/hj07020102.html
 - **S03** ストックホルム条約事務局「Releases from unintentional POPs / Overview」附属書C、人為的発生源と第5条の基本的責務：https://www.pops.int/Implementation/BATandBEP/ReleasesfromunintentionalPOPs/Overview/tabid/9646/Default.aspx
 - **S04** WHO「Dioxins」（2026年8月11日更新、自然火災・火山噴火、人為発生源、化学工程の概要）：https://www.who.int/news-room/fact-sheets/detail/dioxins-and-their-effects-on-human-health
-- **S05** Buekensほか（2001）, *De Novo Synthesis of Polychlorinated Dibenzo-p-dioxins and Dibenzofurans on Fly Ash from a Sintering Process*, Environmental Science & Technology 35:1616–1623, doi:10.1021/es000199f（焼結飛灰を用いた250～450℃、30分～6時間の実験、400℃付近の極大）：https://pubmed.ncbi.nlm.nih.gov/11329711/
+- **S05** Xhrouet・Pirard・De Pauw（2001）, *De Novo Synthesis of Polychlorinated Dibenzo-p-dioxins and Dibenzofurans on Fly Ash from a Sintering Process*, Environmental Science & Technology 35:1616–1623, doi:10.1021/es000199f（焼結飛灰を用いた250～450℃、30分～6時間の実験、400℃付近の極大）：https://pubmed.ncbi.nlm.nih.gov/11329711/
 - **S06** （2025）, *Methodological Insights into the Occurrence, Conversion, and Control of Polychlorinated Dibenzo-p-Dioxins/Dibenzofurans from Waste Incineration*, *Molecules* 30, 4106（反応機構・温度域・複数経路の総説）：https://pmc.ncbi.nlm.nih.gov/articles/PMC12566111/
 - **S07** （2018）, *Synergy of Iron and Copper Oxides in the Catalytic Formation of PCDD/Fs from 2-Monochlorophenol*（前駆体の表面反応・金属触媒）：https://pmc.ncbi.nlm.nih.gov/articles/PMC5911412/
 - **S08** Stieglitz（1998）, *Selected Topics on the De Novo Synthesis of PCDD/PCDF on Fly Ash*（飛灰炭素の酸化・塩素化、銅、300～350℃の実験的説明）：https://journals.sagepub.com/doi/10.1089/ees.1998.15.5
 - **S09** National Research Council（2000）, *Waste Incineration and Public Health*, National Academies Press（塩素と炉間の単純相関が確認されない条件、後燃焼域温度の重要性）：https://www.nationalacademies.org/read/5803/chapter/5
 - **S10** US EPA HERO, Gullett et al.（2000）, *The role of chlorine in dioxin formation*（塩素量と反応性塩素の違い）：https://hero.epa.gov/reference/1947546/
-- **S11** *Science of the Total Environment* 掲載の2007年総説 *Dioxin formation from waste incineration*（小型燃焼の制御実験における塩素・金属・COの作用。フルスケール代表値ではない）：https://pubmed.ncbi.nlm.nih.gov/17432330/
+- **S11** Shibamoto・Yasuhara・Katami（2007）, *Dioxin formation from waste incineration*, *Reviews of Environmental Contamination and Toxicology* 190:1–41（小型燃焼の制御実験における塩素・金属・COの作用。フルスケール代表値ではない）：https://pubmed.ncbi.nlm.nih.gov/17432330/
 - **S12** （2016）, *PCDD/F catalysis by metal chlorides and oxides*（銅など金属による触媒反応・経路の違い）：https://www.sciencedirect.com/science/article/pii/S0045653516308074
-- **S13** （2001）*The influence of level and chlorine source on the formation ... during combustion of an artificial municipal waste*, Chemosphere（燃焼条件変動と塩素量の役割の制御実験）：https://www.sciencedirect.com/science/article/abs/pii/S0045653500001557
+- **S13** Wikström・Marklund（2001）, *The influence of level and chlorine source on the formation ... during combustion of an artificial municipal waste*, Chemosphere（燃焼条件変動と塩素量の役割の制御実験）：https://www.sciencedirect.com/science/article/abs/pii/S0045653500001557
 - **S14** 旧厚生省「ごみ処理に係るダイオキシン類発生防止等ガイドライン」（1997年1月、当時の新設炉の技術的目安850℃、2秒等。現行法定数値の証明には用いない）：https://www.env.go.jp/recycle/kosei_press/h970123a/h970123a-1.html
 - **S15** ストックホルム条約事務局「BAT/BEP Guidance」（条約第5条・附属書Cに関連する防止策）：https://www.pops.int/Implementation/BATandBEP%28new%29/UnintentionalPOPsreleases%28new%29/BATandBEPGuidance/tabid/9647/Default.aspx
 

@@ -1,3 +1,11 @@
+## 第45パス（2026-10-12）：M07例外判断・M08プレフライト
+
+ユーザーから「別アカウントからのapproveができないため、スキップして次へ」との明示的指示。**PR #3のみM07の正式Approve要件を例外的に省略**し、[判断の原文・内容レビュー証跡・M08プレフライト](pr3-m07-waiver-m08-preflight-20261012.md)を記録。
+
+GitHub上の`COMMENTED`を`APPROVED`と表示しない。mainは`protected=false`、現行Rulesets 0件。**M08のReady化・マージ操作は実施していない**。CIの再検証と、ユーザーによるM08最終統合判断が必要。科学的QA残（122独立出典未確認、727個別点検待ち）、HOLD175、後続のPゲートは維持。
+
+---
+
 ## 第44パス（2026-10-12）：第三者レビュー4件への対応
 
 [レビュー #5486797058](https://github.com/rhodanus2179/dioxin-studyware/pull/3#pullrequestreview-5486797058)は**内容上の研究基盤マージGO**と判定したが、GitHubの`COMMENTED`（同一アカウント）であり**M07正式APPROVEは未取得**。4件の提案への[対応報告](pr3-third-party-review-response-20261012.md)：M06証跡のレビュー時79ファイル・ツリー201件への更新、READMEの旧23件と未点検727件の明確化、[公開の明示的許可ルール](publication-approval-policy.md)とテスト、[mainブランチの保護設定手順](main-branch-protection-setup.md)。**ブランチ保護そのものは未適用、PRはDraft・未マージ、HOLD175は継続**。

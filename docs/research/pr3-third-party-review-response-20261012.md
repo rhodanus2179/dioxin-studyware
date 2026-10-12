@@ -15,7 +15,11 @@
 | 3. `no-explicit-HOLD`の公開誤認 | [明示的許可方針](publication-approval-policy.md)、`js/publication.js`、`tests/validate-publication-allowlist.mjs`を追加。既存の独自9問だけに試作表示の明示的承認を与え、**未設定・研究データ・HOLD・未承認はすべて非表示**。 | 対応済み（CI検証待ち） |
 | 4. mainブランチ保護 | [管理画面での設定手順](main-branch-protection-setup.md)を記載。APIでrulesets 0件、branch protection照会403、連携アプリには保護変更権限なし。管理者がGitHub UIで1件の別アカウント承認＋CI必須を設定する必要がある。 | **管理画面での設定待ち** |
 
-## M07/M08の現在位置
+## 2026-10-12：M07の正式Approve要件の省略
+
+ユーザーが「別アカウントからのapproveができません。スキップして次に進めてください」と指示したため、[PR #3限定の省略決定](pr3-m07-waiver-m08-preflight-20261012.md)を追記。以下は**第44パス当時のステータス**として保持し、現時点のM07ゲート判定は上記例外記録に従う。
+
+## M07/M08の現在位置（第44パス時点の履歴）
 
 - **M07の内容レビュー**：レポートと`COMMENTED`レビューは受領済み。**GitHubでの権限ある別アカウントによる`APPROVE`は未取得**。同じアカウントからの再投稿や「Approveとみなす」という宣言ではGitHubのレビュー要件を満たさない。新コミットの内容を確認する別レビュアーに依頼する。
 - **M08統合判断**：ユーザーの明示的なReady化・mainマージ承認は未取得。本PRは**Draft・未マージのまま**維持。

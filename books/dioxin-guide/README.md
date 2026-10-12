@@ -28,6 +28,8 @@
 - [第3章 初稿品質確認記録（統計差替・内容確認・最終編集申し送り）](reviews/chapter-03-review-v0.1.md)
 - [第4章 初稿「ダイオキシン類の性質」（内容初稿、16頁目標の紙幅は最終工程で調整）](manuscript/chapter-04.md)
 - [第4章 初稿品質確認記録（TEF版、物性、生物蓄積、科学・法令の独立校閲）](reviews/chapter-04-review-v0.1.md)
+- [第5章 初稿「ダイオキシン類汚染の発生機構」（内容初稿・14頁目標、紙幅は最終工程）](manuscript/chapter-05.md)
+- [第5章 初稿品質確認記録（反応機構・de novo・冷却域・塩素・生成と捕集の区別）](reviews/chapter-05-review-v0.1.md)
 - [図表の作成・管理](figures/README.md)
 - [演習問題の作成・管理](exercises/README.md)
 

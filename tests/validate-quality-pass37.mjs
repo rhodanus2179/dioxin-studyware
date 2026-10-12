@@ -7,7 +7,7 @@ const by=new Map(e.map(x=>[x.choice_id,x])),tri=new Map(t.map(x=>[x.choice_id,x]
 for(const x of a){assert.equal(x.publication_approval,"not-authorized");assert.equal(by.get(x.choice_id).external_evidence_scope,x.evidence_scope);for(let id of x.source_ids.split(" "))assert.ok(src.has(id),id);}
 for(const x of c){assert.equal(by.get(x.choice_id).external_evidence_scope,x.new_scope);for(let id of x.source_ids.split(" "))assert.ok(src.has(id),id);}
 assert.match(by.get("R03-G-Q07-C4").editorial_note,/2,730/);assert.match(by.get("R03-G-Q07-C5").editorial_note,/3,635/);
-for(const x of b){assert.equal(x.publication_approval,"not-authorized");assert.equal(tri.get(x.choice_id).meaning_review_status,x.review_status);assert.match(rev.get(x.choice_id).original_explanation_draft,/IARC|環境省/); // A later MOE-original reconciliation may supersede the pass37 IARC-only wording.for(let id of x.independent_source_ids.split(" "))assert.ok(src.has(id),id);}
+for(const x of b){assert.equal(x.publication_approval,"not-authorized");assert.equal(tri.get(x.choice_id).meaning_review_status,x.review_status);assert.match(rev.get(x.choice_id).original_explanation_draft,/IARC|環境省/); /* Pass41 supersedes IARC-only prose with the environment-ministry original. */for(let id of x.independent_source_ids.split(" "))assert.ok(src.has(id),id);}
 assert.match(tri.get("R05-G-Q10-C4").review_priority,/P0/);assert.match(tri.get("R05-G-Q10-C5").review_priority,/P0/);
 assert.match(by.get("R03-G-Q08-C2").external_evidence_scope,/discrepancy/);assert.match(r3.find(x=>x.choice_id==="R03-G-Q08-C2").original_explanation_draft,/大気排出量/);
 console.log("PASS37: 10 first-time source checks; two historical classifications confirmed; 5 vapor pressures reviewed; 130 no-source and 175 HOLD remain");

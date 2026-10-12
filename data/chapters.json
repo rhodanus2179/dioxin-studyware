@@ -31,7 +31,8 @@
     "id": "g04",
     "subject": "general",
     "title": "第4章　性質",
-    "status": "planned"
+    "status": "draft",
+    "path": "content/general/04-properties.md"
   },
   {
     "id": "g05",

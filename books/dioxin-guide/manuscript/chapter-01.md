@@ -3,9 +3,12 @@ title: "第1章 ダイオキシン類対策の法規制"
 book: "公害防止管理者試験 ダイオキシン類関係 要点と演習（仮題）"
 chapter: 1
 status: drafting
-version: v0.1-in-progress
+version: v0.1
 target_pages: 18
 target_chars_per_page: 900
+actual_draft_approx_chars: 17091
+visual_assets_pending: 6
+question_count: 5
 publication_approval: false
 reference_scope: "法令・告示は2026年10月時点を基準として再照合する。過去問については各受験年度の法令適用時点を別途確認"
 ---

@@ -10,7 +10,11 @@ assert.equal(holds.length,175);assert.equal(holds.filter(x=>x.priority.startsWit
 assert.equal(figures.length,19);assert.ok(figures.every(x=>x.status==="planned"&&x.asset_path===null));assert.equal(questions.length,9);
 for(const id of ["R05-G-Q10-C3","R05-G-Q10-C4","R05-G-Q10-C5"]){const h=holds.find(x=>x.choice_id===id),t=tri.find(x=>x.choice_id===id);assert.ok(h&&t);assert.ok(h.priority.startsWith("P1-"));assert.match(t.review_priority,/P1-official-original-and-publication-QA-pass41/);assert.match(t.meaning_review_status,/pass41/);assert.equal(t.final_publication_approval,"not-authorized");}
 assert.equal(v41.length,5);assert.equal(gate.length,13);for(let n=1;n<=8;n++){let id="M"+String(n).padStart(2,"0");assert.ok(gate.some(x=>x.gate_id===id&&x.merge_blocker==="yes"),id)}for(let n=1;n<=5;n++){let id="P"+String(n).padStart(2,"0");assert.ok(gate.some(x=>x.gate_id===id&&x.merge_blocker==="no"),id)}
-for(const id of ["M06","M07","M08"])assert.equal(gate.find(x=>x.gate_id===id).current_state,"pending");
+assert.equal(gate.find(x=>x.gate_id==="M06").current_state,"completed-owner-attested-and-screened");
+assert.equal(gate.find(x=>x.gate_id==="M07").current_state,"pending");
+assert.equal(gate.find(x=>x.gate_id==="M08").current_state,"pending");
+const approval=fs.readFileSync(base+"pr3-m06-rights-owner-attestation-20261012.md","utf8");
+assert.ok(approval.includes("completed-owner-attested-and-screened"));assert.ok(approval.includes("M07"));assert.ok(approval.includes("175"));
 const docs=[
 "docs/editorial/scientific-evidence-and-exam-interpretation-policy.md",
 base+"pr3-quality-audit-and-merge-gates.md"
@@ -18,4 +22,4 @@ base+"pr3-quality-audit-and-merge-gates.md"
 for(const f of docs){let s=fs.readFileSync(f,"utf8");assert.match(s,/HOLD175|HOLD.*175|175.*HOLD/);assert.match(s,/P0/);assert.match(s,/K\/V\/E\/Q/);assert.ok(s.length>2000)}
 assert.ok(fs.readFileSync("docs/editorial-policy.md","utf8").includes("scientific-evidence-and-exam-interpretation-policy.md"));
 assert.ok(fs.readFileSync("README.md","utf8").includes("知識227 ID"));
-console.log("PASS PR3 MERGE GATES: 13/65/185, 227 nodes (118 zero links), 1000 choices, 205 evidence (122 without independent source), 795 triage (727 pending), 0 current P0, HOLD175, source218, 19 planned figures, 9 original questions, M06-M08 pending.");
+console.log("PASS PR3 MERGE GATES: 13/65/185, 227 nodes (118 zero links), 1000 choices, 205 evidence (122 without independent source), 795 triage (727 pending), 0 current P0, HOLD175, source218, 19 planned figures, 9 original questions, M06 owner-attested, M07-M08 pending.");

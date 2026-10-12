@@ -24,6 +24,8 @@
 - [第1章 執筆時点の構造・出典・誌面量QA](reviews/chapter-01-review-v0.1.md)
 - [第2章 初稿「ダイオキシン類問題の背景」（8頁目標）](manuscript/chapter-02.md)
 - [第2章 初稿品質確認記録](reviews/chapter-02-review-v0.1.md)
+- [第3章 初稿「ダイオキシン類排出の現状」（10頁目標、分量超過につき紙幅調整HOLD）](manuscript/chapter-03.md)
+- [第3章 初稿品質確認記録（統計差替・分量ゲート）](reviews/chapter-03-review-v0.1.md)
 - [図表の作成・管理](figures/README.md)
 - [演習問題の作成・管理](exercises/README.md)
 

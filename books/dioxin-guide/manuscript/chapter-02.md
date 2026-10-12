@@ -2,7 +2,7 @@
 title: "第2章 ダイオキシン類問題の背景"
 chapter: 2
 status: drafting
-version: v0.1-in-progress
+version: v0.1
 target_pages: 8
 target_chars_per_page: 900
 publication_approval: false

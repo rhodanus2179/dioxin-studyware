@@ -36,6 +36,10 @@
 - [第7章 初稿品質確認記録（法第33条、地方監督・公表・土壌底質対策、行政統計の差替）](reviews/chapter-07-review-v0.1.md)
 - [第8章 初稿「大気関係ダイオキシン類対策」（5節・16項・32目、内容初稿／28頁目標は後工程）](manuscript/chapter-08.md)
 - [第8章 初稿品質確認記録（集じん効率・吸着と触媒・SV・残渣収支・独立校閲ゲート）](reviews/chapter-08-review-v0.1.md)
+- [第9章 初稿「大気関係ダイオキシン類対象施設」（3節・9項・18目、20頁目標は後工程）](manuscript/chapter-09.md)
+- [第9章 初稿品質確認記録（5類型・規模・排出基準・酸素補正・出典留保）](reviews/chapter-09-review-v0.1.md)
+- [第10章 初稿「水質関係ダイオキシン類対策」（3節・7項・14目、14頁目標は後工程）](manuscript/chapter-10.md)
+- [第10章 初稿品質確認記録（SS・溶存態・凝集ろ過膜・GAC・汚泥・計算検算）](reviews/chapter-10-review-v0.1.md)
 - [図表の作成・管理](figures/README.md)
 - [演習問題の作成・管理](exercises/README.md)
 

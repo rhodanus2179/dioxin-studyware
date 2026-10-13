@@ -34,6 +34,8 @@
 - [第6章 初稿品質確認記録（AhR、IARC、2024年度TDS、日本TDI・EFSA 2026年TWI）](reviews/chapter-06-review-v0.1.md)
 - [第7章 初稿「国・地方公共団体の防止対策」（内容初稿・6頁目標、紙幅は最終工程）](manuscript/chapter-07.md)
 - [第7章 初稿品質確認記録（法第33条、地方監督・公表・土壌底質対策、行政統計の差替）](reviews/chapter-07-review-v0.1.md)
+- [第8章 初稿「大気関係ダイオキシン類対策」（5節・16項・32目、内容初稿／28頁目標は後工程）](manuscript/chapter-08.md)
+- [第8章 初稿品質確認記録（集じん効率・吸着と触媒・SV・残渣収支・独立校閲ゲート）](reviews/chapter-08-review-v0.1.md)
 - [図表の作成・管理](figures/README.md)
 - [演習問題の作成・管理](exercises/README.md)
 

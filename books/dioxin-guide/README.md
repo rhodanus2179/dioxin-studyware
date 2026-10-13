@@ -32,6 +32,8 @@
 - [第5章 初稿品質確認記録（反応機構・de novo・冷却域・塩素・生成と捕集の区別）](reviews/chapter-05-review-v0.1.md)
 - [第6章 初稿「ダイオキシン類汚染による影響」（内容初稿・12頁目標、紙幅は最終工程で調整）](manuscript/chapter-06.md)
 - [第6章 初稿品質確認記録（AhR、IARC、2024年度TDS、日本TDI・EFSA 2026年TWI）](reviews/chapter-06-review-v0.1.md)
+- [第7章 初稿「国・地方公共団体の防止対策」（内容初稿・6頁目標、紙幅は最終工程）](manuscript/chapter-07.md)
+- [第7章 初稿品質確認記録（法第33条、地方監督・公表・土壌底質対策、行政統計の差替）](reviews/chapter-07-review-v0.1.md)
 - [図表の作成・管理](figures/README.md)
 - [演習問題の作成・管理](exercises/README.md)
 

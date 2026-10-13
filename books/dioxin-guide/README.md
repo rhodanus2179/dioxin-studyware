@@ -40,6 +40,8 @@
 - [第9章 初稿品質確認記録（5類型・規模・排出基準・酸素補正・出典留保）](reviews/chapter-09-review-v0.1.md)
 - [第10章 初稿「水質関係ダイオキシン類対策」（3節・7項・14目、14頁目標は後工程）](manuscript/chapter-10.md)
 - [第10章 初稿品質確認記録（SS・溶存態・凝集ろ過膜・GAC・汚泥・計算検算）](reviews/chapter-10-review-v0.1.md)
+- [第11章 初稿「水質関係ダイオキシン類対象施設」（3節・9項・18目、20頁目標は後工程）](manuscript/chapter-11.md)
+- [第11章 初稿品質確認記録（水質19類型・工程限定・18/19号・事業場排水・独立校閲ゲート）](reviews/chapter-11-review-v0.1.md)
 - [図表の作成・管理](figures/README.md)
 - [演習問題の作成・管理](exercises/README.md)
 

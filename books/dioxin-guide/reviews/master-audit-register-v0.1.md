@@ -24,8 +24,11 @@
 - 知識ID：登録ID重複=0、本文13章で未登場=0（なし）、本文でCSV未登録の形式一致ID=0（なし）。**ID出現は知識説明の充足を証明しない**。付録中の再参照は登録数の評価対象外。
 - 全13章＋付録のfrontmatterは`status: drafting`、`publication_approval: false`（M：14/14一致）。
 - 章別の図124件は**文字列として存在する制作指示**。清書・校閲された完成図の数ではない。序章の「ミニ計算例」等、番号付き「計算例」以外の数値演習は上記52件に含まない。
-- **選択肢の構造検査**：五つの独立した選択肢行（①～⑤）=60/71、正答表記抽出=71/71。この検査では正答唯一性・誤肢の論理・説明十分性を保証しない（複数肢をまとめて論じる表現もあり得る）。
+- **選択肢の構造検査**：①～⑤が各独立行にある60/71問に加え、残り11問では選択肢5肢が**同じ1行内に横並び**で記載されていることを再取得・確認した（対象：8-2、8-5、9-8、10-2、10-4、10-7、11-7、12-3、12-5、12-7、12-8）。したがって**五肢表示の欠落は0/71問**。正答表記抽出=71/71。横並び11問は組版時の可読性を別途検査する。この検査では正答唯一性・誤肢の論理・説明十分性を保証しない（複数肢をまとめて論じる表現もあり得る）。
 - 原稿Markdown文字数（見出し・表・参照・注記を含む）=326252文字。組版実字数とは異なる。**字数の多寡をP0の不合格理由としない**。
+
+
+**P0再検査による表示上の発見（S2、誤答は未確定）**：選択肢のレイアウトが縦積み60問、横並び11問で不統一。11問は五肢自体が欠けているわけではなく、単純な「行頭①～⑤」正規表現の検出漏れだった。組版時は改行・折返し・可読性の統一が必要（該当IDは上記）。法令や答えの正しさの評価ではない。
 
 ### 1.1 章別検査一覧
 
@@ -452,7 +455,7 @@ CSVの別名／重複統合関係は原台帳の`role`と`canonical_knowledge_id
 
 ## 5. 独自五者択一71問の出題・答え表示の機械台帳（M）
 
-「五肢」は①～⑤の独立した設問行検出、「正解表示」は本文の文字列から抽出。正解の唯一性・全肢の科学的/法的正誤はすべてHOLD。全肢に説明を与えているかは意味上の独立レビューが必要。
+「五肢」は①～⑤の検出（独立行60問・横並び1行11問のいずれも5肢の記載を確認）、「正解表示」は本文の文字列から抽出。正解の唯一性・全肢の科学的/法的正誤はすべてHOLD。全肢に説明を与えているかは意味上の独立レビューが必要。
 
 | 問題ID | 節 | 5肢 | 正答表示 | 独立正答・全肢監査 | ファイル |
 |---|---|---|---|---|---|
@@ -486,10 +489,10 @@ CSVの別名／重複統合関係は原台帳の`role`と`canonical_knowledge_id
 | 7-2 | 7.2 | M有 | ④（M抽出のみ） | **HOLD** | `books/dioxin-guide/manuscript/chapter-07.md` |
 | 7-3 | 7.2 | M有 | ②（M抽出のみ） | **HOLD** | `books/dioxin-guide/manuscript/chapter-07.md` |
 | 8-1 | 8.1 | M有 | ④（M抽出のみ） | **HOLD** | `books/dioxin-guide/manuscript/chapter-08.md` |
-| 8-2 | 8.1 | M未抽出・調査 | ③（M抽出のみ） | **HOLD** | `books/dioxin-guide/manuscript/chapter-08.md` |
+| 8-2 | 8.1 | M有（横並び） | ③（M抽出のみ） | **HOLD** | `books/dioxin-guide/manuscript/chapter-08.md` |
 | 8-3 | 8.2 | M有 | ⑤（M抽出のみ） | **HOLD** | `books/dioxin-guide/manuscript/chapter-08.md` |
 | 8-4 | 8.3 | M有 | ②（M抽出のみ） | **HOLD** | `books/dioxin-guide/manuscript/chapter-08.md` |
-| 8-5 | 8.3 | M未抽出・調査 | ③（M抽出のみ） | **HOLD** | `books/dioxin-guide/manuscript/chapter-08.md` |
+| 8-5 | 8.3 | M有（横並び） | ③（M抽出のみ） | **HOLD** | `books/dioxin-guide/manuscript/chapter-08.md` |
 | 8-6 | 8.3 | M有 | ④（M抽出のみ） | **HOLD** | `books/dioxin-guide/manuscript/chapter-08.md` |
 | 8-7 | 8.4 | M有 | ⑤（M抽出のみ） | **HOLD** | `books/dioxin-guide/manuscript/chapter-08.md` |
 | 8-8 | 8.4 | M有 | ②（M抽出のみ） | **HOLD** | `books/dioxin-guide/manuscript/chapter-08.md` |
@@ -501,29 +504,29 @@ CSVの別名／重複統合関係は原台帳の`role`と`canonical_knowledge_id
 | 9-5 | 9.3 | M有 | ②（M抽出のみ） | **HOLD** | `books/dioxin-guide/manuscript/chapter-09.md` |
 | 9-6 | 9.3 | M有 | ④（M抽出のみ） | **HOLD** | `books/dioxin-guide/manuscript/chapter-09.md` |
 | 9-7 | 9.3 | M有 | ②（M抽出のみ） | **HOLD** | `books/dioxin-guide/manuscript/chapter-09.md` |
-| 9-8 | 9.3 | M未抽出・調査 | ②（M抽出のみ） | **HOLD** | `books/dioxin-guide/manuscript/chapter-09.md` |
+| 9-8 | 9.3 | M有（横並び） | ②（M抽出のみ） | **HOLD** | `books/dioxin-guide/manuscript/chapter-09.md` |
 | 10-1 | 10.1 | M有 | ③（M抽出のみ） | **HOLD** | `books/dioxin-guide/manuscript/chapter-10.md` |
-| 10-2 | 10.1 | M未抽出・調査 | ③（M抽出のみ） | **HOLD** | `books/dioxin-guide/manuscript/chapter-10.md` |
+| 10-2 | 10.1 | M有（横並び） | ③（M抽出のみ） | **HOLD** | `books/dioxin-guide/manuscript/chapter-10.md` |
 | 10-3 | 10.2 | M有 | ②（M抽出のみ） | **HOLD** | `books/dioxin-guide/manuscript/chapter-10.md` |
-| 10-4 | 10.2 | M未抽出・調査 | ④（M抽出のみ） | **HOLD** | `books/dioxin-guide/manuscript/chapter-10.md` |
+| 10-4 | 10.2 | M有（横並び） | ④（M抽出のみ） | **HOLD** | `books/dioxin-guide/manuscript/chapter-10.md` |
 | 10-5 | 10.2 | M有 | ③（M抽出のみ） | **HOLD** | `books/dioxin-guide/manuscript/chapter-10.md` |
 | 10-6 | 10.3 | M有 | ②（M抽出のみ） | **HOLD** | `books/dioxin-guide/manuscript/chapter-10.md` |
-| 10-7 | 10.3 | M未抽出・調査 | ③（M抽出のみ） | **HOLD** | `books/dioxin-guide/manuscript/chapter-10.md` |
+| 10-7 | 10.3 | M有（横並び） | ③（M抽出のみ） | **HOLD** | `books/dioxin-guide/manuscript/chapter-10.md` |
 | 11-1 | 11.1 | M有 | ③（M抽出のみ） | **HOLD** | `books/dioxin-guide/manuscript/chapter-11.md` |
 | 11-2 | 11.1 | M有 | ④（M抽出のみ） | **HOLD** | `books/dioxin-guide/manuscript/chapter-11.md` |
 | 11-3 | 11.2 | M有 | ②（M抽出のみ） | **HOLD** | `books/dioxin-guide/manuscript/chapter-11.md` |
 | 11-4 | 11.2 | M有 | ④（M抽出のみ） | **HOLD** | `books/dioxin-guide/manuscript/chapter-11.md` |
 | 11-5 | 11.3 | M有 | ③（M抽出のみ） | **HOLD** | `books/dioxin-guide/manuscript/chapter-11.md` |
 | 11-6 | 11.3 | M有 | ④（M抽出のみ） | **HOLD** | `books/dioxin-guide/manuscript/chapter-11.md` |
-| 11-7 | 11.3 | M未抽出・調査 | ③（M抽出のみ） | **HOLD** | `books/dioxin-guide/manuscript/chapter-11.md` |
+| 11-7 | 11.3 | M有（横並び） | ③（M抽出のみ） | **HOLD** | `books/dioxin-guide/manuscript/chapter-11.md` |
 | 12-1 | 12.1 | M有 | ③（M抽出のみ） | **HOLD** | `books/dioxin-guide/manuscript/chapter-12.md` |
 | 12-2 | 12.2 | M有 | ①（M抽出のみ） | **HOLD** | `books/dioxin-guide/manuscript/chapter-12.md` |
-| 12-3 | 12.2 | M未抽出・調査 | ③（M抽出のみ） | **HOLD** | `books/dioxin-guide/manuscript/chapter-12.md` |
+| 12-3 | 12.2 | M有（横並び） | ③（M抽出のみ） | **HOLD** | `books/dioxin-guide/manuscript/chapter-12.md` |
 | 12-4 | 12.3 | M有 | ②（M抽出のみ） | **HOLD** | `books/dioxin-guide/manuscript/chapter-12.md` |
-| 12-5 | 12.3 | M未抽出・調査 | ④（M抽出のみ） | **HOLD** | `books/dioxin-guide/manuscript/chapter-12.md` |
+| 12-5 | 12.3 | M有（横並び） | ④（M抽出のみ） | **HOLD** | `books/dioxin-guide/manuscript/chapter-12.md` |
 | 12-6 | 12.4 | M有 | ③（M抽出のみ） | **HOLD** | `books/dioxin-guide/manuscript/chapter-12.md` |
-| 12-7 | 12.4 | M未抽出・調査 | ②（M抽出のみ） | **HOLD** | `books/dioxin-guide/manuscript/chapter-12.md` |
-| 12-8 | 12.5 | M未抽出・調査 | ④（M抽出のみ） | **HOLD** | `books/dioxin-guide/manuscript/chapter-12.md` |
+| 12-7 | 12.4 | M有（横並び） | ②（M抽出のみ） | **HOLD** | `books/dioxin-guide/manuscript/chapter-12.md` |
+| 12-8 | 12.5 | M有（横並び） | ④（M抽出のみ） | **HOLD** | `books/dioxin-guide/manuscript/chapter-12.md` |
 | 12-9 | 12.5 | M有 | ④（M抽出のみ） | **HOLD** | `books/dioxin-guide/manuscript/chapter-12.md` |
 | 12-10 | 12.6 | M有 | ③（M抽出のみ） | **HOLD** | `books/dioxin-guide/manuscript/chapter-12.md` |
 | 12-11 | 12.6 | M有 | ⑤（M抽出のみ） | **HOLD** | `books/dioxin-guide/manuscript/chapter-12.md` |

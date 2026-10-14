@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1465 835" width="1465" height="835" role="img" aria-label="DL・QLと S_DL・C_DL の違い">
+<title>DL・QLと S_DL・C_DL の違い</title><desc>装置・試料下限の概念と法定TEQ計上方法を混同しない</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#202632"/></marker></defs>
+<style>
+text{font-family:"Noto Sans CJK JP","Noto Sans JP","Yu Gothic","Hiragino Kaku Gothic ProN",sans-serif;fill:#1d2630}
+.bold{font-weight:700}.center{text-anchor:middle}.small{font-size:16px}.minor{fill:#495461}
+.panel{fill:#fff;stroke:#202632;stroke-width:2.3}.gray{fill:#f0f2f4;stroke:#202632;stroke-width:2.3}
+.tint{fill:#dfe3e8;stroke:#202632;stroke-width:2.3}
+.dashbox{fill:#fff;stroke:#47515c;stroke-width:2.4;stroke-dasharray:9 6}
+.arr{stroke:#202632;stroke-width:2.7;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke:#66707a;stroke-width:2;fill:none}.dashed{stroke:#65707a;stroke-width:2.5;stroke-dasharray:8 6;fill:none}
+.particle{fill:#1d2630;stroke:#1d2630}.border{stroke:#9aa2ab;stroke-width:1}
+</style>
+<rect width="1465" height="835" fill="white"/>
+<text x="45" y="54" font-size="31" class="bold">図12-17　DL・QLと S_DL・C_DL の違い</text>
+<text x="45" y="89" font-size="18" class="minor">装置・試料下限の概念と法定TEQ計上方法を混同しない</text>
+<line x1="45" y1="109" x2="1420" y2="109" class="border"/>
+<text x="68" y="150" font-size="22" class="bold">1. 検出の区分：濃度軸（左ほど低濃度）</text><rect class="panel" x="70" y="178" width="402" height="123" rx="12"/><text x="271" y="220" font-size="23" class="center bold">DL未満</text><text x="271" y="269" font-size="19" class="center">検出下限に届かない</text><rect class="gray" x="472" y="178" width="430" height="123" rx="12"/><text x="687" y="220" font-size="23" class="center bold">DL以上・QL未満</text><text x="687" y="269" font-size="19" class="center">検出と信頼できる定量は別</text><rect class="panel" x="902" y="178" width="495" height="123" rx="12"/><text x="1149.5" y="220" font-size="23" class="center bold">QL以上</text><text x="1149.5" y="269" font-size="19" class="center">所定条件で定量可能</text><path class="arr" d="M82 334 L1391 334" marker-end="url(#arrow)"/><line x1="472" y1="311" x2="472" y2="362" stroke="#202632" stroke-width="3"/><line x1="902" y1="311" x2="902" y2="362" stroke="#202632" stroke-width="3"/><text x="472" y="390" font-size="21" class="center bold">DL：検出下限</text><text x="902" y="390" font-size="21" class="center bold">QL：定量下限</text><text x="1330" y="390" font-size="18" class="minor">濃度 ↑</text><text x="70" y="433" font-size="22" class="bold">2. これとは別の区別：排ガス K 0311 の「計画上の下限」と「試料換算下限」</text><rect class="gray" x="70" y="453" width="626" height="147" rx="12"/><text x="92" y="491" font-size="23" class="bold">A　S_DL：採取計画で設定する試料ガスDL</text><text x="92" y="526" font-size="19" >5.5：評価濃度・採取量を決める計画値</text><text x="92" y="566" font-size="18" >附属書D.3：酸素補正を伴う計画時の記号</text><rect class="panel" x="735" y="453" width="662" height="147" rx="12"/><text x="757" y="491" font-size="23" class="bold">B　C_DL：実試料の条件から求めるDL</text><text x="757" y="526" font-size="19" >7.5.3：採取量・分取・注入等を反映</text><text x="757" y="566" font-size="18" >正誤票で7.5.3の C_DL まで置換しない</text><text x="82" y="634" font-size="19" class="bold">S_DL と C_DL の大小関係はこの図では仮定しない。両者は目的・算定場面が異なる。</text><rect class="dashbox" x="70" y="658" width="626" height="92" rx="12"/><text x="91" y="689" font-size="20" class="bold">法定排出ガス・排出水の通常TEQ計算</text><text x="91" y="725" font-size="19" >規則第3条：異性体のQL未満は0で算入</text><rect class="dashbox" x="735" y="658" width="662" height="92" rx="12"/><text x="755" y="689" font-size="20" class="bold">環境調査・常時監視は別の取扱い</text><text x="755" y="725" font-size="19" >例：DL未満をDL/2。媒体・目的・現行版を確認</text>
+<line x1="45" y1="768" x2="1420" y2="768" class="border"/>
+<text x="45" y="793" font-size="16" class="minor">根拠：第12章12.5.3～12.5.4、JSA公開正誤票D.3（2021-05-15）｜数式の完全一致はHOLD。</text>
+</svg>

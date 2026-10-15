@@ -1,3 +1,4 @@
+import {mdRender} from "./markdown.js";
 import {readProgress,saveAnswer,summary} from "./storage.js";
 import {selectPublicPrototypeExercises} from "./publication.js";
 const root=document.getElementById("app");
@@ -5,20 +6,6 @@ const nav=document.getElementById("navigation");
 const catalog={chapters:[],questions:[],references:[],sections:[],outlineItems:[]};
 let quizState=null;
 function escapeHtml(v){return String(v).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
-function inline(v){return escapeHtml(v).replace(/\*\*(.+?)\*\*/g,"<strong>$1</strong>").replace(/`(.+?)`/g,"<code>$1</code>");}
-function mdRender(md){
-  const lines=md.replace(/\r/g,"").split("\n");let out=[],para=[],list=[];
-  const paraClose=()=>{if(para.length){out.push("<p>"+inline(para.join(" "))+"</p>");para=[];}};
-  const listClose=()=>{if(list.length){out.push("<ul>"+list.map(s=>"<li>"+inline(s)+"</li>").join("")+"</ul>");list=[];}};
-  for(const s of lines){
-    if(/^\s*$/.test(s)){paraClose();listClose();continue;}
-    const m=s.match(/^(#{1,3})\s+(.+)$/);
-    if(m){paraClose();listClose();let level=m[1].length+1;out.push("<h"+level+">"+inline(m[2])+"</h"+level+">");continue;}
-    if(s.startsWith("- ")){paraClose();list.push(s.slice(2));continue;}
-    listClose();para.push(s.trim());
-  }
-  paraClose();listClose();return out.join("\n");
-}
 function el(tag,attrs={},txt){const e=document.createElement(tag);for(const [k,v] of Object.entries(attrs)){if(k==="className")e.className=v;else e.setAttribute(k,v);}if(txt!==undefined)e.textContent=txt;return e;}
 function chapter(id){return catalog.chapters.find(c=>c.id===id);}
 function outlineHtml(id){

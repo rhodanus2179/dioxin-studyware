@@ -1,0 +1,236 @@
+{
+  "schema_version": 1,
+  "chapter": "g04",
+  "status": "editorial-draft-not-public",
+  "publication_approval": "HOLD",
+  "created_on": "2026-10-12",
+  "notes": "すべてStudyware独自の問題。公式過去問の文言は転記しない。正答・各誤答理由の最終K/V/E/Qレビューと公開判断は未完了。data/questions.jsonには追加しない。",
+  "questions": [
+    {
+      "id": "g04-draft-001",
+      "chapter": "g04",
+      "knowledge_ids": [
+        "DX-G04-001",
+        "DX-G04-002",
+        "DX-G04-003"
+      ],
+      "difficulty": 1,
+      "question": "PCDD・PCDF・PCBの基本骨格に関する説明として適切なものはどれか。",
+      "choices": [
+        "PCDDの基本骨格には酸素架橋が一つだけある。",
+        "PCDFの基本骨格には酸素原子を含む環構造がない。",
+        "PCBでは二つのベンゼン環が炭素–炭素結合で直接結合している。",
+        "PCDDとPCBは塩素の位置だけが異なる同一骨格である。",
+        "PCDFはベンゼン環を含まない。"
+      ],
+      "answer": 2,
+      "choice_explanations": [
+        "PCDDには酸素原子を含む二つの架橋がある。",
+        "PCDFの縮合骨格には酸素原子一つが含まれる。",
+        "正しい。PCBの基本骨格はビフェニルであり、酸素架橋をもたない。",
+        "PCDDの酸素架橋とPCBの直接C–C結合は別骨格である。",
+        "PCDFにも二つのベンゼン環に由来する芳香環構造がある。"
+      ],
+      "explanation": "PCDD二つ、PCDF一つの酸素架橋と、PCBの炭素–炭素結合を構造上の違いとして整理する。",
+      "source_type": "original",
+      "publication_approval": "HOLD",
+      "review_status": "draft",
+      "references": [
+        "env-dioxin"
+      ]
+    },
+    {
+      "id": "g04-draft-002",
+      "chapter": "g04",
+      "knowledge_ids": [
+        "DX-G04-004",
+        "DX-G04-016"
+      ],
+      "difficulty": 2,
+      "question": "WHO-TEF(2006)で個別に係数が付与されるPCDD・PCDF・DL-PCBの異性体数の組合せとして適切なものはどれか。",
+      "choices": [
+        "PCDD 75、PCDF 135、DL-PCB 209",
+        "PCDD 7、PCDF 10、DL-PCB 12",
+        "PCDD 12、PCDF 10、DL-PCB 7",
+        "PCDD 4、PCDF 8、DL-PCB 17",
+        "PCDD 7、PCDF 12、DL-PCB 10"
+      ],
+      "answer": 1,
+      "choice_explanations": [
+        "75・135・209は各物質群の構造上の種類数と混同した数。",
+        "正しい。合計29異性体にWHO-TEF(2006)が付与される。",
+        "異性体数の配分が異なる。",
+        "非オルト4・モノオルト8というDL-PCBの内訳を三群に誤配分している。",
+        "PCDFとDL-PCBの対象種数を入れ替えている。"
+      ],
+      "explanation": "全構造数とTEF対象数を区別する。版も明記する。",
+      "source_type": "original",
+      "publication_approval": "HOLD",
+      "review_status": "draft",
+      "references": [
+        "env-dioxin"
+      ]
+    },
+    {
+      "id": "g04-draft-003",
+      "chapter": "g04",
+      "knowledge_ids": [
+        "DX-G04-007",
+        "DX-G04-008"
+      ],
+      "difficulty": 2,
+      "question": "架空の試料で2,3,7,8-TCDDが0.20 pg/g、OCDDが100 pg/g、PCB #126が0.50 pg/gであった。この3成分のみについてWHO-TEF(2006)で計算するTEQの合計として適切なものはどれか（係数は順に1、0.0003、0.1）。",
+      "choices": [
+        "0.200 pg-TEQ/g",
+        "0.230 pg-TEQ/g",
+        "0.280 pg-TEQ/g",
+        "1.150 pg-TEQ/g",
+        "100.700 pg-TEQ/g"
+      ],
+      "answer": 2,
+      "choice_explanations": [
+        "TCDDの寄与だけを計上し、残りを無視している。",
+        "OCDDの寄与を加えたがPCB #126の寄与を落としている。",
+        "正しい。0.20+100×0.0003+0.50×0.1=0.280。",
+        "相対毒性の係数ではなく不適切な足し算・重み付けをしている。",
+        "質量濃度をそのまま合計し、TEFを使っていない。"
+      ],
+      "explanation": "この3成分だけの部分和であり、実試料の29種の総TEQを示すものではない。全数値は学習用の架空データ。",
+      "source_type": "original",
+      "publication_approval": "HOLD",
+      "review_status": "draft",
+      "references": [
+        "env-dioxin"
+      ]
+    },
+    {
+      "id": "g04-draft-004",
+      "chapter": "g04",
+      "knowledge_ids": [
+        "DX-G04-011",
+        "DX-G04-017"
+      ],
+      "difficulty": 3,
+      "question": "環境省2004年ハンドブック表8.3における25℃の集成値（TeCDDs同族体平均1.9×10^-6 Pa、OCDD 1.1×10^-10 Pa）から最も適切に言えることはどれか。",
+      "choices": [
+        "OCDDの蒸気圧はTeCDDs平均の約2桁下である。",
+        "TeCDDs平均の蒸気圧はOCDDの約1.7万倍である。",
+        "任意の2,3,7,8-TCDDの実測値は必ず1.9×10^-6 Paである。",
+        "この数値は全温度・全異性体で一定の倍率を保証する。",
+        "PCB #189の蒸気圧が直接実測されたことを示す。"
+      ],
+      "answer": 1,
+      "choice_explanations": [
+        "比は約1.7×10^4であり約4桁差。",
+        "正しい。1.9×10^-6 ÷ 1.1×10^-10 ≒ 1.7×10^4。",
+        "同族体平均と個別異性体を混同している。",
+        "温度・相・異性体・実測か推算かで値は変わり得る。",
+        "別のPCB異性体についての推算・実測区別を本表の比からは判定できない。"
+      ],
+      "explanation": "国内試験での代表値の読み方と、科学的な条件付き数値の読み方を区別する。",
+      "source_type": "original",
+      "publication_approval": "HOLD",
+      "review_status": "draft",
+      "references": [
+        "env-dioxin"
+      ]
+    },
+    {
+      "id": "g04-draft-005",
+      "chapter": "g04",
+      "knowledge_ids": [
+        "DX-G04-010",
+        "DX-G04-013",
+        "DX-G04-014"
+      ],
+      "difficulty": 2,
+      "question": "ダイオキシン類の溶解性と生物蓄積の関係について適切な説明はどれか。",
+      "choices": [
+        "水に溶けにくければ、水圏の生物には移動しない。",
+        "水中の溶存濃度が低ければ、底質も魚も調査する必要はない。",
+        "Kowは毒性等価係数TEFと同じ概念である。",
+        "粒子・底質への分配や食物を通じた取り込みがあるので、水中の溶存濃度だけでは曝露を判断できない。",
+        "生物濃縮と生物増幅は常に完全に同一の過程である。"
+      ],
+      "answer": 3,
+      "choice_explanations": [
+        "粒子や底質への分配や食物経由の移行がある。",
+        "溶存相以外の媒体や食物連鎖の評価が必要な場合がある。",
+        "Kowは分配を表す物性値、TEFは相対毒性の重みである。",
+        "正しい。複数媒体と曝露経路をつなげて考える。",
+        "環境媒体からの直接取り込みと食物網での濃度上昇は区別する。"
+      ],
+      "explanation": "物性→環境分配→食物網→曝露という因果の流れを確認する。",
+      "source_type": "original",
+      "publication_approval": "HOLD",
+      "review_status": "draft",
+      "references": [
+        "env-dioxin"
+      ]
+    },
+    {
+      "id": "g04-draft-006",
+      "chapter": "g04",
+      "knowledge_ids": [
+        "DX-G04-009",
+        "DX-G04-018"
+      ],
+      "difficulty": 3,
+      "question": "WHO-TEFの版について、2026年時点の資料の読み方として最も適切なものはどれか。",
+      "choices": [
+        "WHOの2022年再評価後、日本の過去の測定TEQはすべて自動的に同じ数値となる。",
+        "WHO-TEF(2006)と2022 WHO-TEFは同じ係数表を指す。",
+        "WHOが係数を見直せば、日本の法令上の適用日は必ずその会合日となる。",
+        "環境省2026年公表の令和6年度調査結果に2006版が示されるので、国内の全媒体・全法令の2026年10月現在の適用も確認済みとなる。",
+        "WHOでの科学的再評価、論文の刊行年、国内法令・行政測定の適用時点を区別して確認する。"
+      ],
+      "answer": 4,
+      "choice_explanations": [
+        "係数が変われば濃度が同じでもTEQが変わり得る。",
+        "2022年の再評価で複数のTEFが更新された。",
+        "国際的な勧告と国内の規制上の適用日は別手続である。",
+        "特定の行政報告に使われた版だけから全法令の現行適用は断定できない。",
+        "正しい。対象年度・根拠規則・媒体別運用も確認する。"
+      ],
+      "explanation": "研究の最新版と出題年度・国内制度の採用版は別物。",
+      "source_type": "original",
+      "publication_approval": "HOLD",
+      "review_status": "draft",
+      "references": [
+        "env-dioxin"
+      ]
+    },
+    {
+      "id": "g04-draft-007",
+      "chapter": "g04",
+      "knowledge_ids": [
+        "DX-G04-011",
+        "DX-G04-012"
+      ],
+      "difficulty": 2,
+      "question": "大気中のダイオキシン類の存在形態と対策の関係として適切なものはどれか。",
+      "choices": [
+        "ダイオキシン類は常に100%気相に存在し、粒子には分配しない。",
+        "蒸気圧の大小だけで、気相と粒子相の割合がすべて決まる。",
+        "温度や粒子への吸着条件に応じて気粒分配が変わるので、装置の捕集対象を考える必要がある。",
+        "高塩素化体ほど常に低い温度で無条件に揮発しやすい。",
+        "気粒分配が変わるなら、排ガスの測定は不要になる。"
+      ],
+      "answer": 2,
+      "choice_explanations": [
+        "粒子に吸着した状態も存在し得る。",
+        "粒子量、組成、温度等も影響する。",
+        "正しい。集じんとガス相の吸着処理の役割につながる。",
+        "一般的傾向と反対であり、温度や異性体条件も無視している。",
+        "測定や評価の必要性はなくならず、捕集・分析法にも関係する。"
+      ],
+      "explanation": "物性を装置選定・処理の学習に接続する。",
+      "source_type": "original",
+      "publication_approval": "HOLD",
+      "review_status": "draft",
+      "references": [
+        "env-dioxin"
+      ]
+    }
+  ]
+}

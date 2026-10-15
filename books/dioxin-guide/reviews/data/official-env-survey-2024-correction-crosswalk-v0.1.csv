@@ -1,0 +1,6 @@
+media,initial_sites,initial_samples,corrected_sites,corrected_samples,delta_sites,delta_samples,initial_url,corrected_url
+大気,512,1391,512,1391,0,0,https://www.env.go.jp/press/press_03410.html,https://www.env.go.jp/content/000416031.pdf
+公共用水域水質,1264,1643,1273,1652,9,9,https://www.env.go.jp/press/press_03410.html,https://www.env.go.jp/content/000416031.pdf
+公共用水域底質,1002,1064,1011,1073,9,9,https://www.env.go.jp/press/press_03410.html,https://www.env.go.jp/content/000416031.pdf
+地下水質,442,445,445,448,3,3,https://www.env.go.jp/press/press_03410.html,https://www.env.go.jp/content/000416031.pdf
+土壌,658,658,659,659,1,1,https://www.env.go.jp/press/press_03410.html,https://www.env.go.jp/content/000416031.pdf

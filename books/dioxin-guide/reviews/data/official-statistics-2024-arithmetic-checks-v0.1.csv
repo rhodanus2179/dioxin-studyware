@@ -1,0 +1,18 @@
+subject,input_a,input_b,computed,unit,calculation,official_source,audit_status
+水質超過率,29,1273,2.27808327,%,"29÷1,273",https://www.env.go.jp/content/000416031.pdf,arithmetic PASS; full source table audit HOLD
+水質達成率,1244,1273,97.72191673,%,"(1,273−29)÷1,273",https://www.env.go.jp/content/000416031.pdf,arithmetic PASS; full source table audit HOLD
+底質超過率,1,1011,0.09891197,%,"1÷1,011",https://www.env.go.jp/content/000416031.pdf,arithmetic PASS; full source table audit HOLD
+底質達成率,1010,1011,99.90108803,%,"(1,011−1)÷1,011",https://www.env.go.jp/content/000416031.pdf,arithmetic PASS; full source table audit HOLD
+小型焼却炉法規制対象外,4.2,0.054,9.61632,g-TEQ/年,4.2t/基/年×1000kg/t×0.054µg/kg×42400基÷10^6,https://www.env.go.jp/content/000384865.pdf,arithmetic PASS; full source table audit HOLD
+火葬場推計・下限,1674137,1000,1.674137,g-TEQ/年,1674137体×1000ng/体÷10^9,https://www.env.go.jp/content/000384865.pdf,arithmetic PASS; full source table audit HOLD
+火葬場推計・上限,1674137,2390,4.00118743,g-TEQ/年,1674137体×2390ng/体÷10^9,https://www.env.go.jp/content/000384865.pdf,arithmetic PASS; full source table audit HOLD
+電炉（建屋ガス含む）,682,21600000,14.9112,g-TEQ/年,682ng/t×21600000t÷10^9+0.18g,https://www.env.go.jp/content/000384865.pdf,arithmetic PASS; full source table audit HOLD
+焼結鉱,46,82000000,3.772,g-TEQ/年,46ng/t×82000000t÷10^9,https://www.env.go.jp/content/000384865.pdf,arithmetic PASS; full source table audit HOLD
+削減目標比,92,176,52.27272727,%,92÷176×100,https://www.env.go.jp/content/000384865.pdf,arithmetic PASS; full source table audit HOLD
+大気対象施設合計,7732,8,7740,施設,7732+8,https://www.env.go.jp/content/000385324.pdf,arithmetic PASS; full source table audit HOLD
+水質対象施設合計,3172,2,3174,施設,3172+2,https://www.env.go.jp/content/000385324.pdf,arithmetic PASS; full source table audit HOLD
+水質対象事業場合計,1353,2,1355,事業場,1353+2,https://www.env.go.jp/content/000385324.pdf,arithmetic PASS; full source table audit HOLD
+大気焼却施設構成率,6858,7740,88.60465116,%,6858÷7740,https://www.env.go.jp/content/000385324.pdf,arithmetic PASS; full source table audit HOLD
+水質焼却施設関連構成率,2267,3174,71.42407057,%,(1434+833)÷3174,https://www.env.go.jp/content/000385324.pdf,arithmetic PASS; full source table audit HOLD
+大気測定結果報告対象合計,5550,2210,7760,報告対象,5550+2210,https://www.env.go.jp/press/press_03313.html,arithmetic PASS; full source table audit HOLD
+水質測定結果報告対象合計,482,78,560,事業場報告対象,482+78,https://www.env.go.jp/press/press_03313.html,arithmetic PASS; full source table audit HOLD

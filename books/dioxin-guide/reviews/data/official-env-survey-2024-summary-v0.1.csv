@@ -1,0 +1,17 @@
+ID,media,group,sites,samples,exceed_sites,mean,minimum,maximum,unit,exceedance_rate_%,notes,source_url
+A0,大気,全体,512,1391,0,0.013,0.0017,0.32,pg-TEQ/m3,0.0000,549地点・1438検体は調査全体,https://www.env.go.jp/content/000416031.pdf
+A1,大気,一般環境,400,1069,0,0.013,0.0017,0.32,pg-TEQ/m3,0.0000,分類内訳,https://www.env.go.jp/content/000416031.pdf
+A2,大気,発生源周辺,89,254,0,0.015,0.0017,0.28,pg-TEQ/m3,0.0000,分類内訳,https://www.env.go.jp/content/000416031.pdf
+A3,大気,沿道,23,68,0,0.012,0.0052,0.04,pg-TEQ/m3,0.0000,分類内訳,https://www.env.go.jp/content/000416031.pdf
+W0,公共用水域水質,全体,1273,1652,29,0.2,0.0086,2.6,pg-TEQ/L,2.2781,地点ごとの年間平均値で判定,https://www.env.go.jp/content/000416031.pdf
+W1,公共用水域水質,河川,991,1347,27,0.22,0.01,2.6,pg-TEQ/L,2.7245,分類内訳,https://www.env.go.jp/content/000416031.pdf
+W2,公共用水域水質,湖沼,71,79,2,0.22,0.011,2.6,pg-TEQ/L,2.8169,分類内訳,https://www.env.go.jp/content/000416031.pdf
+W3,公共用水域水質,海域,211,226,0,0.066,0.0086,0.73,pg-TEQ/L,0.0000,分類内訳,https://www.env.go.jp/content/000416031.pdf
+S0,公共用水域底質,全体,1011,1073,1,5.8,0.035,290,pg-TEQ/g,0.0989,年1回以上の超過で地点を計上,https://www.env.go.jp/content/000416031.pdf
+S1,公共用水域底質,河川,772,833,1,5,0.035,290,pg-TEQ/g,0.1295,分類内訳,https://www.env.go.jp/content/000416031.pdf
+S2,公共用水域底質,湖沼,64,65,0,8.6,0.23,74,pg-TEQ/g,0.0000,分類内訳,https://www.env.go.jp/content/000416031.pdf
+S3,公共用水域底質,海域,175,175,0,8.1,0.11,94,pg-TEQ/g,0.0000,分類内訳,https://www.env.go.jp/content/000416031.pdf
+G0,地下水質,概況調査,445,448,0,0.049,0.0073,0.93,pg-TEQ/L,0.0000,ほか汚染井戸周辺9地点16検体、継続監視16地点18検体,https://www.env.go.jp/content/000416031.pdf
+L0,土壌,全体,659,659,0,2,0,130,pg-TEQ/g,0.0000,簡易測定2地点2検体は平均・濃度範囲算出対象外,https://www.env.go.jp/content/000416031.pdf
+L1,土壌,一般環境把握,483,483,0,1.5,0,100,pg-TEQ/g,0.0000,分類内訳,https://www.env.go.jp/content/000416031.pdf
+L2,土壌,発生源周辺,176,176,0,3.4,0,130,pg-TEQ/g,0.0000,分類内訳,https://www.env.go.jp/content/000416031.pdf
